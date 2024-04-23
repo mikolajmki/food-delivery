@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vLIib5bJLpQfv6ejump1FaXoiJ0ZtENJi22aYlWfWio=",
+  "Hash": "bbCCLf3fvnN4m1epy9nrsPPm51Btk7CXC/0rjJ2zWXo=",
   "Source": "food-delivery",
   "BasePath": "_content/food-delivery",
   "Mode": "Default",
@@ -1383,6 +1383,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Items\\f3d7f320-1d3f-4763-81ed-0a7cc1679b19-tak.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\wwwroot\\Images\\Items\\fddb46ce-152c-43ba-9f37-00c37b50e4c2-nn.webp",
+      "SourceId": "food-delivery",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\wwwroot\\",
+      "BasePath": "_content/food-delivery",
+      "RelativePath": "Images/Items/fddb46ce-152c-43ba-9f37-00c37b50e4c2-nn.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Items\\fddb46ce-152c-43ba-9f37-00c37b50e4c2-nn.webp"
     },
     {
       "Identity": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\wwwroot\\js\\site.js",

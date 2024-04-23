@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\Images\\Items\\f3d7f320-1d3f-4763-81ed-0a7cc1679b19-tak.jpg"
     },
     {
+      "Id": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\wwwroot\\Images\\Items\\fddb46ce-152c-43ba-9f37-00c37b50e4c2-nn.webp",
+      "PackagePath": "staticwebassets\\Images\\Items\\fddb46ce-152c-43ba-9f37-00c37b50e4c2-nn.webp"
+    },
+    {
       "Id": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

@@ -284,3 +284,5 @@ C:\Users\mikol\source\repos\food-delivery\food-delivery\bin\Debug\net6.0\runtime
 C:\Users\mikol\source\repos\food-delivery\food-delivery\bin\Debug\net6.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\mikol\source\repos\food-delivery\food-delivery\bin\Debug\net6.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\mikol\source\repos\food-delivery\food-delivery\bin\Debug\net6.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\mikol\source\repos\food-delivery\food-delivery\bin\Debug\net6.0\appsettings.Docker.json
+C:\Users\mikol\source\repos\food-delivery\food-delivery\obj\Debug\net6.0\food-delivery.sourcelink.json

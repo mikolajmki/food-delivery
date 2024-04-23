@@ -35,6 +35,11 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UseRequestLocalization(options =>
+    options
+        .SetDefaultCulture("pl-PL")
+);
+
 app.UseSession();
 
 var scope = app.Services.CreateScope();
