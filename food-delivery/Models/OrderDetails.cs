@@ -1,0 +1,17 @@
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace food_delivery.Models
+{
+    public class OrderDetails
+    {
+        public int Id { get; set; }
+        [ForeignKey(nameof(OrderHeaderId))]
+        public virtual OrderHeader OrderHeader { get; set; }
+        public int OrderHeaderId { get; set; }
+        [ForeignKey(nameof(ItemId))]
+        public virtual Item Item { get; set; }
+        public int? ItemId { get; set; }
+        public string Name { get; set; }
+        public int Count { get; set; }
+    }
+}

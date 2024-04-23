@@ -1,0 +1,251 @@
+﻿@model food_delivery.ViewModels.OrderDetailsViewModel
+
+@{
+    ViewData["Title"] = "OrderDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    Review review;
+}
+
+    <div class="container-sm">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Pickup Details</h2>
+                <form asp-action="OrderDetails" method="post">
+                    <input type="hidden" asp-for="OrderHeader.ApplicationUserId" />
+                    <input type="hidden" asp-for="OrderHeader.Id" />
+                    <div class="row mb-3">
+
+                        <div class="col-6">
+                            <label asp-for="OrderHeader.Name">Name</label>
+                            <input readonly asp-for="OrderHeader.Name" class="form-control" />
+                        </div>
+
+                        <div class="col-6">
+                            <label asp-for="OrderHeader.ApplicationUser.Email">Email</label>
+                            <input readonly asp-for="OrderHeader.ApplicationUser.Email" class="form-control" />
+                        </div>
+
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-4">
+                            <label asp-for="OrderHeader.Phone">Phone</label>
+                            <input readonly asp-for="OrderHeader.Phone" class="form-control" />
+                        </div>
+
+                        <div class="col-8">
+                            <label asp-for="OrderHeader.Address">Address</label>
+                            <input readonly asp-for="OrderHeader.Address" class="form-control" />
+                        </div>
+
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-4">
+                            <label asp-for="OrderHeader.OrderDate">OrderDate</label>
+                            <input readonly asp-for="OrderHeader.OrderDate" class="form-control" />
+                        </div>
+                        <div class="col-4">
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <label asp-for="OrderHeader.PaymentStatus">PaymentStatus</label>
+                                @* <input asp-for="OrderHeader.PaymentStatus" class="form-control" /> *@
+                                <select asp-for="OrderHeader.PaymentStatus" class="form-control">
+                                    <option readonly>@Model.OrderHeader.PaymentStatus</option>
+                                    <option value="Pending">Pending</option>
+                                    <option value="Approved">Approved</option>
+                                    <option value="Rejected">Rejected</option>
+                                </select>
+                                <span asp-validation-for="OrderHeader.PaymentStatus" class="text-danger"></span>
+                            }
+                            else
+                            {
+                                <label asp-for="OrderHeader.PaymentStatus">PaymentStatus</label>
+                                <input readonly asp-for="OrderHeader.PaymentStatus" class="form-control" />
+                            }
+                        </div>
+                        <div class="col-4">
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <label asp-for="OrderHeader.OrderStatus">OrderStatus</label>
+                                @* <input asp-for="OrderHeader.OrderStatus" class="form-control" /> *@
+                                <select asp-for="OrderHeader.OrderStatus" class="form-control">
+                                    <option readonly>@Model.OrderHeader.OrderStatus</option>
+                                    <option value="Pending">Pending</option>
+                                    <option value="Approved">Approved</option>
+                                    <option value="Rejected">Rejected</option>
+                                    <option value="Shipped">Shipped</option>
+                                    <option value="Cancelled">Cancelled</option>
+                                </select>
+                                <span asp-validation-for="OrderHeader.OrderStatus" class="text-danger"></span>
+                            }
+                            else
+                            {
+                                <label asp-for="OrderHeader.OrderStatus">OrderStatus</label>
+                                <input readonly asp-for="OrderHeader.OrderStatus" class="form-control" />
+                            }
+                        </div>
+                    </div>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <div class="row">
+                            <div class="col-6">
+                                <button type="submit" id="btnPlaceOrder" class="btn btn-primary w-100 mt-0">Update order</button>
+                            </div>
+                            <div class="col-6">
+                                <a asp-action="Delete" class="btn btn-danger w-100" asp-route-id="@Model.OrderHeader.Id">Delete</a>
+                            </div>
+                        </div>
+                    }
+                </form>
+                @if (User.IsInRole("Customer") )
+                {
+                    <h2>Review Item</h2>
+                    <form asp-action="Review" method="post">
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <label asp-for="NewReview.ItemId">Item</label>
+                                @* <input asp-for="OrderHeader.OrderStatus" class="form-control" /> *@
+                                <select required="true" id="review" asp-for="NewReview.ItemId" class="form-control" asp-items="@ViewBag.NotReviewedItems">
+                                    <option disabled selected value="">Select item</option>
+                                </select>
+                                <span asp-validation-for="NewReview.ItemId" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+                                <label asp-for="NewReview.Rating">Rating</label>
+                                @* <input asp-for="OrderHeader.OrderStatus" class="form-control" /> *@
+                                <select multiple min="1" max="5" asp-for="NewReview.Rating" class="form-control h-75" required>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                                <span asp-validation-for="NewReview.Rating" class="text-danger"></span>
+                            </div>
+                            <div class="col-10">
+                                <label asp-for="NewReview.Comment">Comment</label>
+                                @* <input asp-for="OrderHeader.OrderStatus" class="form-control" /> *@
+                                <textarea spellcheck="false" required rows="5" asp-for="NewReview.Comment" class="form-control h-75"></textarea>
+                                <span asp-validation-for="NewReview.Comment" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <button type="submit" id="btnReview" class="btn btn-primary w-100">Leave review</button>
+                    </form>
+                }
+                @*                 <div class="row mb-3">
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <label asp-for="OrderHeader.Name"></label>
+                        <input asp-for="OrderHeader.Name" class="form-control" />
+                        <span asp-validation-for="OrderHeader.Name" class="text-danger"></span>
+                    }
+                    else
+                    {
+                        <label asp-for="OrderHeader.Name">Name</label>
+                        <input readonly asp-for="OrderHeader.Name" class="form-control" />
+                    }
+                </div>
+                <div class="row mb-3">
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <label asp-for="OrderHeader.Name">Name</label>
+                        <input asp-for="OrderHeader.Name" class="form-control" />
+                        <span asp-validation-for="OrderHeader.Name" class="text-danger"></span>
+                    }
+                    else
+                    {
+                        <label asp-for="OrderHeader.Name">Name</label>
+                        <input readonly asp-for="OrderHeader.Name" class="form-control" />
+                    }
+                </div>
+                <div class="row mb-3">
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <label asp-for="OrderHeader.Name">Name</label>
+                        <input asp-for="OrderHeader.Name" class="form-control" />
+                        <span asp-validation-for="OrderHeader.Name" class="text-danger"></span>
+                    }
+                    else
+                    {
+                        <label asp-for="OrderHeader.Name">Name</label>
+                        <input readonly asp-for="OrderHeader.Name" class="form-control" />
+                    }
+                </div> *@
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header py-3">
+                        <h5 class="mb-0">Order summary</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            @foreach (var details in Model.OrderDetails)
+                            {
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div class="d-flex flex-row">
+                                        <img class="img-fluid" width="100" height="100" src="@details.Item.Image" alt="Alternate Text" />
+                                        <div class="d-flex flex-column align-items-start px-2">
+                                            <span class="text-dark">@details.Item.Title</span>
+
+                                            @{ review = Model.Reviews.FirstOrDefault(x => x.ItemId == details.ItemId); }
+                                            @if (review == default(Review))
+                                            {
+                                                @if (User.IsInRole("Customer"))
+                                                {
+                                                    <a href="#review" class="link-success">Review item</a>
+                                                }
+                                            }
+                                            else
+                                            {
+                                                <span>Your review:
+                                                    @for (int i = 0; i < review.Rating; i++)
+                                                    {
+                                                        <i class="fa fa-star"></i>
+                                                    }
+                                                    @for (int i = 0; i < 5 - review.Rating; i++)
+                                                    {
+                                                        <i class="fa fa-star-o"></i>
+                                                    }
+                                                </span>
+                                            }
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-4">
+                                        <span>QTY: @details.Count</span>
+                                        <span>@(((details.Item.Price) * details.Count).ToString("C"))</span>
+                                    </div>
+                                </li>
+                            }
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <strong>Total amount</strong>
+                                    <strong>
+                                        <p class="mb-0">(including VAT)</p>
+                                    </strong>
+                                </div>
+                                <input asp-for="OrderHeader.ApplicationUser.Id" type="hidden" />
+                                <input asp-for="OrderHeader.OrderTotal" type="hidden" />
+                                <span><strong>@Model.OrderHeader.OrderTotal.ToString("C")</strong></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+@* <h1>OrderDetails</h1>
+
+<div>
+    <h4>OrderDetailsViewModel</h4>
+    <hr />
+    <dl class="row">
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
+ *@

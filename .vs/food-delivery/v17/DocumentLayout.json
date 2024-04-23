@@ -1,0 +1,1465 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mikol\\source\\repos\\food-delivery\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\admin\\views\\subcategories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\admin\\views\\subcategories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\admin\\views\\subcategories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\admin\\views\\subcategories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\admin\\views\\subcategories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\admin\\views\\subcategories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\admin\\views\\reviews\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\admin\\views\\reviews\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\admin\\views\\orders\\orderdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\admin\\views\\orders\\orderdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\admin\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\admin\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\admin\\views\\items\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\admin\\views\\items\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\admin\\views\\items\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\admin\\views\\items\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\admin\\views\\items\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\admin\\views\\items\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\admin\\views\\coupons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\admin\\views\\coupons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\admin\\views\\coupons\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\admin\\views\\coupons\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\admin\\views\\coupons\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\admin\\views\\coupons\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\admin\\views\\reviews\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\admin\\views\\reviews\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\customer\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\customer\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\admin\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\admin\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\viewmodels\\orderdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\viewmodels\\orderdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\customer\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\customer\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\viewmodels\\itemlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\viewmodels\\itemlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\admin\\controllers\\itemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\admin\\controllers\\itemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\viewmodels\\itemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\viewmodels\\itemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\viewmodels\\itemdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\viewmodels\\itemdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\viewmodels\\itemreviewsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\viewmodels\\itemreviewsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\admin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\admin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\admin\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\admin\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\viewmodels\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\viewmodels\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\admin\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\admin\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\admin\\controllers\\subcategoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\admin\\controllers\\subcategoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\customer\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\customer\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\customer\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\customer\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\customer\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\customer\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\customer\\views\\cart\\summary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\customer\\views\\cart\\summary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mikol\\AppData\\Local\\Temp\\sb5hskvi..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\views\\shared\\components\\cart\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\views\\shared\\components\\cart\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\viewcomponents\\cartviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\viewcomponents\\cartviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\models\\subcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\models\\subcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mikol\\AppData\\Local\\Temp\\zelhk1mn..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\wwwroot\\images\\items\\ee7f1d10-0583-4ff9-8224-7cbea4d867a4-mercedes.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\wwwroot\\images\\items\\ee7f1d10-0583-4ff9-8224-7cbea4d867a4-mercedes.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\wwwroot\\images\\items\\f3d7f320-1d3f-4763-81ed-0a7cc1679b19-tak.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\wwwroot\\images\\items\\f3d7f320-1d3f-4763-81ed-0a7cc1679b19-tak.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\models\\orderdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\models\\orderdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\models\\orderheader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\models\\orderheader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mikol\\AppData\\Local\\Temp\\2m00wtx3..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mikol\\AppData\\Local\\Temp\\isblwxtw..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\admin\\controllers\\couponscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\admin\\controllers\\couponscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\repository\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\repository\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\models\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\models\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\models\\coupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\models\\coupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\repository\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\repository\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\viewmodels\\categoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\viewmodels\\categoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\food-delivery.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\food-delivery.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\utility\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\utility\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\repository\\idbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\repository\\idbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\viewmodels\\cartorderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\viewmodels\\cartorderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\utility\\paymentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\utility\\paymentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\utility\\paymentsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\utility\\paymentsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mikol\\AppData\\Local\\Temp\\chfytdaf..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mikol\\AppData\\Local\\Temp\\.vsdbgsrc\\d0a61216c6021b372c771414059d3f49bf392cfa4a05f2fad1736a5acf8f6a73\\CartController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mikol\\AppData\\Local\\Temp\\zn4d0xl1..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mikol\\AppData\\Local\\Temp\\2udb1j5c..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\admin\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\admin\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mikol\\AppData\\Local\\Temp\\p4umqja1..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mikol\\AppData\\Local\\Temp\\ublkk1zo..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\admin\\views\\categories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\admin\\views\\categories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\identity\\pages\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\identity\\pages\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\identity\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\identity\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\identity\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\identity\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\viewmodels\\subcategoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\viewmodels\\subcategoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\areas\\identity\\pages\\account\\manage\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\areas\\identity\\pages\\account\\manage\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|c:\\users\\mikol\\source\\repos\\food-delivery\\food-delivery\\libman.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}|food-delivery\\food-delivery.csproj|solutionrelative:food-delivery\\libman.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Items\\Create.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Admin\\Views\\Items\\Create.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Items\\Create.cshtml",
+              "RelativeToolTip": "food-delivery\\Areas\\Admin\\Views\\Items\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T13:12:02.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Orders\\Index.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Admin\\Views\\Orders\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Orders\\Index.cshtml",
+              "RelativeToolTip": "food-delivery\\Areas\\Admin\\Views\\Orders\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T14:55:17.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Items\\Edit.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Admin\\Views\\Items\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Items\\Edit.cshtml",
+              "RelativeToolTip": "food-delivery\\Areas\\Admin\\Views\\Items\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T22:35:14.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Items\\Index.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Admin\\Views\\Items\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Items\\Index.cshtml",
+              "RelativeToolTip": "food-delivery\\Areas\\Admin\\Views\\Items\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T13:10:12.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Orders\\OrderDetails.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Admin\\Views\\Orders\\OrderDetails.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Orders\\OrderDetails.cshtml",
+              "RelativeToolTip": "food-delivery\\Areas\\Admin\\Views\\Orders\\OrderDetails.cshtml",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAAwIAAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T15:20:55.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Reviews\\Details.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Admin\\Views\\Reviews\\Details.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Reviews\\Details.cshtml",
+              "RelativeToolTip": "food-delivery\\Areas\\Admin\\Views\\Reviews\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-23T11:57:18.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Subcategories\\Create.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Admin\\Views\\Subcategories\\Create.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Subcategories\\Create.cshtml",
+              "RelativeToolTip": "food-delivery\\Areas\\Admin\\Views\\Subcategories\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-17T22:43:43.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Subcategories\\Index.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Admin\\Views\\Subcategories\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Subcategories\\Index.cshtml",
+              "RelativeToolTip": "food-delivery\\Areas\\Admin\\Views\\Subcategories\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-17T22:34:25.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Subcategories\\Edit.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Admin\\Views\\Subcategories\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Subcategories\\Edit.cshtml",
+              "RelativeToolTip": "food-delivery\\Areas\\Admin\\Views\\Subcategories\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-17T22:58:55.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Coupons\\Index.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Admin\\Views\\Coupons\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Coupons\\Index.cshtml",
+              "RelativeToolTip": "food-delivery\\Areas\\Admin\\Views\\Coupons\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-23T15:10:44.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Coupons\\Edit.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Admin\\Views\\Coupons\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Coupons\\Edit.cshtml",
+              "RelativeToolTip": "food-delivery\\Areas\\Admin\\Views\\Coupons\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T22:38:22.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Coupons\\Create.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Admin\\Views\\Coupons\\Create.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Coupons\\Create.cshtml",
+              "RelativeToolTip": "food-delivery\\Areas\\Admin\\Views\\Coupons\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-23T15:10:26.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Reviews\\Index.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Admin\\Views\\Reviews\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Reviews\\Index.cshtml",
+              "RelativeToolTip": "food-delivery\\Areas\\Admin\\Views\\Reviews\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T23:06:10.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Customer\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Customer\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Customer\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "food-delivery\\Areas\\Customer\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAA9wFsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T20:36:36.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Admin\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "food-delivery\\Areas\\Admin\\Controllers\\OrdersController.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAuwCsAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T14:48:43.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "OrderDetailsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\ViewModels\\OrderDetailsViewModel.cs",
+              "RelativeDocumentMoniker": "food-delivery\\ViewModels\\OrderDetailsViewModel.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\ViewModels\\OrderDetailsViewModel.cs",
+              "RelativeToolTip": "food-delivery\\ViewModels\\OrderDetailsViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T15:14:39.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Customer\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Customer\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Customer\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "food-delivery\\Areas\\Customer\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAADgAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T21:00:48.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ItemListViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\ViewModels\\ItemListViewModel.cs",
+              "RelativeDocumentMoniker": "food-delivery\\ViewModels\\ItemListViewModel.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\ViewModels\\ItemListViewModel.cs",
+              "RelativeToolTip": "food-delivery\\ViewModels\\ItemListViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T20:39:35.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ItemsController.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Controllers\\ItemsController.cs",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Admin\\Controllers\\ItemsController.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Controllers\\ItemsController.cs",
+              "RelativeToolTip": "food-delivery\\Areas\\Admin\\Controllers\\ItemsController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAqwIsAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T13:44:46.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Models\\Item.cs",
+              "RelativeDocumentMoniker": "food-delivery\\Models\\Item.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Models\\Item.cs",
+              "RelativeToolTip": "food-delivery\\Models\\Item.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T21:04:18.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ItemDetailsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\ViewModels\\ItemDetailsViewModel.cs",
+              "RelativeDocumentMoniker": "food-delivery\\ViewModels\\ItemDetailsViewModel.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\ViewModels\\ItemDetailsViewModel.cs",
+              "RelativeToolTip": "food-delivery\\ViewModels\\ItemDetailsViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T21:53:51.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ItemViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\ViewModels\\ItemViewModel.cs",
+              "RelativeDocumentMoniker": "food-delivery\\ViewModels\\ItemViewModel.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\ViewModels\\ItemViewModel.cs",
+              "RelativeToolTip": "food-delivery\\ViewModels\\ItemViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T13:48:21.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ItemReviewsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\ViewModels\\ItemReviewsViewModel.cs",
+              "RelativeDocumentMoniker": "food-delivery\\ViewModels\\ItemReviewsViewModel.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\ViewModels\\ItemReviewsViewModel.cs",
+              "RelativeToolTip": "food-delivery\\ViewModels\\ItemReviewsViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T14:30:51.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "food-delivery\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACEAAABeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T13:19:06.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Users\\Index.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Admin\\Views\\Users\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Users\\Index.cshtml",
+              "RelativeToolTip": "food-delivery\\Areas\\Admin\\Views\\Users\\Index.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAADkAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T23:07:43.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ReviewsController.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Controllers\\ReviewsController.cs",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Admin\\Controllers\\ReviewsController.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Controllers\\ReviewsController.cs",
+              "RelativeToolTip": "food-delivery\\Areas\\Admin\\Controllers\\ReviewsController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAA1wCUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T22:32:36.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "SubcategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Controllers\\SubcategoriesController.cs",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Admin\\Controllers\\SubcategoriesController.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Controllers\\SubcategoriesController.cs",
+              "RelativeToolTip": "food-delivery\\Areas\\Admin\\Controllers\\SubcategoriesController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAWwCAAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T22:30:23.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "UserViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\ViewModels\\UserViewModel.cs",
+              "RelativeDocumentMoniker": "food-delivery\\ViewModels\\UserViewModel.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\ViewModels\\UserViewModel.cs",
+              "RelativeToolTip": "food-delivery\\ViewModels\\UserViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T13:04:56.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Customer\\Views\\Home\\Details.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Customer\\Views\\Home\\Details.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Customer\\Views\\Home\\Details.cshtml",
+              "RelativeToolTip": "food-delivery\\Areas\\Customer\\Views\\Home\\Details.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAASwBEAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T20:51:07.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Customer\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Customer\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Customer\\Controllers\\CartController.cs",
+              "RelativeToolTip": "food-delivery\\Areas\\Customer\\Controllers\\CartController.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAtwGgAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T11:55:16.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Customer\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Customer\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Customer\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "food-delivery\\Areas\\Customer\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAASwDEAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-20T12:06:31.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Summary.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Customer\\Views\\Cart\\Summary.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Customer\\Views\\Cart\\Summary.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Customer\\Views\\Cart\\Summary.cshtml",
+              "RelativeToolTip": "food-delivery\\Areas\\Customer\\Views\\Cart\\Summary.cshtml",
+              "ViewState": "AQIAAE0AAAAAAAAAAAASwGEAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T15:37:28.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "food-delivery\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-17T21:24:26.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Views\\Shared\\Components\\Cart\\Default.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Views\\Shared\\Components\\Cart\\Default.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Views\\Shared\\Components\\Cart\\Default.cshtml",
+              "RelativeToolTip": "food-delivery\\Views\\Shared\\Components\\Cart\\Default.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-20T11:50:12.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "CartViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\ViewComponents\\CartViewComponent.cs",
+              "RelativeDocumentMoniker": "food-delivery\\ViewComponents\\CartViewComponent.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\ViewComponents\\CartViewComponent.cs",
+              "RelativeToolTip": "food-delivery\\ViewComponents\\CartViewComponent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T11:19:22.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "SQLQuery1.sql ",
+              "DocumentMoniker": "C:\\Users\\mikol\\AppData\\Local\\Temp\\sb5hskvi..sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\sb5hskvi..sql",
+              "ToolTip": "SQLQuery1.sql *",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-04-23T13:04:31.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "food-delivery\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACoAAAB9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-22T14:00:17.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "food-delivery\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "food-delivery\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T19:40:09.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Review.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Models\\Review.cs",
+              "RelativeDocumentMoniker": "food-delivery\\Models\\Review.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Models\\Review.cs",
+              "RelativeToolTip": "food-delivery\\Models\\Review.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T21:42:46.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "f3d7f320-1d3f-4763-81ed-0a7cc1679b19-tak.jpg - Bitmap [259x194, 24 bity, JPG]",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\wwwroot\\Images\\Items\\f3d7f320-1d3f-4763-81ed-0a7cc1679b19-tak.jpg",
+              "RelativeDocumentMoniker": "food-delivery\\wwwroot\\Images\\Items\\f3d7f320-1d3f-4763-81ed-0a7cc1679b19-tak.jpg",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\wwwroot\\Images\\Items\\f3d7f320-1d3f-4763-81ed-0a7cc1679b19-tak.jpg - Bitmap [259x194, 24 bity, JPG]",
+              "RelativeToolTip": "food-delivery\\wwwroot\\Images\\Items\\f3d7f320-1d3f-4763-81ed-0a7cc1679b19-tak.jpg - Bitmap [259x194, 24 bity, JPG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-04-22T19:30:35.996Z",
+              "EditorCaption": " - Bitmap [259x194, 24 bity, JPG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "SQLQuery1.sql ",
+              "DocumentMoniker": "C:\\Users\\mikol\\AppData\\Local\\Temp\\zelhk1mn..sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\zelhk1mn..sql",
+              "ToolTip": "SQLQuery1.sql *",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-04-22T19:44:09.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Subcategory.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Models\\Subcategory.cs",
+              "RelativeDocumentMoniker": "food-delivery\\Models\\Subcategory.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Models\\Subcategory.cs",
+              "RelativeToolTip": "food-delivery\\Models\\Subcategory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T21:02:30.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ee7f1d10-0583-4ff9-8224-7cbea4d867a4-mercedes.jpg - Bitmap [664x442, 24 bity, JPG]",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\wwwroot\\Images\\Items\\ee7f1d10-0583-4ff9-8224-7cbea4d867a4-mercedes.jpg",
+              "RelativeDocumentMoniker": "food-delivery\\wwwroot\\Images\\Items\\ee7f1d10-0583-4ff9-8224-7cbea4d867a4-mercedes.jpg",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\wwwroot\\Images\\Items\\ee7f1d10-0583-4ff9-8224-7cbea4d867a4-mercedes.jpg - Bitmap [664x442, 24 bity, JPG]",
+              "RelativeToolTip": "food-delivery\\wwwroot\\Images\\Items\\ee7f1d10-0583-4ff9-8224-7cbea4d867a4-mercedes.jpg - Bitmap [664x442, 24 bity, JPG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-04-22T19:30:35.098Z",
+              "EditorCaption": " - Bitmap [664x442, 24 bity, JPG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "OrderHeader.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Models\\OrderHeader.cs",
+              "RelativeDocumentMoniker": "food-delivery\\Models\\OrderHeader.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Models\\OrderHeader.cs",
+              "RelativeToolTip": "food-delivery\\Models\\OrderHeader.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T21:21:07.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "OrderDetails.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Models\\OrderDetails.cs",
+              "RelativeDocumentMoniker": "food-delivery\\Models\\OrderDetails.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Models\\OrderDetails.cs",
+              "RelativeToolTip": "food-delivery\\Models\\OrderDetails.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T21:26:34.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "SQLQuery2.sql ",
+              "DocumentMoniker": "C:\\Users\\mikol\\AppData\\Local\\Temp\\isblwxtw..sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\isblwxtw..sql",
+              "ToolTip": "SQLQuery2.sql *",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-04-22T16:13:39.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "SQLQuery3.sql ",
+              "DocumentMoniker": "C:\\Users\\mikol\\AppData\\Local\\Temp\\2m00wtx3..sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\2m00wtx3..sql",
+              "ToolTip": "SQLQuery3.sql *",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-04-22T16:16:09.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "CouponsController.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Controllers\\CouponsController.cs",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Admin\\Controllers\\CouponsController.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Controllers\\CouponsController.cs",
+              "RelativeToolTip": "food-delivery\\Areas\\Admin\\Controllers\\CouponsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T13:18:53.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Repository\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "food-delivery\\Repository\\DbInitializer.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Repository\\DbInitializer.cs",
+              "RelativeToolTip": "food-delivery\\Repository\\DbInitializer.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAIA3wB0AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T21:38:05.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "food-delivery\\Models\\Cart.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Models\\Cart.cs",
+              "RelativeToolTip": "food-delivery\\Models\\Cart.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T21:08:51.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "EmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Models\\EmailSender.cs",
+              "RelativeDocumentMoniker": "food-delivery\\Models\\EmailSender.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Models\\EmailSender.cs",
+              "RelativeToolTip": "food-delivery\\Models\\EmailSender.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T19:26:25.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Coupon.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Models\\Coupon.cs",
+              "RelativeDocumentMoniker": "food-delivery\\Models\\Coupon.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Models\\Coupon.cs",
+              "RelativeToolTip": "food-delivery\\Models\\Coupon.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T21:17:15.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Repository\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "food-delivery\\Repository\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Repository\\ApplicationDbContext.cs",
+              "RelativeToolTip": "food-delivery\\Repository\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAA0wBQAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T21:29:43.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "CategoryViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\ViewModels\\CategoryViewModel.cs",
+              "RelativeDocumentMoniker": "food-delivery\\ViewModels\\CategoryViewModel.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\ViewModels\\CategoryViewModel.cs",
+              "RelativeToolTip": "food-delivery\\ViewModels\\CategoryViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T21:41:50.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "food-delivery.csproj",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\food-delivery.csproj",
+              "RelativeDocumentMoniker": "food-delivery\\food-delivery.csproj",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\food-delivery.csproj",
+              "RelativeToolTip": "food-delivery\\food-delivery.csproj",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAQAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-16T21:00:03.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "OrderStatus.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Utility\\OrderStatus.cs",
+              "RelativeDocumentMoniker": "food-delivery\\Utility\\OrderStatus.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Utility\\OrderStatus.cs",
+              "RelativeToolTip": "food-delivery\\Utility\\OrderStatus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T15:10:54.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "IDbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Repository\\IDbInitializer.cs",
+              "RelativeDocumentMoniker": "food-delivery\\Repository\\IDbInitializer.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Repository\\IDbInitializer.cs",
+              "RelativeToolTip": "food-delivery\\Repository\\IDbInitializer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T21:35:19.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "CartOrderViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\ViewModels\\CartOrderViewModel.cs",
+              "RelativeDocumentMoniker": "food-delivery\\ViewModels\\CartOrderViewModel.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\ViewModels\\CartOrderViewModel.cs",
+              "RelativeToolTip": "food-delivery\\ViewModels\\CartOrderViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T11:57:05.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "PaymentStatus.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Utility\\PaymentStatus.cs",
+              "RelativeDocumentMoniker": "food-delivery\\Utility\\PaymentStatus.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Utility\\PaymentStatus.cs",
+              "RelativeToolTip": "food-delivery\\Utility\\PaymentStatus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T15:09:11.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "PaymentSettings.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Utility\\PaymentSettings.cs",
+              "RelativeDocumentMoniker": "food-delivery\\Utility\\PaymentSettings.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Utility\\PaymentSettings.cs",
+              "RelativeToolTip": "food-delivery\\Utility\\PaymentSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T16:03:50.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "SQLQuery2.sql ",
+              "DocumentMoniker": "C:\\Users\\mikol\\AppData\\Local\\Temp\\chfytdaf..sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\chfytdaf..sql",
+              "ToolTip": "SQLQuery2.sql *",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-04-21T19:45:16.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\AppData\\Local\\Temp\\.vsdbgsrc\\d0a61216c6021b372c771414059d3f49bf392cfa4a05f2fad1736a5acf8f6a73\\CartController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\d0a61216c6021b372c771414059d3f49bf392cfa4a05f2fad1736a5acf8f6a73\\CartController.cs",
+              "ToolTip": "C:\\Users\\mikol\\AppData\\Local\\Temp\\.vsdbgsrc\\d0a61216c6021b372c771414059d3f49bf392cfa4a05f2fad1736a5acf8f6a73\\CartController.cs",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\d0a61216c6021b372c771414059d3f49bf392cfa4a05f2fad1736a5acf8f6a73\\CartController.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAswGIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T19:19:00.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Program.cs",
+              "RelativeDocumentMoniker": "food-delivery\\Program.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Program.cs",
+              "RelativeToolTip": "food-delivery\\Program.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAADUAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T22:02:20.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "food-delivery\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-17T21:24:23.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "food-delivery\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-17T21:27:39.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\appsettings.json",
+              "RelativeDocumentMoniker": "food-delivery\\appsettings.json",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\appsettings.json",
+              "RelativeToolTip": "food-delivery\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-16T21:57:25.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "food-delivery\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T21:39:49.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "food-delivery\\Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "food-delivery\\Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-20T11:09:43.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
+              "RelativeToolTip": "food-delivery\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T22:39:27.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "food-delivery\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T21:57:11.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "food-delivery\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T21:57:15.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Categories\\Edit.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Admin\\Views\\Categories\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Admin\\Views\\Categories\\Edit.cshtml",
+              "RelativeToolTip": "food-delivery\\Areas\\Admin\\Views\\Categories\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-17T22:09:13.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "food-delivery\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-17T21:24:25.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "food-delivery\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-17T21:24:20.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "food-delivery\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-17T19:45:35.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\_ViewStart.cshtml",
+              "RelativeToolTip": "food-delivery\\Areas\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T13:15:16.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\_ViewImports.cshtml",
+              "RelativeToolTip": "food-delivery\\Areas\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T13:15:17.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Identity\\Pages\\Error.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Identity\\Pages\\Error.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Identity\\Pages\\Error.cshtml",
+              "RelativeToolTip": "food-delivery\\Areas\\Identity\\Pages\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T13:15:18.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+              "RelativeToolTip": "food-delivery\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T13:15:20.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "food-delivery\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T13:15:21.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "food-delivery\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-17T21:27:43.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "SubcategoryViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\ViewModels\\SubcategoryViewModel.cs",
+              "RelativeDocumentMoniker": "food-delivery\\ViewModels\\SubcategoryViewModel.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\ViewModels\\SubcategoryViewModel.cs",
+              "RelativeToolTip": "food-delivery\\ViewModels\\SubcategoryViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T22:37:19.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+              "RelativeToolTip": "food-delivery\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-17T22:11:36.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "food-delivery\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Models\\Category.cs",
+              "RelativeToolTip": "food-delivery\\Models\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T21:01:28.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "food-delivery\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "food-delivery\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-17T21:24:26.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "libman.json",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\libman.json",
+              "RelativeDocumentMoniker": "food-delivery\\libman.json",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\libman.json",
+              "RelativeToolTip": "food-delivery\\libman.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-17T21:11:50.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "food-delivery\\Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "food-delivery\\Models\\ApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T21:06:10.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "food-delivery\\ScaffoldingReadMe.txt",
+              "ToolTip": "C:\\Users\\mikol\\source\\repos\\food-delivery\\food-delivery\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "food-delivery\\ScaffoldingReadMe.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-04-16T22:38:08.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "SQLQuery1.sql ",
+              "DocumentMoniker": "C:\\Users\\mikol\\AppData\\Local\\Temp\\zn4d0xl1..sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\zn4d0xl1..sql",
+              "ToolTip": "SQLQuery1.sql *",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-04-21T17:58:53.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "SQLQuery1.sql ",
+              "DocumentMoniker": "C:\\Users\\mikol\\AppData\\Local\\Temp\\2udb1j5c..sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\2udb1j5c..sql",
+              "ToolTip": "SQLQuery1.sql *",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-04-20T12:52:43.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "SQLQuery2.sql ",
+              "DocumentMoniker": "C:\\Users\\mikol\\AppData\\Local\\Temp\\p4umqja1..sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\p4umqja1..sql",
+              "ToolTip": "SQLQuery2.sql *",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-04-19T21:15:09.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "SQLQuery1.sql ",
+              "DocumentMoniker": "C:\\Users\\mikol\\AppData\\Local\\Temp\\ublkk1zo..sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\ublkk1zo..sql",
+              "ToolTip": "SQLQuery1.sql *",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-04-19T20:53:33.999Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
