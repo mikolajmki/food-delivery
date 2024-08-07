@@ -17,11 +17,11 @@ builder.Services.AddControllers(
 builder.Services.AddDbContext<ApplicationDbContext>(
     options => options.UseSqlServer(builder.Configuration.GetConnectionString("ApplicationDbContextConnection")));
 
-builder.Configuration.GetSection(PaymentSettings.Stripe).Bind(PaymentSettings.StripeOptions);
+//builder.Configuration.GetSection(PaymentSettings.Stripe).Bind(PaymentSettings.StripeOptions);
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
-    .AddRoles<IdentityRole>()
-    .AddEntityFrameworkStores<ApplicationDbContext>();
+//builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
+//    .AddRoles<IdentityRole>()
+//    .AddEntityFrameworkStores<ApplicationDbContext>();
 
 builder.Services.AddScoped<IDbInitializer, DbInitializer>();
 
