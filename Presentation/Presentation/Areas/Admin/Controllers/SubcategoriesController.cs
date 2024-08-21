@@ -39,7 +39,7 @@ namespace food_delivery.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult Create(SubcategoryViewModel vm)
         {
-            Subcategory model = new Subcategory();
+            SubcategoryApiModel model = new SubcategoryApiModel();
             if (ModelState.IsValid)
             {
                 model.Title = vm.Title;
@@ -70,7 +70,7 @@ namespace food_delivery.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult Edit(SubcategoryViewModel vm)
         {
-            Subcategory model = _context.Subcategories.Where(x => x.Id == vm.Id).FirstOrDefault();
+            SubcategoryApiModel model = _context.Subcategories.Where(x => x.Id == vm.Id).FirstOrDefault();
             if (ModelState.IsValid)
             {
                 model.Title = vm.Title;

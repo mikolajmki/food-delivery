@@ -4,7 +4,7 @@ namespace food_delivery.ViewModels
 {
     public class CartOrderViewModel
     {
-        public List<Cart> ListOfCart { get; set; }
-        public OrderHeader OrderHeader { get; set; }
+        public List<CartApiModel> ListOfCart { get; set; }
+        public OrderHeaderApiModel OrderHeader { get; set; }
     }
 }

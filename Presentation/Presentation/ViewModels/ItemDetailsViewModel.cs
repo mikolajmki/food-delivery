@@ -7,9 +7,9 @@ namespace food_delivery.ViewModels
     {
         public int Id { get; set; }
         public int ItemId { get; set; }
-        public Item Item { get; set; }
+        public ItemApiModel Item { get; set; }
         public string ApplicationUserId { get; set; }
-        public List<Review> Reviews { get; set; }
+        public List<ReviewApiModel> Reviews { get; set; }
         public int Count { get; set; }
     }
 }

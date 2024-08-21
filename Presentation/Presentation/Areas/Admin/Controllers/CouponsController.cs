@@ -1,32 +1,32 @@
-﻿using food_delivery.Models;
+﻿using Application.Abstractions;
 using System.Web.Mvc;
 
 namespace food_delivery.Areas.Admin.Controllers
 {
-    [Area("Admin")]
+    [RouteArea("Admin")]
     [Authorize(Roles = "Admin")]
     public class CouponsController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IGenericRepository<Coupon> _couponRepository;
 
-        public CouponsController(ApplicationDbContext context)
+        public CouponsController(IGenericRepository<Coupon> couponRepository)
         {
-            _context = context;
+            _couponRepository = couponRepository;
         }
 
         [HttpGet]
-        public IActionResult Index()
+        public ActionResult Index()
         {
-            var coupons = _context.Coupons.ToList();
+            var coupons = _couponRepository.GetAll();
             return View(coupons);
         }
         [HttpGet]
-        public IActionResult Create()
+        public ViewResult Create()
         {
             return View();
         }
         [HttpPost]
-        public IActionResult Create(Coupon coupons)
+        public ActionResult Create(Coupon coupons)
         {
             if (ModelState.IsValid)
             {
@@ -41,8 +41,7 @@ namespace food_delivery.Areas.Admin.Controllers
                     }
                 }
                 coupons.CouponPicture = photo;
-                _context.Coupons.Add();
-                _context.SaveChanges();
+                _couponRepository.Create(coupons);
                 return RedirectToAction("Index");
             }
             return View(coupons);

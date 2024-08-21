@@ -25,7 +25,7 @@ namespace food_delivery.Areas.Customer.Controllers
         {
             details = new CartOrderViewModel()
             {
-                OrderHeader = new Models.OrderHeader(),
+                OrderHeader = new Models.OrderHeaderApiModel(),
             };
             var claimsIdentity = (ClaimsIdentity)User.Identity;
             var claims = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
@@ -51,7 +51,7 @@ namespace food_delivery.Areas.Customer.Controllers
             details = new CartOrderViewModel()
             {
                 ListOfCart = _context.Carts.Include(x => x.Item).Where(x => x.ApplicationUserId == claims.Value).ToList(),
-                OrderHeader = new Models.OrderHeader(),
+                OrderHeader = new Models.OrderHeaderApiModel(),
             };
 
             details.OrderHeader.ApplicationUser = _context.ApplicationUsers.Where(x => x.Id == claims.Value).FirstOrDefault();
@@ -70,7 +70,7 @@ namespace food_delivery.Areas.Customer.Controllers
         [HttpPost]
         public IActionResult Summary(CartOrderViewModel vm)
         {
-            OrderHeader orderHeader = new Models.OrderHeader()
+            OrderHeaderApiModel orderHeader = new Models.OrderHeaderApiModel()
             {
                 ApplicationUserId = vm.OrderHeader.ApplicationUser.Id,
                 Name = vm.OrderHeader.Name,
@@ -91,7 +91,7 @@ namespace food_delivery.Areas.Customer.Controllers
 
             foreach (var cart in carts)
             {
-                OrderDetails orderDetails = new Models.OrderDetails()
+                OrderDetailsApiModel orderDetails = new Models.OrderDetailsApiModel()
                 {
                     OrderHeaderId = orderHeader.Id,
                     ItemId = cart.Item.Id,

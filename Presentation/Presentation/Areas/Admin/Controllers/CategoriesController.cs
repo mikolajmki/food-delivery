@@ -1,12 +1,11 @@
 ﻿using Application.Abstractions;
 using food_delivery.Models;
 using food_delivery.ViewModels;
-using Microsoft.AspNetCore.Mvc;
 using System.Web.Mvc;
 
 namespace food_delivery.Areas.Admin.Controllers
 {
-    [Area("Admin")]
+    [RouteArea("Admin")]
     [Authorize(Roles = "Admin")]
     public class CategoriesController : Controller
     {

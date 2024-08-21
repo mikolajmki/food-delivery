@@ -49,7 +49,7 @@ namespace food_delivery.Areas.Admin.Controllers
             return View(vm);
         }
         [HttpGet]
-        public IActionResult GetSubcategory(Item item)
+        public IActionResult GetSubcategory(ItemApiModel item)
         {
             ItemViewModel vm = new ItemViewModel()
             {
@@ -67,7 +67,7 @@ namespace food_delivery.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(ItemViewModel vm)
         {
-            Item model = new Item();
+            ItemApiModel model = new ItemApiModel();
             if (ModelState.IsValid)
             {
                 if (vm.ImageUrl != null && vm.ImageUrl.Length > 0)
@@ -111,7 +111,7 @@ namespace food_delivery.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult Edit(ItemViewModel vm)
         {
-            Item model = _context.Items.Where(x => x.Id == vm.Id).FirstOrDefault();
+            ItemApiModel model = _context.Items.Where(x => x.Id == vm.Id).FirstOrDefault();
             if (ModelState.IsValid)
             {
                 model.Id = vm.Id;

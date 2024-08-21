@@ -24,7 +24,7 @@ namespace food_delivery.Areas.Admin.Controllers
             var claimsIdentity = (ClaimsIdentity)User.Identity;
             var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
 
-            List<Review> reviews;
+            List<ReviewApiModel> reviews;
 
             if (User.IsInRole("Admin")) 
             {
@@ -41,7 +41,7 @@ namespace food_delivery.Areas.Admin.Controllers
 
         public IActionResult Details(int id)
         {
-            Review review;
+            ReviewApiModel review;
 
             if (User.IsInRole("Admin"))
             {
@@ -55,9 +55,9 @@ namespace food_delivery.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public IActionResult Edit (Review review)
+        public IActionResult Edit (ReviewApiModel review)
         {
-            Review model = _context.Reviews.FirstOrDefault(x => x.Id == review.Id);
+            ReviewApiModel model = _context.Reviews.FirstOrDefault(x => x.Id == review.Id);
 
             if (ModelState.IsValid)
             {

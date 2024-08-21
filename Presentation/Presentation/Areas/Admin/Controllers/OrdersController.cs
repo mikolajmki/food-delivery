@@ -30,7 +30,7 @@ namespace food_delivery.Areas.Admin.Controllers
             var claimsIdentity = (ClaimsIdentity)User.Identity;
             var claims = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
 
-            IEnumerable<OrderHeader> orders;
+            IEnumerable<OrderHeaderApiModel> orders;
 
             if (User.IsInRole("Admin"))
             {
@@ -76,7 +76,7 @@ namespace food_delivery.Areas.Admin.Controllers
             var ids = vm.OrderDetails.Select(x => x.ItemId);
             vm.Reviews = _context.Reviews.Where(x => ids.Contains(x.ItemId) && x.ApplicationUserId == vm.OrderHeader.ApplicationUserId).ToList();
 
-            List<Item> notReviewedItems = new List<Item>();
+            List<ItemApiModel> notReviewedItems = new List<ItemApiModel>();
 
             foreach (var item in vm.OrderDetails) 
             {
@@ -91,7 +91,7 @@ namespace food_delivery.Areas.Admin.Controllers
             return View(vm);
         }
         [HttpPost]
-        public IActionResult Review(Review newReview) 
+        public IActionResult Review(ReviewApiModel newReview) 
         {
             var claimsIdentity = (ClaimsIdentity)User.Identity;
             var claims = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
@@ -112,7 +112,7 @@ namespace food_delivery.Areas.Admin.Controllers
         public IActionResult OrderDetails(OrderDetailsViewModel vm)
         {
 
-            OrderDetails orderDetails = _context.OrderDetails.Include(x => x.OrderHeader).Where(x => x.OrderHeader.Id == vm.OrderHeader.Id).FirstOrDefault();
+            OrderDetailsApiModel orderDetails = _context.OrderDetails.Include(x => x.OrderHeader).Where(x => x.OrderHeader.Id == vm.OrderHeader.Id).FirstOrDefault();
 
             orderDetails.OrderHeader.PaymentStatus = vm.OrderHeader.PaymentStatus;
             orderDetails.OrderHeader.OrderStatus = vm.OrderHeader.OrderStatus;
@@ -126,9 +126,9 @@ namespace food_delivery.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult Delete(int id)
         {
-            OrderHeader orderHeader = _context.OrderHeaders.Where(x => x.Id == id).FirstOrDefault();
+            OrderHeaderApiModel orderHeader = _context.OrderHeaders.Where(x => x.Id == id).FirstOrDefault();
 
-            List<OrderDetails> orderDetails = _context.OrderDetails.Where(x => x.OrderHeaderId == id).ToList();
+            List<OrderDetailsApiModel> orderDetails = _context.OrderDetails.Where(x => x.OrderHeaderId == id).ToList();
 
             _context.Remove(orderHeader);
 

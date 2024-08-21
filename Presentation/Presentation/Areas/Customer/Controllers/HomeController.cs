@@ -128,7 +128,7 @@ namespace food_delivery.Areas.Customer.Controllers
 
                 if (cartFromDb == null) 
                 {
-                    await _context.Carts.AddAsync(new Cart
+                    await _context.Carts.AddAsync(new CartApiModel
                     {
                         ItemId = vm.ItemId,
                         ApplicationUserId = vm.ApplicationUserId,
