@@ -1,8 +1,6 @@
-﻿using Domain.Models;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace food_delivery.Models;
+namespace Domain.Models;
 
 public class Review: BaseEntity
 {

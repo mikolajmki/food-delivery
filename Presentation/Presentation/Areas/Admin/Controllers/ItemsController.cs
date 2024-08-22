@@ -1,11 +1,8 @@
-﻿using food_delivery.Models;
-using food_delivery.Repository;
+﻿using Application.Abstractions.Repositories;
 using food_delivery.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using NuGet.Protocol;
+using System.Web.Mvc;
 
 namespace food_delivery.Areas.Admin.Controllers
 {
@@ -13,18 +10,18 @@ namespace food_delivery.Areas.Admin.Controllers
     [Authorize(Roles = "Admin")]
     public class ItemsController : Controller
     {
-        private readonly ApplicationDbContext _context;
-        private readonly IWebHostEnvironment _webHostEnvironment;
+        private readonly ItemService _itemRepository;
 
-        public ItemsController(ApplicationDbContext context, IWebHostEnvironment webHostEnvironment)
+        public ItemsController(ItemService itemRepository)
         {
-            _context = context;
-            _webHostEnvironment = webHostEnvironment;
+            _itemRepository = itemRepository;
         }
 
         [HttpGet]
         public IActionResult Index()
         {
+            _itemRepository.GetPopulated();
+
             var items = _context.Items
                 .Include(x => x.Category)
                 .Include(y => y.Subcategory)

@@ -1,8 +1,9 @@
-﻿using food_delivery.Models;
+﻿using Domain.Models;
+using food_delivery.Repository;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
-namespace food_delivery.Repository
+namespace Infrastructure.Repository
 {
     public class DbInitializer: IDbInitializer
     {

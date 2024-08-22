@@ -1,4 +1,4 @@
-﻿namespace food_delivery.Repository
+﻿namespace Infrastructure.Repository
 {
     public interface IDbInitializer
     {

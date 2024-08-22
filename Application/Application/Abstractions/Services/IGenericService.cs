@@ -1,8 +1,8 @@
 ﻿using Domain.Models.Abstraction;
 
-namespace Application.Abstractions;
+namespace Application.Abstractions.Repositories;
 
-public interface IGenericRepository<TEntity> 
+public interface IGenericService<TEntity>
     where TEntity : class, IBaseEntity
 {
     Task<IQueryable<TEntity>> GetAll();

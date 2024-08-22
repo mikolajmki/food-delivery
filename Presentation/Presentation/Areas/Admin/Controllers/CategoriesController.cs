@@ -1,4 +1,4 @@
-﻿using Application.Abstractions;
+﻿using Application.Abstractions.Repositories;
 using food_delivery.Models;
 using food_delivery.ViewModels;
 using System.Web.Mvc;
@@ -9,9 +9,9 @@ namespace food_delivery.Areas.Admin.Controllers
     [Authorize(Roles = "Admin")]
     public class CategoriesController : Controller
     {
-        private readonly IGenericRepository<Category> _categoryRepository;
+        private readonly ICategoryRepository<Category> _categoryRepository;
 
-        public CategoriesController(IGenericRepository<Category> categoryRepository)
+        public CategoriesController(ICategoryRepository<Category> categoryRepository)
         {
             _categoryRepository = categoryRepository;
         }

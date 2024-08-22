@@ -1,5 +1,4 @@
-﻿using Application.Abstractions;
-using Domain.Models;
+﻿using Application.Abstractions.Repositories;
 using Domain.Models.Abstraction;
 using food_delivery.Repository;
 using Microsoft.EntityFrameworkCore;

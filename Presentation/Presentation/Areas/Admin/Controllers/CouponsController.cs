@@ -1,4 +1,4 @@
-﻿using Application.Abstractions;
+﻿using Application.Abstractions.Repositories;
 using System.Web.Mvc;
 
 namespace food_delivery.Areas.Admin.Controllers

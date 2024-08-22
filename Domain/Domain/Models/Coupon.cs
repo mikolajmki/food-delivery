@@ -1,6 +1,4 @@
-﻿using Domain.Models;
-
-namespace food_delivery.Models;
+﻿namespace Domain.Models;
 
 public class Coupon: BaseEntity
 {
