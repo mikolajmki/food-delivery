@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "dDHNbejd8VU=",
+  "dgSpecHash": "Iuih31jQjiA=",
   "success": true,
   "projectFilePath": "C:\\sii\\food-delivery\\food-delivery\\WebAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\mmarcinkowski1\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\mmarcinkowski1\\.nuget\\packages\\fontawesome\\4.7.0\\fontawesome.4.7.0.nupkg.sha512",
     "C:\\Users\\mmarcinkowski1\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\mmarcinkowski1\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

@@ -3,7 +3,9 @@ using food_delivery.Models;
 
 namespace Application.Abstractions;
 
-public interface IModelMapper
+public interface IModelMapper<TMapFrom, TMapTo> 
+    where TMapFrom : class, IBaseEntityModel
+    where TMapTo : class, IBaseEntityModel
 {
     public CategoryModel MapToCategoryModel(Category category);
     public ItemModel MapToItemModel(Item item);
@@ -14,4 +16,5 @@ public interface IModelMapper
     public OrderHeaderModel MapToOrderHeaderModel(OrderHeader orderHeader);
     public ReviewModel MapToReviewModel(Review review);
     public SubcategoryModel MapToSubcategoryModel(Subcategory subcategory);
+    public TMapTo
 }

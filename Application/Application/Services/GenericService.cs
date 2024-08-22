@@ -1,4 +1,5 @@
 ﻿using Application.Abstractions;
+using AutoMapper;
 using Domain.Models.Abstraction;
 
 namespace Application.Services;
@@ -8,15 +9,28 @@ internal class GenericService<TModel, TEntity> : IGenericService<TModel, TEntity
     where TEntity : class, IBaseEntity
 {
     private readonly IGenericRepository<TEntity> _repository;
+    private readonly MapperConfiguration _mapperConfiguration;
 
-    public Task<bool> Create(TModel model)
+    public GenericService(IGenericRepository<TEntity> repository, MapperConfiguration mapperConfiguration)
     {
-        
+        _repository = repository;
+        _mapperConfiguration = mapperConfiguration;
+    }
+
+    public async Task<bool> Create(TModel model)
+    {
+        var mapper = new Mapper(_mapperConfiguration);
+
+        TEntity entity = mapper.Map<TEntity>(model);
+
+        await _repository.Create(entity);
+
+        return true;
     }
 
     public Task<bool> Delete(int id)
     {
-        throw new NotImplementedException();
+        _repository.Delete(id);
     }
 
     public Task<IQueryable<TModel>> GetAll()

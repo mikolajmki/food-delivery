@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "AutoMapper/13.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "FontAwesome/4.7.0": {
         "type": "package"
       },
@@ -4501,6 +4517,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "AutoMapper": "13.0.1",
           "Domain": "1.0.0"
         },
         "compile": {
@@ -4514,6 +4531,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "AutoMapper": "13.0.1",
           "Microsoft.Extensions.Identity.Stores": "6.0.29"
         },
         "compile": {
@@ -4528,6 +4546,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Application": "1.0.0",
+          "AutoMapper": "13.0.1",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.29"
         },
         "compile": {
@@ -4542,6 +4561,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Application": "1.0.0",
+          "AutoMapper": "13.0.1",
           "Microsoft.AspNet.Mvc": "5.3.0",
           "Microsoft.AspNetCore.Mvc.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5"
@@ -4556,6 +4576,21 @@
     }
   },
   "libraries": {
+    "AutoMapper/13.0.1": {
+      "sha512": "/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
+      "type": "package",
+      "path": "automapper/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.13.0.1.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/net6.0/AutoMapper.dll",
+        "lib/net6.0/AutoMapper.xml"
+      ]
+    },
     "FontAwesome/4.7.0": {
       "sha512": "n4H/brfszElyoZ4kmGh8E75uqvLzLvFr3h2PFVdPH1LwUmWIpeqdaW2pcC4oZAhg7sESyObh0IZpAI8COCNeUg==",
       "type": "package",
@@ -12284,6 +12319,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Application >= 1.0.0",
+      "AutoMapper >= 13.0.1",
       "Domain >= 1.0.0",
       "FontAwesome >= 4.7.0",
       "Infrastructure >= 1.0.0",
@@ -12355,6 +12391,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[13.0.1, )"
+          },
           "FontAwesome": {
             "target": "Package",
             "version": "[4.7.0, )"
