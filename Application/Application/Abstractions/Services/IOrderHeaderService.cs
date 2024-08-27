@@ -1,8 +1,8 @@
-﻿using Domain.Models;
+﻿using Application.Models;
 
-namespace Application.Abstractions.Repositories;
+namespace Application.Abstractions.Services;
 
-public interface IOrderHeaderService : IGenericService<OrderHeader>
+public interface IOrderHeaderService : IGenericService<OrderHeaderModel>
 {
-    Task<OrderHeader> GetOrderHeader();
+    Task<OrderHeaderModel> GetOrderHeader();
 }

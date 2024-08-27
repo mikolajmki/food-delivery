@@ -1,6 +1,7 @@
-﻿using food_delivery.Models;
+﻿using Presentation.ApiModels;
+using Presentation.Models;
 
-namespace food_delivery.ViewModels
+namespace Presentation.ViewModels
 {
     public class OrderDetailsViewModel
     {

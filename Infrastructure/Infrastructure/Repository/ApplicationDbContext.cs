@@ -1,5 +1,4 @@
-﻿using food_delivery.Models;
-using Infrastructure.Repository;
+﻿using Domain.Models
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 

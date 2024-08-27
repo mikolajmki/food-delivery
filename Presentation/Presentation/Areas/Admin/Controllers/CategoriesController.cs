@@ -1,6 +1,7 @@
-﻿using Application.Abstractions.Repositories;
-using food_delivery.Models;
-using food_delivery.ViewModels;
+﻿using Application.Abstractions.Services;
+using Application.Models;
+using AutoMapper;
+using Presentation.ViewModels;
 using System.Web.Mvc;
 
 namespace food_delivery.Areas.Admin.Controllers
@@ -9,25 +10,21 @@ namespace food_delivery.Areas.Admin.Controllers
     [Authorize(Roles = "Admin")]
     public class CategoriesController : Controller
     {
-        private readonly ICategoryRepository<Category> _categoryRepository;
+        private readonly ICategoryService categoryService;
+        private readonly IMapper mapper;
 
-        public CategoriesController(ICategoryRepository<Category> categoryRepository)
+        public CategoriesController(ICategoryService categoryService)
         {
-            _categoryRepository = categoryRepository;
+            this.categoryService = categoryService;
         }
 
         [HttpGet]
         public async Task<ViewResult> Index()
         {
-            var allCategories = await _categoryRepository.GetAll();
+            var allCategories = await categoryService.GetAll();
 
-            List<CategoryViewModel> categoryViewModel = allCategories
-                .ToList()
-                .Select(x => new CategoryViewModel()
-                {
-                    Id = x.Id,
-                    Title = x.Title
-                }).ToList();
+            List<CategoryViewModel> categoryViewModel =
+                mapper.ProjectTo<CategoryViewModel>(allCategories).ToList();
 
             return View(categoryViewModel);
         }
@@ -41,24 +38,18 @@ namespace food_delivery.Areas.Admin.Controllers
         [HttpPost]
         public async Task<RedirectToRouteResult> Create(CategoryViewModel vm)
         {
-            Category model = new Category()
-            {
-                Title = vm.Title,
-            };
+            var mappedCategory = mapper.Map<CategoryModel>(vm);
 
-            await _categoryRepository.Create(model);
+            await categoryService.Create(mappedCategory);
 
             return RedirectToAction("Index");
         }
         [HttpGet]
         public async Task<ViewResult> Edit(int id)
         {
-            var category = await _categoryRepository.GetById(id);
-            var viewModel = new CategoryViewModel()
-            {
-                Id = category.Id,
-                Title = category.Title,
-            };
+            var category = await categoryService.GetById(id);
+
+            var viewModel = mapper.Map<CategoryViewModel>(category);
 
             return View(viewModel);
         }
@@ -67,12 +58,9 @@ namespace food_delivery.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                var category = await _categoryRepository.GetById(vm.Id);
-                if (category != null)
-                {
-                    category.Title = vm.Title;
-                    _categoryRepository.Update(vm.Id, category);
-                }
+                var category = await categoryService.GetById(vm.Id);
+
+                await categoryService.Update(category.Id, category);
             }
             return RedirectToAction("Index");
         }
@@ -80,7 +68,7 @@ namespace food_delivery.Areas.Admin.Controllers
         public async Task<RedirectToRouteResult> Delete(int id)
         {
 
-            await _categoryRepository.Delete(id);
+            await categoryService.Delete(id);
 
             return RedirectToAction("Index");
         }

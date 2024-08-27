@@ -1,6 +1,6 @@
-﻿using food_delivery.Models;
+﻿using Presentation.ApiModels;
 
-namespace food_delivery.ViewModels
+namespace Presentation.ViewModels
 {
     public class CartOrderViewModel
     {

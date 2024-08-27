@@ -1,8 +1,7 @@
-﻿using Application.Abstractions.Repositories;
-using Domain.Models;
-namespace Application.Abstractions;
+﻿using Application.Models;
+namespace Application.Abstractions.Services;
 
-public interface IReviewService : IGenericService<Review>
+public interface IReviewService : IGenericService<ReviewModel>
 {
-    Task<Review> GetReview();
+    Task<ReviewModel> GetReview();
 }

@@ -1,4 +1,4 @@
-namespace food_delivery.Models
+namespace Presentation.Models
 {
     public class ErrorViewModel
     {

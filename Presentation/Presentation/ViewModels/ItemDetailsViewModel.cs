@@ -1,7 +1,6 @@
-﻿using food_delivery.Models;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using Presentation.ApiModels;
 
-namespace food_delivery.ViewModels
+namespace Presentation.ViewModels
 {
     public class ItemDetailsViewModel
     {

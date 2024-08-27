@@ -1,7 +1,7 @@
-﻿using Domain.Models;
-namespace Application.Abstractions.Repositories;
+﻿using Application.Models;
+namespace Application.Abstractions.Services;
 
-public interface ICategoryService : IGenericService<Category>
+public interface ICategoryService : IGenericService<CategoryModel>
 {
-    Task<Category> GetCategory();
+    Task<CategoryModel> GetCategory();
 }

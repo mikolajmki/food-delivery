@@ -3,7 +3,7 @@ using Domain.Models;
 
 namespace Infrastructure.Repository;
 
-internal class CartRepository : GenericRepository<Cart>, CartService
+internal class CartRepository : GenericRepository<Cart>, ICartRepository
 {
     public Task<Cart> GetCart()
     {

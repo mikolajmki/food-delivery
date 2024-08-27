@@ -3,7 +3,7 @@ using Domain.Models;
 
 namespace Infrastructure.Repository;
 
-internal class SubcategoryRepository : GenericRepository<Subcategory>, SubcategoryService
+internal class SubcategoryRepository : GenericRepository<Subcategory>, ISubcategoryRepository
 {
     public Task<Subcategory> GetSubcategory()
     {

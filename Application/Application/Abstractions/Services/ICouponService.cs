@@ -1,8 +1,8 @@
-﻿using Domain.Models;
+﻿using Application.Models;
 
-namespace Application.Abstractions.Repositories;
+namespace Application.Abstractions.Services;
 
-public interface ICouponService : IGenericService<Coupon>
+public interface ICouponService : IGenericService<CouponModel>
 {
-    Task<Coupon> GetCoupon();
+    Task<CouponModel> GetCoupon();
 }

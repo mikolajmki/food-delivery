@@ -1,4 +1,4 @@
-﻿namespace food_delivery.ViewModels
+﻿namespace Presentation.ViewModels
 {
     public class CategoryViewModel
     {

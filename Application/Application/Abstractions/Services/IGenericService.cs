@@ -1,13 +1,13 @@
 ﻿using Domain.Models.Abstraction;
 
-namespace Application.Abstractions.Repositories;
+namespace Application.Abstractions.Services;
 
-public interface IGenericService<TEntity>
-    where TEntity : class, IBaseEntity
+public interface IGenericService<TModel>
+    where TModel : class, IBaseEntityModel
 {
-    Task<IQueryable<TEntity>> GetAll();
-    Task<TEntity> GetById(int id);
-    Task<bool> Create(TEntity model);
-    Task<bool> Update(int id, TEntity entity);
+    Task<IQueryable<TModel>> GetAll();
+    Task<TModel> GetById(int id);
+    Task<bool> Create(TModel model);
+    Task<bool> Update(int id, TModel model);
     Task<bool> Delete(int id);
 }

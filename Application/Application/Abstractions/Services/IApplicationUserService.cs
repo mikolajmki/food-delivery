@@ -1,6 +1,6 @@
 ﻿using Domain.Models;
 
-namespace Application.Abstractions.Repositories;
+namespace Application.Abstractions.Services;
 
 public interface IApplicationUserService : IGenericService<ApplicationUser>
 {

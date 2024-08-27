@@ -1,4 +1,9 @@
 ﻿using Application.Abstractions.Repositories;
+using Application.Abstractions.Services;
+using Application.Models;
+using AutoMapper;
+using Presentation.ApiModels;
+using Presentation.ViewModels;
 using System.Web.Mvc;
 
 namespace food_delivery.Areas.Admin.Controllers
@@ -7,17 +12,19 @@ namespace food_delivery.Areas.Admin.Controllers
     [Authorize(Roles = "Admin")]
     public class CouponsController : Controller
     {
-        private readonly IGenericRepository<Coupon> _couponRepository;
+        private readonly ICouponService couponService;
+        private readonly IMapper mapper;
 
-        public CouponsController(IGenericRepository<Coupon> couponRepository)
+        public CouponsController(ICouponService couponService, IMapper mapper)
         {
-            _couponRepository = couponRepository;
+            this.couponService = couponService;
+            this.mapper = mapper;
         }
 
         [HttpGet]
         public ActionResult Index()
         {
-            var coupons = _couponRepository.GetAll();
+            var coupons = couponService.GetAll();
             return View(coupons);
         }
         [HttpGet]
@@ -26,10 +33,12 @@ namespace food_delivery.Areas.Admin.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Create(Coupon coupons)
+        public async Task<ActionResult> Create(CouponViewModel vm)
         {
             if (ModelState.IsValid)
             {
+                // file service
+
                 var files = Request.Form.Files;
                 byte[] photo = null;
                 using (var fileStream = files[0].OpenReadStream())
@@ -40,66 +49,63 @@ namespace food_delivery.Areas.Admin.Controllers
                         photo = memoryStream.ToArray();
                     }
                 }
-                coupons.CouponPicture = photo;
-                _couponRepository.Create(coupons);
+
+                vm.CouponPicture = photo;
+
+                ///
+
+                var coupon = mapper.Map<CouponModel>(vm);
+
+                await couponService.Create(coupon);
+
+
                 return RedirectToAction("Index");
             }
-            return View(coupons);
+            return View();
         }
         [HttpGet]
-        public IActionResult Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
-            var coupon = _context.Coupons.Where(x => x.Id == id).FirstOrDefault();
-            if (coupon == null)
-            {
-                return NotFound();
-            }
-            _context.Coupons.Remove(coupon);
-            _context.SaveChanges();
+            await couponService.Delete(id);
+
             return RedirectToAction("Index");
         }
         [HttpGet]
-        public IActionResult Edit(int id)
+        public async Task<ActionResult> Edit(int id)
         {
-            var coupon = _context.Coupons.Where(x => x.Id == id).FirstOrDefault();
-            if (coupon == null)
-            {
-                return NotFound();
-            }
+            var coupon = await couponService.GetById(id);
+
             return View(coupon);
         }
         [HttpPost]
-        public IActionResult Edit(Coupon model)
+        public async Task<ActionResult> Edit(RequestCouponModel request)
         {
-            var coupon = _context.Coupons.Where(x => x.Id == model.Id).FirstOrDefault();
             if (ModelState.IsValid)
             {
-                var files = Request.Form.Files;
-                if (files.Count > 0)
-                {
-                    byte[] photo = null;
-                    using (var fileStream = files[0].OpenReadStream())
-                    {
-                        using (var memoryStream = new MemoryStream())
-                        {
-                            fileStream.CopyTo(memoryStream);
-                            photo = memoryStream.ToArray();
-                        }
-                    }
-                    coupon.CouponPicture = photo;
-                }
-                coupon.MinimumAmount = model.MinimumAmount;
-                coupon.Discount = model.Discount;
-                coupon.IsActive = model.IsActive;
-                coupon.Title = model.Title;
-                coupon.Type = model.Type;
 
-                _context.Coupons.Update(coupon);
-                _context.SaveChanges();
+                // file service
+
+                var file = request.file;
+
+                byte[] photo = null;
+
+                using (var fileStream = file.OpenReadStream())
+                {
+                    using (var memoryStream = new MemoryStream())
+                    {
+                        fileStream.CopyTo(memoryStream);
+                        photo = memoryStream.ToArray();
+                    }
+                }
+                request.CouponPicture = photo;
+                //
+
+                var coupon = mapper.Map<CouponModel>(request);
+                await couponService.Update(coupon.Id, coupon);
 
                 return RedirectToAction("Index");
             }
-            return View(model);
+            return View();
         }
     }
 }

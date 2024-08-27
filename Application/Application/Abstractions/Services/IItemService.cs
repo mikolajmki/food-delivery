@@ -1,9 +1,9 @@
-﻿using Domain.Models;
+﻿using Application.Models;
 
-namespace Application.Abstractions.Repositories;
+namespace Application.Abstractions.Services;
 
-public interface ItemService : IGenericService<Item>
+public interface IItemService : IGenericService<ItemModel>
 {
-    Task<Item> GetItem();
+    Task<ItemModel> GetItem();
     void GetPopulated();
 }

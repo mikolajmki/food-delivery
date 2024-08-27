@@ -4,7 +4,7 @@ using food_delivery.Repository;
 
 namespace Infrastructure.Repository;
 
-public class ItemRepository : GenericRepository<Item>, ItemService
+public class ItemRepository : GenericRepository<Item>, IItemRepository
 {
     private readonly ApplicationDbContext _context;
 

@@ -1,6 +1,6 @@
 ﻿using Application.Abstractions;
 using Application.Models;
-using food_delivery.Models;
+using Domain.Models;
 
 namespace Application.Mappers;
 

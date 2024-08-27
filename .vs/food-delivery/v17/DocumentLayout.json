@@ -3,36 +3,120 @@
   "WorkspaceRootPath": "C:\\sii\\food-delivery\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\services\\isubcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\services\\isubcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|c:\\sii\\food-delivery\\presentation\\presentation\\viewmodels\\itemlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|solutionrelative:presentation\\presentation\\viewmodels\\itemlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\services\\ireviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\services\\ireviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|c:\\sii\\food-delivery\\presentation\\presentation\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|solutionrelative:presentation\\presentation\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\services\\iorderheaderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\services\\iorderheaderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\services\\iorderdetailsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\services\\iorderdetailsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\services\\iitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\services\\iitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\services\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\services\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\services\\igenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\services\\igenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\services\\icouponservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\services\\icouponservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\repositories\\icategoryrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\repositories\\icategoryrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\services\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\services\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|c:\\sii\\food-delivery\\presentation\\presentation\\areas\\admin\\controllers\\couponscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|solutionrelative:presentation\\presentation\\areas\\admin\\controllers\\couponscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|c:\\sii\\food-delivery\\presentation\\presentation\\areas\\admin\\controllers\\itemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|solutionrelative:presentation\\presentation\\areas\\admin\\controllers\\itemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|c:\\sii\\food-delivery\\presentation\\presentation\\apimodels\\requestcouponmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|solutionrelative:presentation\\presentation\\apimodels\\requestcouponmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|c:\\sii\\food-delivery\\presentation\\presentation\\viewmodels\\couponviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|solutionrelative:presentation\\presentation\\viewmodels\\couponviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|c:\\sii\\food-delivery\\presentation\\presentation\\configuration\\automapperconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|solutionrelative:presentation\\presentation\\configuration\\automapperconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|c:\\sii\\food-delivery\\presentation\\presentation\\viewmodels\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|solutionrelative:presentation\\presentation\\viewmodels\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\models\\itemlistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\models\\itemlistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\models\\itemreviewsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\models\\itemreviewsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|c:\\sii\\food-delivery\\presentation\\presentation\\viewmodels\\itemreviewsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|solutionrelative:presentation\\presentation\\viewmodels\\itemreviewsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|c:\\sii\\food-delivery\\presentation\\presentation\\viewmodels\\cartorderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|solutionrelative:presentation\\presentation\\viewmodels\\cartorderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\models\\cartordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\models\\cartordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|c:\\sii\\food-delivery\\presentation\\presentation\\areas\\customer\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|solutionrelative:presentation\\presentation\\areas\\customer\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|c:\\sii\\food-delivery\\presentation\\presentation\\viewmodels\\subcategoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|solutionrelative:presentation\\presentation\\viewmodels\\subcategoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|c:\\sii\\food-delivery\\presentation\\presentation\\viewmodels\\orderdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|solutionrelative:presentation\\presentation\\viewmodels\\orderdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|c:\\sii\\food-delivery\\presentation\\presentation\\apimodels\\orderdetailsapimodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|solutionrelative:presentation\\presentation\\apimodels\\orderdetailsapimodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|c:\\sii\\food-delivery\\presentation\\presentation\\viewmodels\\itemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|solutionrelative:presentation\\presentation\\viewmodels\\itemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|c:\\sii\\food-delivery\\presentation\\presentation\\viewmodels\\itemdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|solutionrelative:presentation\\presentation\\viewmodels\\itemdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|c:\\sii\\food-delivery\\presentation\\presentation\\viewmodels\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|solutionrelative:presentation\\presentation\\viewmodels\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|c:\\sii\\food-delivery\\presentation\\presentation\\viewmodels\\categoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|solutionrelative:presentation\\presentation\\viewmodels\\categoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|c:\\sii\\food-delivery\\presentation\\presentation\\areas\\admin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|solutionrelative:presentation\\presentation\\areas\\admin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|c:\\sii\\food-delivery\\presentation\\presentation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|solutionrelative:presentation\\presentation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\services\\iitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\services\\iitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\services\\genericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\services\\genericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\services\\iorderdetailsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\services\\iorderdetailsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\services\\icartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,32 +127,156 @@
       "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\services\\iapplicationuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\repositories\\ireviewrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\repositories\\ireviewrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\mappers\\modelmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\mappers\\modelmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\repositories\\iorderheaderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\repositories\\iorderheaderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\imodelmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\imodelmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\repositories\\iorderdetailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\repositories\\iorderdetailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\repositories\\iitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\repositories\\iitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7A535DE-E611-4B8A-A6DC-633E9007C081}|Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\sii\\food-delivery\\infrastructure\\infrastructure\\repository\\subcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7A535DE-E611-4B8A-A6DC-633E9007C081}|Infrastructure\\Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure\\repository\\subcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7A535DE-E611-4B8A-A6DC-633E9007C081}|Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\sii\\food-delivery\\infrastructure\\infrastructure\\repository\\reviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7A535DE-E611-4B8A-A6DC-633E9007C081}|Infrastructure\\Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure\\repository\\reviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7A535DE-E611-4B8A-A6DC-633E9007C081}|Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\sii\\food-delivery\\infrastructure\\infrastructure\\repository\\orderheaderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7A535DE-E611-4B8A-A6DC-633E9007C081}|Infrastructure\\Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure\\repository\\orderheaderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7A535DE-E611-4B8A-A6DC-633E9007C081}|Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\sii\\food-delivery\\infrastructure\\infrastructure\\repository\\orderdetailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7A535DE-E611-4B8A-A6DC-633E9007C081}|Infrastructure\\Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure\\repository\\orderdetailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7A535DE-E611-4B8A-A6DC-633E9007C081}|Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\sii\\food-delivery\\infrastructure\\infrastructure\\repository\\itemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7A535DE-E611-4B8A-A6DC-633E9007C081}|Infrastructure\\Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure\\repository\\itemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7A535DE-E611-4B8A-A6DC-633E9007C081}|Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\sii\\food-delivery\\infrastructure\\infrastructure\\repository\\idbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7A535DE-E611-4B8A-A6DC-633E9007C081}|Infrastructure\\Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure\\repository\\idbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7A535DE-E611-4B8A-A6DC-633E9007C081}|Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\sii\\food-delivery\\infrastructure\\infrastructure\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7A535DE-E611-4B8A-A6DC-633E9007C081}|Infrastructure\\Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7A535DE-E611-4B8A-A6DC-633E9007C081}|Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\sii\\food-delivery\\infrastructure\\infrastructure\\repository\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7A535DE-E611-4B8A-A6DC-633E9007C081}|Infrastructure\\Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure\\repository\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7A535DE-E611-4B8A-A6DC-633E9007C081}|Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\sii\\food-delivery\\infrastructure\\infrastructure\\repository\\couponrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7A535DE-E611-4B8A-A6DC-633E9007C081}|Infrastructure\\Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure\\repository\\couponrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7A535DE-E611-4B8A-A6DC-633E9007C081}|Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\sii\\food-delivery\\infrastructure\\infrastructure\\repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7A535DE-E611-4B8A-A6DC-633E9007C081}|Infrastructure\\Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure\\repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7A535DE-E611-4B8A-A6DC-633E9007C081}|Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\sii\\food-delivery\\infrastructure\\infrastructure\\repository\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7A535DE-E611-4B8A-A6DC-633E9007C081}|Infrastructure\\Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure\\repository\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7A535DE-E611-4B8A-A6DC-633E9007C081}|Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\sii\\food-delivery\\infrastructure\\infrastructure\\repository\\applicationuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7A535DE-E611-4B8A-A6DC-633E9007C081}|Infrastructure\\Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure\\repository\\applicationuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7A535DE-E611-4B8A-A6DC-633E9007C081}|Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\sii\\food-delivery\\infrastructure\\infrastructure\\repository\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7A535DE-E611-4B8A-A6DC-633E9007C081}|Infrastructure\\Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure\\repository\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\repositories\\iapplicationuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\repositories\\iapplicationuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\repositories\\icouponrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\repositories\\icouponrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\repositories\\icategoryrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\repositories\\icategoryrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\repositories\\iitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\repositories\\iitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\repositories\\iorderdetailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\repositories\\iorderdetailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\repositories\\iorderheaderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\repositories\\iorderheaderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\repositories\\ireviewrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\repositories\\ireviewrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\repositories\\isubcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\repositories\\isubcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\services\\icouponservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\services\\icouponservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\services\\iorderheaderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\services\\iorderheaderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\services\\isubcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\services\\isubcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\services\\ireviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\services\\ireviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\models\\baseentitymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\models\\baseentitymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\models\\cartmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\models\\cartmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\models\\categorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\models\\categorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\models\\applicationusermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\models\\applicationusermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\models\\subcategorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\models\\subcategorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\models\\reviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\models\\reviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\models\\orderheadermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\models\\orderheadermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\models\\orderdetailsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\models\\orderdetailsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\models\\itemmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\models\\itemmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\models\\couponmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\models\\couponmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\repositories\\icartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,7 +290,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,137 +302,588 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ISubcategoryService.cs",
-              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\ISubcategoryService.cs",
-              "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Services\\ISubcategoryService.cs",
-              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\ISubcategoryService.cs",
-              "RelativeToolTip": "Application\\Application\\Abstractions\\Services\\ISubcategoryService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 12,
+              "Title": "ItemReviewsModel.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Models\\ItemReviewsModel.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Models\\ItemReviewsModel.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Models\\ItemReviewsModel.cs",
+              "RelativeToolTip": "Application\\Application\\Models\\ItemReviewsModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T14:29:12.902Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T15:50:26.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ItemListModel.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Models\\ItemListModel.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Models\\ItemListModel.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Models\\ItemListModel.cs",
+              "RelativeToolTip": "Application\\Application\\Models\\ItemListModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T15:48:44.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AutoMapperConfiguration.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Presentation\\Presentation\\Configuration\\AutoMapperConfiguration.cs",
+              "RelativeDocumentMoniker": "Presentation\\Presentation\\Configuration\\AutoMapperConfiguration.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Presentation\\Presentation\\Configuration\\AutoMapperConfiguration.cs",
+              "RelativeToolTip": "Presentation\\Presentation\\Configuration\\AutoMapperConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T15:41:27.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserViewModel.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ViewModels\\UserViewModel.cs",
+              "RelativeDocumentMoniker": "Presentation\\Presentation\\ViewModels\\UserViewModel.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ViewModels\\UserViewModel.cs",
+              "RelativeToolTip": "Presentation\\Presentation\\ViewModels\\UserViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T15:36:57.113Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IReviewService.cs",
-              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\IReviewService.cs",
-              "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Services\\IReviewService.cs",
-              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\IReviewService.cs",
-              "RelativeToolTip": "Application\\Application\\Abstractions\\Services\\IReviewService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Presentation\\Presentation\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Presentation\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Presentation\\Presentation\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "Presentation\\Presentation\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T14:29:11.571Z",
+              "WhenOpened": "2024-08-27T13:13:56.422Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IOrderHeaderService.cs",
-              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\IOrderHeaderService.cs",
-              "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Services\\IOrderHeaderService.cs",
-              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\IOrderHeaderService.cs",
-              "RelativeToolTip": "Application\\Application\\Abstractions\\Services\\IOrderHeaderService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T14:29:10.288Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IOrderDetailsService.cs",
-              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\IOrderDetailsService.cs",
-              "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Services\\IOrderDetailsService.cs",
-              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\IOrderDetailsService.cs",
-              "RelativeToolTip": "Application\\Application\\Abstractions\\Services\\IOrderDetailsService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T14:29:09.771Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IItemService.cs",
-              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\IItemService.cs",
-              "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Services\\IItemService.cs",
-              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\IItemService.cs",
-              "RelativeToolTip": "Application\\Application\\Abstractions\\Services\\IItemService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T14:29:09.25Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IGenericService.cs",
-              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\IGenericService.cs",
-              "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Services\\IGenericService.cs",
-              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\IGenericService.cs",
-              "RelativeToolTip": "Application\\Application\\Abstractions\\Services\\IGenericService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T14:29:08.715Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ICouponService.cs",
-              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\ICouponService.cs",
-              "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Services\\ICouponService.cs",
-              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\ICouponService.cs",
-              "RelativeToolTip": "Application\\Application\\Abstractions\\Services\\ICouponService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T14:29:08.175Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "ICategoryService.cs",
               "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\ICategoryService.cs",
               "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Services\\ICategoryService.cs",
               "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\ICategoryService.cs",
               "RelativeToolTip": "Application\\Application\\Abstractions\\Services\\ICategoryService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-22T14:29:07.659Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
+              "Title": "ICategoryRepository .cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Repositories\\ICategoryRepository .cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Repositories\\ICategoryRepository .cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Repositories\\ICategoryRepository .cs",
+              "RelativeToolTip": "Application\\Application\\Abstractions\\Repositories\\ICategoryRepository .cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAMAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T14:29:00.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IGenericService.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\IGenericService.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Services\\IGenericService.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\IGenericService.cs",
+              "RelativeToolTip": "Application\\Application\\Abstractions\\Services\\IGenericService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T14:29:08.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ItemListViewModel.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ViewModels\\ItemListViewModel.cs",
+              "RelativeDocumentMoniker": "Presentation\\Presentation\\ViewModels\\ItemListViewModel.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ViewModels\\ItemListViewModel.cs",
+              "RelativeToolTip": "Presentation\\Presentation\\ViewModels\\ItemListViewModel.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T15:31:41.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CouponsController.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Presentation\\Presentation\\Areas\\Admin\\Controllers\\CouponsController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Presentation\\Areas\\Admin\\Controllers\\CouponsController.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Presentation\\Presentation\\Areas\\Admin\\Controllers\\CouponsController.cs",
+              "RelativeToolTip": "Presentation\\Presentation\\Areas\\Admin\\Controllers\\CouponsController.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAADgv2gAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T16:00:35.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CouponViewModel.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ViewModels\\CouponViewModel.cs",
+              "RelativeDocumentMoniker": "Presentation\\Presentation\\ViewModels\\CouponViewModel.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ViewModels\\CouponViewModel.cs",
+              "RelativeToolTip": "Presentation\\Presentation\\ViewModels\\CouponViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T16:02:02.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RequestCouponModel.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ApiModels\\RequestCouponModel.cs",
+              "RelativeDocumentMoniker": "Presentation\\Presentation\\ApiModels\\RequestCouponModel.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ApiModels\\RequestCouponModel.cs",
+              "RelativeToolTip": "Presentation\\Presentation\\ApiModels\\RequestCouponModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T16:14:40.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ItemsController.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Presentation\\Presentation\\Areas\\Admin\\Controllers\\ItemsController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Presentation\\Areas\\Admin\\Controllers\\ItemsController.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Presentation\\Presentation\\Areas\\Admin\\Controllers\\ItemsController.cs",
+              "RelativeToolTip": "Presentation\\Presentation\\Areas\\Admin\\Controllers\\ItemsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T16:16:49.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CartOrderModel.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Models\\CartOrderModel.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Models\\CartOrderModel.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Models\\CartOrderModel.cs",
+              "RelativeToolTip": "Application\\Application\\Models\\CartOrderModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T15:46:10.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CartOrderViewModel.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ViewModels\\CartOrderViewModel.cs",
+              "RelativeDocumentMoniker": "Presentation\\Presentation\\ViewModels\\CartOrderViewModel.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ViewModels\\CartOrderViewModel.cs",
+              "RelativeToolTip": "Presentation\\Presentation\\ViewModels\\CartOrderViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T15:33:18.506Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ItemReviewsViewModel.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ViewModels\\ItemReviewsViewModel.cs",
+              "RelativeDocumentMoniker": "Presentation\\Presentation\\ViewModels\\ItemReviewsViewModel.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ViewModels\\ItemReviewsViewModel.cs",
+              "RelativeToolTip": "Presentation\\Presentation\\ViewModels\\ItemReviewsViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T15:31:32.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Presentation\\Presentation\\Areas\\Customer\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Presentation\\Areas\\Customer\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Presentation\\Presentation\\Areas\\Customer\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Presentation\\Presentation\\Areas\\Customer\\Controllers\\CartController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T15:44:05.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SubcategoryViewModel.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ViewModels\\SubcategoryViewModel.cs",
+              "RelativeDocumentMoniker": "Presentation\\Presentation\\ViewModels\\SubcategoryViewModel.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ViewModels\\SubcategoryViewModel.cs",
+              "RelativeToolTip": "Presentation\\Presentation\\ViewModels\\SubcategoryViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T15:36:44.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "OrderDetailsViewModel.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ViewModels\\OrderDetailsViewModel.cs",
+              "RelativeDocumentMoniker": "Presentation\\Presentation\\ViewModels\\OrderDetailsViewModel.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ViewModels\\OrderDetailsViewModel.cs",
+              "RelativeToolTip": "Presentation\\Presentation\\ViewModels\\OrderDetailsViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T15:34:45.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "OrderDetailsApiModel.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ApiModels\\OrderDetailsApiModel.cs",
+              "RelativeDocumentMoniker": "Presentation\\Presentation\\ApiModels\\OrderDetailsApiModel.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ApiModels\\OrderDetailsApiModel.cs",
+              "RelativeToolTip": "Presentation\\Presentation\\ApiModels\\OrderDetailsApiModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T15:36:03.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ItemViewModel.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ViewModels\\ItemViewModel.cs",
+              "RelativeDocumentMoniker": "Presentation\\Presentation\\ViewModels\\ItemViewModel.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ViewModels\\ItemViewModel.cs",
+              "RelativeToolTip": "Presentation\\Presentation\\ViewModels\\ItemViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T15:32:35.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ItemDetailsViewModel.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ViewModels\\ItemDetailsViewModel.cs",
+              "RelativeDocumentMoniker": "Presentation\\Presentation\\ViewModels\\ItemDetailsViewModel.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ViewModels\\ItemDetailsViewModel.cs",
+              "RelativeToolTip": "Presentation\\Presentation\\ViewModels\\ItemDetailsViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T15:33:38.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ViewModels\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Presentation\\Presentation\\ViewModels\\ErrorViewModel.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ViewModels\\ErrorViewModel.cs",
+              "RelativeToolTip": "Presentation\\Presentation\\ViewModels\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T15:33:36.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CategoryViewModel.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ViewModels\\CategoryViewModel.cs",
+              "RelativeDocumentMoniker": "Presentation\\Presentation\\ViewModels\\CategoryViewModel.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ViewModels\\CategoryViewModel.cs",
+              "RelativeToolTip": "Presentation\\Presentation\\ViewModels\\CategoryViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T15:33:35.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Presentation\\Presentation\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Presentation\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Presentation\\Presentation\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Presentation\\Presentation\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T15:31:27.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Presentation\\Presentation\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Presentation\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Presentation\\Presentation\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Presentation\\Presentation\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAiwB4AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T15:29:39.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "GenericService.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Services\\GenericService.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Services\\GenericService.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Services\\GenericService.cs",
+              "RelativeToolTip": "Application\\Application\\Services\\GenericService.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAwwB0AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:16:29.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Services\\CategoryService.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Services\\CategoryService.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Services\\CategoryService.cs",
+              "RelativeToolTip": "Application\\Application\\Services\\CategoryService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:15:38.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "IModelMapper.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\IModelMapper.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\IModelMapper.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\IModelMapper.cs",
+              "RelativeToolTip": "Application\\Application\\Abstractions\\IModelMapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:14:59.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ModelMapper.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Mappers\\ModelMapper.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Mappers\\ModelMapper.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Mappers\\ModelMapper.cs",
+              "RelativeToolTip": "Application\\Application\\Mappers\\ModelMapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:05:12.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
               "Title": "IApplicationUserService.cs",
               "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\IApplicationUserService.cs",
               "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Services\\IApplicationUserService.cs",
               "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\IApplicationUserService.cs",
               "RelativeToolTip": "Application\\Application\\Abstractions\\Services\\IApplicationUserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T14:29:06.609Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-22T14:29:06.609Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 29,
               "Title": "ICartService.cs",
               "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\ICartService.cs",
               "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Services\\ICartService.cs",
               "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\ICartService.cs",
               "RelativeToolTip": "Application\\Application\\Abstractions\\Services\\ICartService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T14:29:06.102Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-22T14:29:06.102Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 26,
+              "Title": "IItemService.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\IItemService.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Services\\IItemService.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\IItemService.cs",
+              "RelativeToolTip": "Application\\Application\\Abstractions\\Services\\IItemService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T14:29:09.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IOrderDetailsService.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\IOrderDetailsService.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Services\\IOrderDetailsService.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\IOrderDetailsService.cs",
+              "RelativeToolTip": "Application\\Application\\Abstractions\\Services\\IOrderDetailsService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T14:29:09.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "SubcategoryRepository.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Repository\\SubcategoryRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure\\Repository\\SubcategoryRepository.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Repository\\SubcategoryRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Infrastructure\\Repository\\SubcategoryRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:13:37.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ReviewRepository.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Repository\\ReviewRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure\\Repository\\ReviewRepository.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Repository\\ReviewRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Infrastructure\\Repository\\ReviewRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:13:35.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "OrderHeaderRepository.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Repository\\OrderHeaderRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure\\Repository\\OrderHeaderRepository.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Repository\\OrderHeaderRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Infrastructure\\Repository\\OrderHeaderRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:13:24.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "OrderDetailsRepository.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Repository\\OrderDetailsRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure\\Repository\\OrderDetailsRepository.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Repository\\OrderDetailsRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Infrastructure\\Repository\\OrderDetailsRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:13:17.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ItemRepository.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Repository\\ItemRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure\\Repository\\ItemRepository.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Repository\\ItemRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Infrastructure\\Repository\\ItemRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:13:12.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "IDbInitializer.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Repository\\IDbInitializer.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure\\Repository\\IDbInitializer.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Repository\\IDbInitializer.cs",
+              "RelativeToolTip": "Infrastructure\\Infrastructure\\Repository\\IDbInitializer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:13:11.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Repository\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure\\Repository\\GenericRepository.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Repository\\GenericRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Infrastructure\\Repository\\GenericRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:13:09.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Repository\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure\\Repository\\DbInitializer.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Repository\\DbInitializer.cs",
+              "RelativeToolTip": "Infrastructure\\Infrastructure\\Repository\\DbInitializer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:13:07.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Repository\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure\\Repository\\CategoryRepository.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Repository\\CategoryRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Infrastructure\\Repository\\CategoryRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:13:04.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ApplicationUserRepository.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Repository\\ApplicationUserRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure\\Repository\\ApplicationUserRepository.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Repository\\ApplicationUserRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Infrastructure\\Repository\\ApplicationUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:12:36.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Repository\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure\\Repository\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Repository\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Infrastructure\\Infrastructure\\Repository\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:12:35.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "CouponRepository.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Repository\\CouponRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure\\Repository\\CouponRepository.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Repository\\CouponRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Infrastructure\\Repository\\CouponRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:12:13.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "CartRepository.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Repository\\CartRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure\\Repository\\CartRepository.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Repository\\CartRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Infrastructure\\Repository\\CartRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:12:11.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "ISubcategoryRepository.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Repositories\\ISubcategoryRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Repositories\\ISubcategoryRepository.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Repositories\\ISubcategoryRepository.cs",
+              "RelativeToolTip": "Application\\Application\\Abstractions\\Repositories\\ISubcategoryRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:02:50.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
               "Title": "IReviewRepository .cs",
               "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Repositories\\IReviewRepository .cs",
               "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Repositories\\IReviewRepository .cs",
@@ -232,12 +891,11 @@
               "RelativeToolTip": "Application\\Application\\Abstractions\\Repositories\\IReviewRepository .cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T14:29:05.008Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-22T14:29:05.008Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 51,
               "Title": "IOrderHeaderRepository.cs",
               "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Repositories\\IOrderHeaderRepository.cs",
               "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Repositories\\IOrderHeaderRepository.cs",
@@ -245,12 +903,11 @@
               "RelativeToolTip": "Application\\Application\\Abstractions\\Repositories\\IOrderHeaderRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T14:29:04.495Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-22T14:29:04.495Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 50,
               "Title": "IOrderDetailsRepository.cs",
               "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Repositories\\IOrderDetailsRepository.cs",
               "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Repositories\\IOrderDetailsRepository.cs",
@@ -258,12 +915,11 @@
               "RelativeToolTip": "Application\\Application\\Abstractions\\Repositories\\IOrderDetailsRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T14:29:04.015Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-22T14:29:04.015Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 49,
               "Title": "IItemRepository.cs",
               "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Repositories\\IItemRepository.cs",
               "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Repositories\\IItemRepository.cs",
@@ -271,25 +927,11 @@
               "RelativeToolTip": "Application\\Application\\Abstractions\\Repositories\\IItemRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T14:29:03.484Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-22T14:29:03.484Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "IGenericRepository.cs",
-              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Repositories\\IGenericRepository.cs",
-              "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Repositories\\IGenericRepository.cs",
-              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Repositories\\IGenericRepository.cs",
-              "RelativeToolTip": "Application\\Application\\Abstractions\\Repositories\\IGenericRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T14:29:02.868Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 48,
               "Title": "ICouponRepository.cs",
               "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Repositories\\ICouponRepository.cs",
               "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Repositories\\ICouponRepository.cs",
@@ -297,25 +939,203 @@
               "RelativeToolTip": "Application\\Application\\Abstractions\\Repositories\\ICouponRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T14:29:01.488Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-22T14:29:01.488Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ICategoryRepository .cs",
-              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Repositories\\ICategoryRepository .cs",
-              "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Repositories\\ICategoryRepository .cs",
-              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Repositories\\ICategoryRepository .cs",
-              "RelativeToolTip": "Application\\Application\\Abstractions\\Repositories\\ICategoryRepository .cs",
+              "DocumentIndex": 47,
+              "Title": "IApplicationUserRepository.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Repositories\\IApplicationUserRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Repositories\\IApplicationUserRepository.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Repositories\\IApplicationUserRepository.cs",
+              "RelativeToolTip": "Application\\Application\\Abstractions\\Repositories\\IApplicationUserRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T14:29:00.757Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T13:04:38.421Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 54,
+              "Title": "ICouponService.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\ICouponService.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Services\\ICouponService.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\ICouponService.cs",
+              "RelativeToolTip": "Application\\Application\\Abstractions\\Services\\ICouponService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T14:29:08.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "IOrderHeaderService.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\IOrderHeaderService.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Services\\IOrderHeaderService.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\IOrderHeaderService.cs",
+              "RelativeToolTip": "Application\\Application\\Abstractions\\Services\\IOrderHeaderService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T14:29:10.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "ISubcategoryService.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\ISubcategoryService.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Services\\ISubcategoryService.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\ISubcategoryService.cs",
+              "RelativeToolTip": "Application\\Application\\Abstractions\\Services\\ISubcategoryService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T14:29:12.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "IReviewService.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\IReviewService.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Services\\IReviewService.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\IReviewService.cs",
+              "RelativeToolTip": "Application\\Application\\Abstractions\\Services\\IReviewService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T14:29:11.571Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "BaseEntityModel.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Models\\BaseEntityModel.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Models\\BaseEntityModel.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Models\\BaseEntityModel.cs",
+              "RelativeToolTip": "Application\\Application\\Models\\BaseEntityModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:06:18.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "CartModel.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Models\\CartModel.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Models\\CartModel.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Models\\CartModel.cs",
+              "RelativeToolTip": "Application\\Application\\Models\\CartModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:06:24.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "ApplicationUserModel.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Models\\ApplicationUserModel.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Models\\ApplicationUserModel.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Models\\ApplicationUserModel.cs",
+              "RelativeToolTip": "Application\\Application\\Models\\ApplicationUserModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:06:06.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "SubcategoryModel.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Models\\SubcategoryModel.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Models\\SubcategoryModel.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Models\\SubcategoryModel.cs",
+              "RelativeToolTip": "Application\\Application\\Models\\SubcategoryModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:06:37.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "ReviewModel.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Models\\ReviewModel.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Models\\ReviewModel.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Models\\ReviewModel.cs",
+              "RelativeToolTip": "Application\\Application\\Models\\ReviewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:06:29.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "OrderHeaderModel.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Models\\OrderHeaderModel.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Models\\OrderHeaderModel.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Models\\OrderHeaderModel.cs",
+              "RelativeToolTip": "Application\\Application\\Models\\OrderHeaderModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:06:28.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "OrderDetailsModel.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Models\\OrderDetailsModel.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Models\\OrderDetailsModel.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Models\\OrderDetailsModel.cs",
+              "RelativeToolTip": "Application\\Application\\Models\\OrderDetailsModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:06:27.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "CategoryModel.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Models\\CategoryModel.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Models\\CategoryModel.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Models\\CategoryModel.cs",
+              "RelativeToolTip": "Application\\Application\\Models\\CategoryModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:06:26.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "ItemModel.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Models\\ItemModel.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Models\\ItemModel.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Models\\ItemModel.cs",
+              "RelativeToolTip": "Application\\Application\\Models\\ItemModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:06:27.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "CouponModel.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Models\\CouponModel.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Models\\CouponModel.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Models\\CouponModel.cs",
+              "RelativeToolTip": "Application\\Application\\Models\\CouponModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:06:26.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Repositories\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Repositories\\IGenericRepository.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Repositories\\IGenericRepository.cs",
+              "RelativeToolTip": "Application\\Application\\Abstractions\\Repositories\\IGenericRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T14:29:02.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
               "Title": "ICartRepository.cs",
               "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Repositories\\ICartRepository.cs",
               "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Repositories\\ICartRepository.cs",
@@ -323,8 +1143,7 @@
               "RelativeToolTip": "Application\\Application\\Abstractions\\Repositories\\ICartRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T14:29:00.027Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-22T14:29:00.027Z"
             }
           ]
         }

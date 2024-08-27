@@ -1,8 +1,8 @@
-﻿using Domain.Models;
+﻿using Application.Models;
 
-namespace Application.Abstractions.Repositories;
+namespace Application.Abstractions.Services;
 
-public interface IOrderDetailsService : IGenericService<OrderDetails>
+public interface IOrderDetailsService : IGenericService<OrderDetailsModel>
 {
-    Task<OrderDetails> GetOrderDetails();
+    Task<OrderDetailsModel> GetOrderDetails();
 }

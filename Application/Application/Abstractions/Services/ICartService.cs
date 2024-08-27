@@ -1,8 +1,8 @@
-﻿using Domain.Models;
+﻿using Application.Models;
 
-namespace Application.Abstractions.Repositories;
+namespace Application.Abstractions.Services;
 
-public interface ICartService : IGenericService<Cart>
+public interface ICartService : IGenericService<CartModel>
 {
-    Task<Cart> GetCart();
+    Task<CartModel> GetCart();
 }

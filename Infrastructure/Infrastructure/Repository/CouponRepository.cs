@@ -3,7 +3,7 @@ using Domain.Models;
 
 namespace Infrastructure.Repository;
 
-internal class CouponRepository : GenericRepository<Coupon>, CouponService
+internal class CouponRepository : GenericRepository<Coupon>, ICouponRepository
 {
     public Task<Coupon> GetCoupon()
     {

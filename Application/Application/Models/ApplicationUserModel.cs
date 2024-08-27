@@ -1,7 +1,7 @@
-﻿using Domain.Models;
+﻿using Application.Abstractions;
 using Microsoft.AspNetCore.Identity;
 
-namespace food_delivery.Models
+namespace Application.Models
 {
     public class ApplicationUserModel: IdentityUser
     {

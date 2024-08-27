@@ -1,7 +1,4 @@
-﻿using food_delivery.Models;
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace food_delivery.ViewModels
+﻿namespace Presentation.ViewModels
 {
     public class SubcategoryViewModel
     {

@@ -1,6 +1,4 @@
-﻿using Presentation.ApiModels;
-
-namespace food_delivery.Models;
+﻿namespace Presentation.ApiModels;
 
 public class OrderDetailsApiModel : BaseApiModel
 {

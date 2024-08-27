@@ -1,5 +1,5 @@
 ﻿using Application.Models;
-using food_delivery.Models;
+using Domain.Models;
 
 namespace Application.Abstractions;
 

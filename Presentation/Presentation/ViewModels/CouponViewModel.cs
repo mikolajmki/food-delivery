@@ -1,6 +1,6 @@
-﻿namespace Presentation.ApiModels;
+﻿namespace Presentation.ViewModels;
 
-public class CouponApiModel: BaseApiModel
+public class CouponViewModel
 {
     public string Title { get; set; }
     public string Type { get; set; }
