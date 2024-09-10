@@ -4,5 +4,5 @@ namespace Application.Abstractions;
 
 public interface IReviewRepository : IGenericRepository<Review>
 {
-    Task<Review> GetReview();
+    Task<Review> GetReviewsOfItemsByUser(int[] ids, int userId);
 }

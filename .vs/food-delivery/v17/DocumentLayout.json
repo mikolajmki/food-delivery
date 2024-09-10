@@ -1,7 +1,80 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\sii\\food-delivery\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\repositories\\iorderdetailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\repositories\\iorderdetailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|c:\\sii\\food-delivery\\presentation\\presentation\\areas\\admin\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|solutionrelative:presentation\\presentation\\areas\\admin\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|c:\\sii\\food-delivery\\presentation\\presentation\\areas\\admin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|solutionrelative:presentation\\presentation\\areas\\admin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|c:\\sii\\food-delivery\\presentation\\presentation\\areas\\admin\\controllers\\subcategoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|solutionrelative:presentation\\presentation\\areas\\admin\\controllers\\subcategoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|c:\\sii\\food-delivery\\presentation\\presentation\\areas\\admin\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|solutionrelative:presentation\\presentation\\areas\\admin\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\repositories\\iorderheaderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\repositories\\iorderheaderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\models\\queries\\getorderheadersofuserquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\models\\queries\\getorderheadersofuserquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|c:\\sii\\food-delivery\\presentation\\presentation\\apimodels\\orderheaderorderbyapioptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|solutionrelative:presentation\\presentation\\apimodels\\orderheaderorderbyapioptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\services\\orderheaderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\services\\orderheaderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\services\\iorderheaderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\services\\iorderheaderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\models\\options\\orderheaderorderbyoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\models\\options\\orderheaderorderbyoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\models\\orderheadermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\models\\orderheadermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD477C6-CD9E-4521-AE49-1869C077F20A}|Domain\\Domain\\Domain.csproj|c:\\sii\\food-delivery\\domain\\domain\\models\\orderheader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FD477C6-CD9E-4521-AE49-1869C077F20A}|Domain\\Domain\\Domain.csproj|solutionrelative:domain\\domain\\models\\orderheader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7A535DE-E611-4B8A-A6DC-633E9007C081}|Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\sii\\food-delivery\\infrastructure\\infrastructure\\repository\\orderheaderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7A535DE-E611-4B8A-A6DC-633E9007C081}|Infrastructure\\Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure\\repository\\orderheaderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\services\\identityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\services\\identityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|c:\\sii\\food-delivery\\application\\application\\abstractions\\services\\iidentityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}|Application\\Application\\Application.csproj|solutionrelative:application\\application\\abstractions\\services\\iidentityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|c:\\sii\\food-delivery\\presentation\\presentation\\viewmodels\\orderheaderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|solutionrelative:presentation\\presentation\\viewmodels\\orderheaderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|c:\\sii\\food-delivery\\presentation\\presentation\\apimodels\\orderheaderapimodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}|Presentation\\Presentation\\Presentation.csproj|solutionrelative:presentation\\presentation\\apimodels\\orderheaderapimodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,15 +82,245 @@
       "DocumentGroups": [
         {
           "DockedWidth": 88,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Presentation\\Presentation\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Presentation\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Presentation\\Presentation\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Presentation\\Presentation\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T16:49:14.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SubcategoriesController.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Presentation\\Presentation\\Areas\\Admin\\Controllers\\SubcategoriesController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Presentation\\Areas\\Admin\\Controllers\\SubcategoriesController.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Presentation\\Presentation\\Areas\\Admin\\Controllers\\SubcategoriesController.cs",
+              "RelativeToolTip": "Presentation\\Presentation\\Areas\\Admin\\Controllers\\SubcategoriesController.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T16:49:12.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReviewsController.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Presentation\\Presentation\\Areas\\Admin\\Controllers\\ReviewsController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Presentation\\Areas\\Admin\\Controllers\\ReviewsController.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Presentation\\Presentation\\Areas\\Admin\\Controllers\\ReviewsController.cs",
+              "RelativeToolTip": "Presentation\\Presentation\\Areas\\Admin\\Controllers\\ReviewsController.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T16:49:09.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IOrderDetailsRepository.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Repositories\\IOrderDetailsRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Repositories\\IOrderDetailsRepository.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Repositories\\IOrderDetailsRepository.cs",
+              "RelativeToolTip": "Application\\Application\\Abstractions\\Repositories\\IOrderDetailsRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T16:48:31.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrderHeaderModel.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Models\\OrderHeaderModel.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Models\\OrderHeaderModel.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Models\\OrderHeaderModel.cs",
+              "RelativeToolTip": "Application\\Application\\Models\\OrderHeaderModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T16:21:38.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "OrderHeader.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Domain\\Domain\\Models\\OrderHeader.cs",
+              "RelativeDocumentMoniker": "Domain\\Domain\\Models\\OrderHeader.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Domain\\Domain\\Models\\OrderHeader.cs",
+              "RelativeToolTip": "Domain\\Domain\\Models\\OrderHeader.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAoAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T16:36:31.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetOrderHeadersOfUserQuery.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Models\\Queries\\GetOrderHeadersOfUserQuery.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Models\\Queries\\GetOrderHeadersOfUserQuery.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Models\\Queries\\GetOrderHeadersOfUserQuery.cs*",
+              "RelativeToolTip": "Application\\Application\\Models\\Queries\\GetOrderHeadersOfUserQuery.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T16:33:31.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrderHeaderOrderByOptions.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Models\\Options\\OrderHeaderOrderByOptions.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Models\\Options\\OrderHeaderOrderByOptions.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Models\\Options\\OrderHeaderOrderByOptions.cs",
+              "RelativeToolTip": "Application\\Application\\Models\\Options\\OrderHeaderOrderByOptions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T16:30:00.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderHeaderOrderByApiOptions.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ApiModels\\OrderHeaderOrderByApiOptions.cs",
+              "RelativeDocumentMoniker": "Presentation\\Presentation\\ApiModels\\OrderHeaderOrderByApiOptions.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ApiModels\\OrderHeaderOrderByApiOptions.cs*",
+              "RelativeToolTip": "Presentation\\Presentation\\ApiModels\\OrderHeaderOrderByApiOptions.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T16:22:38.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IdentityService.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Services\\IdentityService.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Services\\IdentityService.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Services\\IdentityService.cs*",
+              "RelativeToolTip": "Application\\Application\\Services\\IdentityService.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T16:13:06.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IIdentityService.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\IIdentityService.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Services\\IIdentityService.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\IIdentityService.cs",
+              "RelativeToolTip": "Application\\Application\\Abstractions\\Services\\IIdentityService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T16:12:39.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IOrderHeaderService.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\IOrderHeaderService.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Services\\IOrderHeaderService.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Services\\IOrderHeaderService.cs",
+              "RelativeToolTip": "Application\\Application\\Abstractions\\Services\\IOrderHeaderService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T16:10:36.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderHeaderService.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Services\\OrderHeaderService.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Services\\OrderHeaderService.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Services\\OrderHeaderService.cs",
+              "RelativeToolTip": "Application\\Application\\Services\\OrderHeaderService.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAIwBAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T16:08:39.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IOrderHeaderRepository.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Repositories\\IOrderHeaderRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Application\\Abstractions\\Repositories\\IOrderHeaderRepository.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Application\\Application\\Abstractions\\Repositories\\IOrderHeaderRepository.cs*",
+              "RelativeToolTip": "Application\\Application\\Abstractions\\Repositories\\IOrderHeaderRepository.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T16:06:32.286Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OrderHeaderRepository.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Repository\\OrderHeaderRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure\\Repository\\OrderHeaderRepository.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Repository\\OrderHeaderRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Infrastructure\\Repository\\OrderHeaderRepository.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBwAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T16:06:25.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "OrderHeaderViewModel.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ViewModels\\OrderHeaderViewModel.cs",
+              "RelativeDocumentMoniker": "Presentation\\Presentation\\ViewModels\\OrderHeaderViewModel.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ViewModels\\OrderHeaderViewModel.cs",
+              "RelativeToolTip": "Presentation\\Presentation\\ViewModels\\OrderHeaderViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T16:05:30.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "OrderHeaderApiModel.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ApiModels\\OrderHeaderApiModel.cs",
+              "RelativeDocumentMoniker": "Presentation\\Presentation\\ApiModels\\OrderHeaderApiModel.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Presentation\\Presentation\\ApiModels\\OrderHeaderApiModel.cs",
+              "RelativeToolTip": "Presentation\\Presentation\\ApiModels\\OrderHeaderApiModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T16:05:06.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\sii\\food-delivery\\Presentation\\Presentation\\Areas\\Admin\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Presentation\\Areas\\Admin\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\sii\\food-delivery\\Presentation\\Presentation\\Areas\\Admin\\Controllers\\OrdersController.cs*",
+              "RelativeToolTip": "Presentation\\Presentation\\Areas\\Admin\\Controllers\\OrdersController.cs*",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAowDoAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T16:04:41.076Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -5,5 +5,5 @@ namespace Application.Abstractions.Services;
 
 public interface IIdentityService
 {
-    public Claim GetClaim(IIdentity identity);
+    public string GetIdFromClaim(IIdentity identity);
 }

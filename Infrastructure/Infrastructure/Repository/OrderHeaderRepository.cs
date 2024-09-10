@@ -14,6 +14,15 @@ internal class OrderHeaderRepository : GenericRepository<OrderHeader>, IOrderHea
         _context = context;
     }
 
+    public async Task<OrderHeader> GetOrderHeaderByIdIncludeUser(int id)
+    {
+        var orderheader = await _context.OrderHeaders
+            .Include(x => x.ApplicationUser)
+            .SingleAsync(x => x.Id == id);
+
+        return orderheader;
+    }
+
     public async Task<List<OrderHeader>> GetOrderHeadersOfAllUsers()
     {
         var orderHeaders = await _context.OrderHeaders
@@ -23,7 +32,7 @@ internal class OrderHeaderRepository : GenericRepository<OrderHeader>, IOrderHea
         return orderHeaders;
     }
 
-    public Task<List<OrderHeader>> GetOrderHeadersOfUser(int id)
+    public Task<List<OrderHeader>> GetOrderHeadersOfUser(string id)
     {
         var orderHeaders = _context.OrderHeaders
             .Where(x => x.ApplicationUserId == id.ToString())

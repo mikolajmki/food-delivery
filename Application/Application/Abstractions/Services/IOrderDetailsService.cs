@@ -2,7 +2,7 @@
 
 namespace Application.Abstractions.Services;
 
-public interface IOrderDetailsService : IGenericService<OrderDetailsModel>
+public interface IOrderDetailsService : IGenericService<OrderDetailsReadModel>
 {
-    Task<OrderDetailsModel> GetOrderDetails();
+    Task<OrderDetailsReadModel> GetOrderDetails(int orderHeaderId);
 }

@@ -4,7 +4,7 @@ namespace Domain.Models;
 
 public class Review: BaseEntity
 {
-    public int? ItemId { get; set; }
+    public int ItemId { get; set; } = 0;
     [ForeignKey(nameof(ItemId))]
     public Item Item { get; set; }
     [ForeignKey(nameof(ApplicationUserId))]

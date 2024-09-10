@@ -6,11 +6,11 @@ namespace Application.Services;
 
 internal class IdentityService : IIdentityService
 {
-    public static Claim GetClaim(IIdentity identity)
+    public string GetIdFromClaim(IIdentity identity)
     {
-        var claimsIdentity = (ClaimsIdentity) identity;
+        var claimsIdentity = (ClaimsIdentity)identity;
         var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier)!;
 
-        return claim;
+        return claim.Value;
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Application.Models;
+using Application.Models.ReadModels;
 using Mapster;
 using MapsterMapper;
 using Presentation.ViewModels;
@@ -27,7 +28,7 @@ public static class MapsterConfiguration
         config.NewConfig<CartOrderModel, CartOrderViewModel>();
         config.NewConfig<ItemListModel, ItemListViewModel>();
         config.NewConfig<ItemReviewsModel, ItemReviewsViewModel>();
-        config.NewConfig<OrderDetailsModel, OrderDetailsViewModel>();
+        config.NewConfig<OrderDetailsReadModel, OrderDetailsViewModel>();
         config.NewConfig<ApplicationUserModel, UserViewModel>();
 
         services.AddSingleton(config);

@@ -1,10 +1,15 @@
 ﻿using Application.Abstractions.Services;
-using food_delivery.Utility;
-using Microsoft.AspNetCore.Authorization;
+using Application.Models;
+using Application.Models.Options;
+using Application.Models.Queries;
+using MapsterMapper;
 using Microsoft.AspNetCore.Mvc;
+using Presentation.ApiModels;
 using Presentation.ViewModels;
 using System.Security.Claims;
 using System.Web.Mvc;
+using ActionResult = System.Web.Mvc.ActionResult;
+using HttpGetAttribute = System.Web.Mvc.HttpGetAttribute;
 
 namespace food_delivery.Areas.Admin.Controllers
 {
@@ -13,7 +18,8 @@ namespace food_delivery.Areas.Admin.Controllers
     public class OrdersController : Controller
     {
         private readonly IOrderDetailsService _orderDetailsService;
-        private IOrderHeaderService _orderHeaderService;
+        private readonly IOrderHeaderService _orderHeaderService;
+        private readonly IMapper _mapper;
 
         public OrdersController(
             IOrderDetailsService orderDetailsService,
@@ -24,67 +30,44 @@ namespace food_delivery.Areas.Admin.Controllers
             _orderHeaderService = orderHeaderService;
         }
 
-        public IActionResult Index(string status)
+        public async Task<ActionResult> IndexAsync(OrderHeaderOrderByApiOptions options)
         {
-            status ??= "all";
+            var orderby = _mapper.Map<OrderHeaderOrderByOptions>(options);
 
-            IEnumerable<OrderDetailsViewModel> orders;
+            var query = new GetOrderHeadersOfUserQuery(orderby);
+
+            List<OrderHeaderModel> orders;
 
             if (User.IsInRole("Admin"))
             {
-                orders = _context.OrderHeaders.Include(x => x.ApplicationUser).ToList();
+                orders = await _orderHeaderService.GetOrderHeadersOfAllUsers(query);
             }
             else
             {
-                orders = _context.OrderHeaders.Where(x => x.ApplicationUserId == claims.Value).ToList();
-            }
-
-            orders = orders.OrderByDescending(x => x.OrderDate);
-
-            switch (status)
-            {
-                case "pending":
-                    orders.Where(x => x.OrderStatus == PaymentStatus.StatusPending).ToList();
-                    break;
-                case "approved":
-                    orders.Where(x => x.OrderStatus == PaymentStatus.StatusApproved).ToList();
-                    break;
-                case "underprocess":
-                    orders.Where(x => x.OrderStatus == OrderStatus.StatusInProceess).ToList();
-                    break;
-                case "shipped":
-                    orders.Where(x => x.OrderStatus == OrderStatus.StatusShipped).ToList();
-                    break;
+                query.Identity = User.Identity;
+                orders = await _orderHeaderService.GetOrderHeadersOfUser(query);
             }
 
             return View(orders);
         }
         [HttpGet]
-        public IActionResult OrderDetails(int id)
+        public async Task<ActionResult> OrderDetailsAsync(int id)
         {
-            var vm = new OrderDetailsViewModel()
-            {
-                OrderHeader = _context.OrderHeaders.Include(x => x.ApplicationUser).FirstOrDefault(x => x.Id == id),
-            };
-
-            //ViewBag.PaymentStatus = new SelectList(new List<string> { "Pending", "Approved", "Rejected", "Delay" });
-            //ViewBag.OrderStatus = new SelectList(new List<string> {"Pending", "Refunded", "Approved", "Cancelled", "UnderProcess", "Shipped" });
-
-            vm.OrderDetails = _context.OrderDetails.Include(x => x.Item).Where(x => x.OrderHeaderId == vm.OrderHeader.Id).ToList();
-            var ids = vm.OrderDetails.Select(x => x.ItemId);
-            vm.Reviews = _context.Reviews.Where(x => ids.Contains(x.ItemId) && x.ApplicationUserId == vm.OrderHeader.ApplicationUserId).ToList();
+            var orderDetailsReadModel = await _orderDetailsService.GetOrderDetails(id);
 
             List<ItemApiModel> notReviewedItems = new List<ItemApiModel>();
 
-            foreach (var item in vm.OrderDetails) 
+            foreach (var item in orderDetailsReadModel.OrderDetails) 
             {
-                if (!vm.Reviews.Any(x => x.ItemId == item.ItemId))
+                if (!orderDetailsReadModel.Reviews.Any(x => x.ItemId == item.ItemId))
                 {
-                    notReviewedItems.Add(item.Item);
+                    //notReviewedItems.Add(item.Item);
                 }
             }
 
             ViewBag.NotReviewedItems = new SelectList(notReviewedItems, "Id", "Title");
+
+            var vm = _mapper.Map<OrderDetailsViewModel>(orderDetailsReadModel);
 
             return View(vm);
         }
