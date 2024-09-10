@@ -1,7 +1,7 @@
-﻿using Application.Abstractions.Repositories;
-using Application.Abstractions.Services;
+﻿using Application.Abstractions.Services;
 using Application.Models;
-using AutoMapper;
+using MapsterMapper;
+using Microsoft.AspNetCore.Http;
 using Presentation.ApiModels;
 using Presentation.ViewModels;
 using System.Web.Mvc;
@@ -33,15 +33,13 @@ namespace food_delivery.Areas.Admin.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<ActionResult> Create(CouponViewModel vm)
+        public async Task<ActionResult> Create(CouponViewModel vm, IFormFile file)
         {
             if (ModelState.IsValid)
             {
                 // file service
-
-                var files = Request.Form.Files;
                 byte[] photo = null;
-                using (var fileStream = files[0].OpenReadStream())
+                using (var fileStream = file.OpenReadStream())
                 {
                     using (var memoryStream = new MemoryStream())
                     {

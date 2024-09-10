@@ -1,9 +1,5 @@
-using food_delivery.Repository;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI.Services;
-using food_delivery.Models;
-using food_delivery.Utility;
+using WebApi.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +20,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(
 //    .AddEntityFrameworkStores<ApplicationDbContext>();
 
 builder.Services.AddScoped<IDbInitializer, DbInitializer>();
+builder.Services.AddMapsterConfiguration();
 
 var app = builder.Build();
 

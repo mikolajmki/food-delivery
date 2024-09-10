@@ -4,5 +4,6 @@ namespace Application.Abstractions.Repositories;
 
 public interface IOrderHeaderRepository : IGenericRepository<OrderHeader>
 {
-    Task<OrderHeader> GetOrderHeader();
+    Task<List<OrderHeader>> GetOrderHeadersOfAllUsers();
+    Task<List<OrderHeader>> GetOrderHeadersOfUser();
 }

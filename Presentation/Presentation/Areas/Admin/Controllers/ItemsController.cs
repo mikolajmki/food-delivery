@@ -1,138 +1,113 @@
-﻿using Application.Abstractions.Repositories;
-using food_delivery.ViewModels;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Application.Abstractions.Services;
+using Application.Models;
+using MapsterMapper;
+using Presentation.ApiModels;
+using Presentation.ViewModels;
 using System.Web.Mvc;
 
 namespace food_delivery.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    [Authorize(Roles = "Admin")]
+    [Microsoft.AspNetCore.Mvc.Area("Admin")]
+    [System.Web.Mvc.Authorize(Roles = "Admin")]
     public class ItemsController : Controller
     {
-        private readonly ItemService _itemRepository;
+        private readonly IItemService itemService;
+        private readonly ICategoryService categoryService;
+        private readonly ISubcategoryService subcategoryService;
+        private readonly IFileService fileService;
+        private readonly IMapper mapper;
 
-        public ItemsController(ItemService itemRepository)
+        public ItemsController(
+            IItemService itemService, 
+            ICategoryService categoryService, 
+            ISubcategoryService subcategoryService,
+            IMapper mapper
+        )
         {
-            _itemRepository = itemRepository;
+            this.itemService = itemService;
+            this.categoryService = categoryService;
+            this.subcategoryService = subcategoryService;
+            this.mapper = mapper;
         }
 
         [HttpGet]
-        public IActionResult Index()
+        public async Task<ViewResult> Index()
         {
-            _itemRepository.GetPopulated();
+            var items = await itemService.GetPopulated();
 
-            var items = _context.Items
-                .Include(x => x.Category)
-                .Include(y => y.Subcategory)
-                .Select(model => new ItemViewModel()
-                {
-                    Id = model.Id,
-                    Title = model.Title,
-                    Description = model.Description,
-                    Price = model.Price,
-                    CategoryId = model.CategoryId,
-                    SubcategoryId = model.SubcategoryId,
-                })
-                .ToList();
             return View(items);
         }
         [HttpGet]
-        public IActionResult Create()
+        public async Task<ActionResult> CreateAsync()
         {
-            ItemViewModel vm = new ItemViewModel();
-            ViewBag.Category = new SelectList(_context.Categories, "Id", "Title");
-            ViewBag.Subcategory = new SelectList(_context.Subcategories, "Id", "Title");
-            return View(vm);
+            var categories = await categoryService.GetAll();
+            var subcategories = await subcategoryService.GetAll();
+            ViewBag.Category = new SelectList(categories, "Id", "Title");
+            ViewBag.Subcategory = new SelectList(subcategories, "Id", "Title");
+
+            return View(new ItemViewModel());
         }
         [HttpGet]
-        public IActionResult GetSubcategory(ItemApiModel item)
+        public async Task<ActionResult> GetSubcategoryAsync(ItemViewModel item)
         {
-            ItemViewModel vm = new ItemViewModel()
-            {
-                Id = item.Id,
-                Title = item.Title,
-                Description = item.Description,
-                Price = item.Price,
-                CategoryId = item.CategoryId,
-            };
-            //var subcategory = _context.Subcategories.Where(x => x.CategoryId == id).ToJson();
-            ViewBag.Subcategory = new SelectList(_context.Subcategories.Where(x => x.CategoryId == item.CategoryId), "Id", "Title");
+            var subcategories = await subcategoryService.GetSubcategoriesOfCategoryId(item.CategoryId); 
+            ViewBag.Subcategory = new SelectList(subcategories, "Id", "Title");
             //return Json(subcategory);
-            return View("Create", vm);
+            return View("Create", item);
         }
         [HttpPost]
-        public async Task<IActionResult> Create(ItemViewModel vm)
+        public async Task<ActionResult> Create(ItemViewModel vm)
         {
-            ItemApiModel model = new ItemApiModel();
-            if (ModelState.IsValid)
+            if (vm.ImageUrl != null && vm.ImageUrl.Length > 0)
             {
-                if (vm.ImageUrl != null && vm.ImageUrl.Length > 0)
+                if (await fileService.SaveImage(vm.ImageUrl!))
                 {
-                    var uploadDir = @"Images/Items";
-                    var filename = Guid.NewGuid().ToString() + "-" + vm.ImageUrl.FileName;
-                    var path = Path.Combine(_webHostEnvironment.WebRootPath, uploadDir, filename);
-                    await vm.ImageUrl.CopyToAsync(new FileStream(path, FileMode.Create));
-                    model.Image = "/" + uploadDir + "/" + filename;
-                    
+                    var item = mapper.Map<ItemModel>(vm);
+                    await itemService.Create(item);
                 }
-                model.Id = vm.Id;
-                model.Title = vm.Title;
-                model.Price = vm.Price;
-                model.Description = vm.Description;
-                model.CategoryId = vm.CategoryId;
-                model.SubcategoryId = vm.SubcategoryId;
-                
-                _context.Items.Add(model);
-                _context.SaveChanges();
             }
             return RedirectToAction("Index");
         }
         [HttpGet]
-        public IActionResult Edit (int id)
+        public async Task<ActionResult> EditAsync(int id)
         {
-            var item = _context.Items.Where(x => x.Id == id).FirstOrDefault();
-            ItemViewModel vm = new ItemViewModel();
-            vm.Id = id;
-            vm.Title = item.Title;
-            vm.Description = item.Description;
-            vm.Price = item.Price;
-            vm.CategoryId = item.CategoryId;
-            vm.SubcategoryId = item.SubcategoryId;
+            var item = await itemService.GetById(id);
 
-            ViewBag.Category = new SelectList(_context.Categories, "Id", "Title");
-            ViewBag.Subcategory = new SelectList(_context.Subcategories, "Id", "Title");
+            var vm = mapper.Map<ItemViewModel>(item);
+
+            var categories = await categoryService.GetAll();
+            var subcategories = await subcategoryService.GetAll();
+
+            var categoryVMs = mapper.Map<List<CategoryViewModel>>(categories);
+            var subcategoryVMs = mapper.Map<List<SubcategoryViewModel>>(subcategories);
+
+            ViewBag.Category = new SelectList(categoryVMs, "Id", "Title");
+            ViewBag.Subcategory = new SelectList(subcategoryVMs, "Id", "Title");
 
             return View(vm);
         }
         [HttpPost]
-        public IActionResult Edit(ItemViewModel vm)
+        public async Task<ActionResult> EditAsync(ItemViewModel vm)
         {
-            ItemApiModel model = _context.Items.Where(x => x.Id == vm.Id).FirstOrDefault();
             if (ModelState.IsValid)
             {
-                model.Id = vm.Id;
-                model.Title = vm.Title;
-                model.Description = vm.Description;
-                model.Price = vm.Price;
-                model.CategoryId = vm.CategoryId;
-                model.SubcategoryId = vm.SubcategoryId;
+                var item = mapper.Map<ItemModel>(vm);
 
-                _context.Items.Update(model);
-                _context.SaveChanges();
-
-                return RedirectToAction("Index");
+                if (await itemService.Update(vm.Id, item))
+                {
+                    return RedirectToAction("Index");
+                }
             }
 
             return View(vm);
         }
         [HttpGet]
-        public IActionResult Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
-            var item = _context.Items.Where(x => x.Id == id).FirstOrDefault();
-            
-            _context.Remove(item);
-            _context.SaveChanges();
+            if (await itemService.Delete(id))
+            {
+                return View("Index");
+            }
 
             return RedirectToAction("Index");
         }

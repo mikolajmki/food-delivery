@@ -4,5 +4,5 @@ namespace Application.Abstractions.Repositories;
 
 public interface ISubcategoryRepository : IGenericRepository<Subcategory>
 {
-    Task<Subcategory> GetSubcategory();
+    Task<List<Subcategory>> GetSubcategoryOfCategoryId(int id);
 }

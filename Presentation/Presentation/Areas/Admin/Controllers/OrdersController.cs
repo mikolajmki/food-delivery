@@ -1,36 +1,34 @@
-﻿using food_delivery.Models;
-using food_delivery.Repository;
+﻿using Application.Abstractions.Services;
 using food_delivery.Utility;
-using food_delivery.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Abstractions;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
+using Presentation.ViewModels;
 using System.Security.Claims;
-using System.Security.Cryptography.X509Certificates;
+using System.Web.Mvc;
 
 namespace food_delivery.Areas.Admin.Controllers
 {
-    [Authorize]
+    [System.Web.Mvc.Authorize]
     [Area("Admin")]
     public class OrdersController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IOrderDetailsService _orderDetailsService;
+        private IOrderHeaderService _orderHeaderService;
 
-        public OrdersController(ApplicationDbContext context)
+        public OrdersController(
+            IOrderDetailsService orderDetailsService,
+            IOrderHeaderService orderHeaderService
+        )
         {
-            _context = context;
+            _orderDetailsService = orderDetailsService;
+            _orderHeaderService = orderHeaderService;
         }
 
         public IActionResult Index(string status)
         {
-            if (status == null) status = "all";
+            status ??= "all";
 
-            var claimsIdentity = (ClaimsIdentity)User.Identity;
-            var claims = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
-
-            IEnumerable<OrderHeaderApiModel> orders;
+            IEnumerable<OrderDetailsViewModel> orders;
 
             if (User.IsInRole("Admin"))
             {

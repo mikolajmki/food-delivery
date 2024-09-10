@@ -1,6 +1,6 @@
 ﻿using Application.Abstractions.Services;
 using Application.Models;
-using AutoMapper;
+using MapsterMapper;
 using Presentation.ViewModels;
 using System.Web.Mvc;
 
@@ -24,7 +24,7 @@ namespace food_delivery.Areas.Admin.Controllers
             var allCategories = await categoryService.GetAll();
 
             List<CategoryViewModel> categoryViewModel =
-                mapper.ProjectTo<CategoryViewModel>(allCategories).ToList();
+                mapper.Map<List<CategoryViewModel>>(allCategories);
 
             return View(categoryViewModel);
         }

@@ -1,10 +1,8 @@
 ﻿using Application.Abstractions;
 using Application.Abstractions.Repositories;
 using Application.Abstractions.Services;
-using Application.Models;
-using AutoMapper;
-using Domain.Models;
 using Domain.Models.Abstraction;
+using MapsterMapper;
 
 namespace Application.Services;
 
@@ -17,10 +15,7 @@ public class GenericService<TModel, TEntity> : IGenericService<TModel>
 
     public GenericService(IGenericRepository<TEntity> repository)
     {
-        var configuration = CreateMapperConfiguration();
-
         _repository = repository;
-        _mapper = configuration.CreateMapper();
     }
 
     public async Task<bool> Create(TModel model)
@@ -55,20 +50,5 @@ public class GenericService<TModel, TEntity> : IGenericService<TModel>
         var entity = _mapper.Map<TEntity>(model);
         await _repository.Update(id, entity);
         return true;
-    }
-
-    private static MapperConfiguration CreateMapperConfiguration()
-    {
-        return new MapperConfiguration(config =>
-        {
-            config.CreateMap<Category, CategoryModel>();
-            config.CreateMap<Item, ItemModel>();
-            config.CreateMap<Subcategory, SubcategoryModel>();
-            config.CreateMap<Review, ReviewModel>();
-            config.CreateMap<Cart, CartModel>();
-            config.CreateMap<Coupon, CouponModel>();
-            config.CreateMap<OrderDetails, OrderDetailsModel>();
-            config.CreateMap<OrderHeader, OrderHeaderModel>();
-        });
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Application.Abstractions.Repositories;
 using Domain.Models;
 using food_delivery.Repository;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repository;
 
@@ -13,8 +14,11 @@ public class ItemRepository : GenericRepository<Item>, IItemRepository
         throw new NotImplementedException();
     }
 
-    public void GetPopulated()
+    public async Task<List<Item>> GetPopulated()
     {
-        throw new NotImplementedException();
+        return await _context.Items
+            .Include(x => x.Category)
+            .Include(x => x.Subcategory)
+            .ToListAsync();
     }
 }
