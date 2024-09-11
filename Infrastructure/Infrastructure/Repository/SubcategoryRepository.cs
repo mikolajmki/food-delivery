@@ -14,7 +14,25 @@ internal class SubcategoryRepository : GenericRepository<Subcategory>, ISubcateg
         _context = context;
     }
 
-    public async Task<List<Subcategory>> GetSubcategoryOfCategoryId(int id)
+    public async Task<List<Subcategory>> GetAllIncludeCategory()
+    {
+        var subcategory = await _context.Subcategories
+            .Include(x => x.Category)
+            .ToListAsync();
+
+        return subcategory;
+    }
+
+    public async Task<Subcategory> GetFirstSubcategoryOfCategoryId(int id)
+    {
+        var subcategory = await _context.Subcategories
+            .Where(x => x.CategoryId == id)
+            .FirstAsync();
+
+        return subcategory;
+    }
+
+    public async Task<List<Subcategory>> GetSubcategoriesOfCategoryId(int id)
     {
         var subcategories = await _context.Subcategories
             .Where(x => x.CategoryId == id)

@@ -1,4 +1,4 @@
-﻿using Application.Models;
+﻿using Application.Models.ApplicationModels;
 using Application.Models.Queries;
 using Domain.Models;
 using System.Security.Principal;

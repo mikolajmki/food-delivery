@@ -1,71 +1,68 @@
-﻿using food_delivery.Models;
-using food_delivery.Repository;
-using food_delivery.ViewModels;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System.Security.Claims;
+﻿using Application.Abstractions.Services;
+using Application.Models.ApplicationModels;
+using MapsterMapper;
+using Presentation.ApiModels;
+using System.Web.Mvc;
+using AuthorizeAttribute = System.Web.Mvc.AuthorizeAttribute;
+using HttpGetAttribute = System.Web.Mvc.HttpGetAttribute;
+using HttpPostAttribute = System.Web.Mvc.HttpPostAttribute;
 
 namespace food_delivery.Areas.Admin.Controllers
 {
     [Authorize]
-    [Area("Admin")]
+    [RouteArea("Admin")]
     public class ReviewsController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IReviewService _reviewService;
+        private readonly IMapper _mapper;
 
-        public ReviewsController(ApplicationDbContext context)
+        public ReviewsController(IReviewService reviewService, IMapper mapper)
         {
-            _context = context;
+            _reviewService = reviewService;
+            _mapper = mapper;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<ViewResult> Index()
         {
-            var claimsIdentity = (ClaimsIdentity)User.Identity;
-            var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
-
-            List<ReviewApiModel> reviews;
+            List<ReviewModel> list;
 
             if (User.IsInRole("Admin")) 
             {
-                reviews = _context.Reviews.Include(x => x.Item).Include(x => x.ApplicationUser).ToList();
+                list = await _reviewService.GetReviewsOfAllUsers();
             } else
             {
-                reviews = _context.Reviews.Where(x => x.ApplicationUserId == claim.Value).Include(x => x.Item).ToList();
+                list = await _reviewService.GetReviewsOfUser(User.Identity!);
             }
 
-            reviews = reviews.OrderByDescending(x => x.CreatedDate).ToList();
+            var reviews = _mapper.Map<List<ReviewApiModel>>(list);
 
             return View(reviews);
         }
 
-        public IActionResult Details(int id)
+        public async Task<ViewResult> Details(int id)
         {
-            ReviewApiModel review;
+            ReviewApiModel model;
 
             if (User.IsInRole("Admin"))
             {
-                 review = _context.Reviews.Include(x => x.Item).Include(x => x.ApplicationUser).FirstOrDefault(x => x.Id == id);
+                model = await _reviewService.GetReviewDetailsIncludeUser(id);
             } else
             {
-                review = _context.Reviews.Include(x => x.Item).FirstOrDefault(x => x.Id == id);
+                model = await _reviewService.GetReviewDetailsIncludeUser(id);
             }
+
+            var review = _mapper.Map<ReviewApiModel>(model);
 
             return View(review);
         }
 
         [HttpPost]
-        public IActionResult Edit (ReviewApiModel review)
+        public async Task<RedirectToRouteResult> EditAsync (ReviewApiModel review)
         {
-            ReviewApiModel model = _context.Reviews.FirstOrDefault(x => x.Id == review.Id);
-
             if (ModelState.IsValid)
             {
-                model.Comment = review.Comment;
-                model.Rating = review.Rating;
-
-                _context.Update(model);
-                _context.SaveChanges();
+                var model = _mapper.Map<ReviewModel>(review);
+                await _reviewService.Update(model.Id, model);
 
                 return RedirectToAction("Index");
             }
@@ -73,11 +70,9 @@ namespace food_delivery.Areas.Admin.Controllers
         }
 
         [HttpGet]
-        public IActionResult Delete(int id) 
+        public async Task<RedirectToRouteResult> Delete(int id) 
         {
-            var review = _context.Reviews.Where(x => x.Id == id).FirstOrDefault();
-            _context.Remove(review);
-            _context.SaveChanges();
+            await _reviewService.Delete(id);
 
             return RedirectToAction("Index");
         }

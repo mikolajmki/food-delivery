@@ -1,8 +1,9 @@
-﻿using Application.Models;
+﻿using Application.Models.ReadModels;
 
 namespace Application.Abstractions.Services;
 
-public interface IOrderDetailsService : IGenericService<OrderDetailsReadModel>
+public interface IOrderDetailsService
 {
-    Task<OrderDetailsReadModel> GetOrderDetails(int orderHeaderId);
+    Task<OrderDetailsReadModel> GetOrderDetailsByOrderHeaderId(int orderHeaderId);
+    Task<bool> DeleteOrderDetailsOfOrderHeaderId(int orderHeaderId);
 }

@@ -1,6 +1,6 @@
-﻿namespace Application.Models;
+﻿namespace Application.Models.ApplicationModels;
 
-public class ReviewModel: BaseEntityModel
+public class ReviewModel : BaseEntityModel
 {
     public int ItemId { get; set; } = 0;
     public string Comment { get; set; }

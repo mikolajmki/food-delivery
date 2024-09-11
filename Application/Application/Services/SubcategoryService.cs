@@ -1,6 +1,6 @@
 ﻿using Application.Abstractions.Repositories;
 using Application.Abstractions.Services;
-using Application.Models;
+using Application.Models.ApplicationModels;
 using Domain.Models;
 using MapsterMapper;
 
@@ -19,9 +19,25 @@ internal class SubcategoryService : GenericService<SubcategoryModel, Subcategory
         _subcategoryRepository = subcategoryRepository;
     }
 
+    public async Task<List<SubcategoryModel>> GetAllIncludeCategory()
+    {
+        var list = await _subcategoryRepository.GetAllIncludeCategory();
+        var subcategories = _mapper.Map<List<SubcategoryModel>>(list);
+
+        return subcategories;
+    }
+
+    public async Task<SubcategoryModel> GetFirstSubcategoryOfCategoryId(int id)
+    {
+        var entity = await _subcategoryRepository.GetFirstSubcategoryOfCategoryId(id);
+        var subcategory = _mapper.Map<SubcategoryModel>(entity);
+
+        return subcategory;
+    }
+
     public async Task<List<SubcategoryModel>> GetSubcategoriesOfCategoryId(int id)
     {
-        var list = await _subcategoryRepository.GetSubcategoryOfCategoryId(id);
+        var list = await _subcategoryRepository.GetSubcategoriesOfCategoryId(id);
         var subcategories = _mapper.Map<List<SubcategoryModel>>(list);
 
         return subcategories;

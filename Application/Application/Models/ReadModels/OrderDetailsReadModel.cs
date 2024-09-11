@@ -1,4 +1,6 @@
-﻿namespace Application.Models.ReadModels;
+﻿using Application.Models.ApplicationModels;
+
+namespace Application.Models.ReadModels;
 
 public class OrderDetailsReadModel : BaseEntityModel
 {

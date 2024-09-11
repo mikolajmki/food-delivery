@@ -1,6 +1,6 @@
-﻿namespace Application.Models;
+﻿namespace Application.Models.ApplicationModels;
 
-public class OrderHeaderModel: BaseEntityModel
+public class OrderHeaderModel : BaseEntityModel
 {
     public double? SubTotal { get; set; }
     public double OrderTotal { get; set; }

@@ -5,4 +5,5 @@ namespace Application.Abstractions.Repositories;
 public interface IOrderDetailsRepository : IGenericRepository<OrderDetails>
 {
     Task<List<OrderDetails>> GetOrderDetailsOfOrderHeader(int id);
+    Task<bool> DeleteOrderDetailsOfOrderHeaderId(int id);
 }

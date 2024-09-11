@@ -1,98 +1,93 @@
-﻿using food_delivery.Models;
-using food_delivery.Repository;
-using food_delivery.ViewModels;
-using Microsoft.AspNetCore.Authorization;
+﻿using Application.Abstractions.Services;
+using Application.Models.ApplicationModels;
+using MapsterMapper;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
+using Presentation.ViewModels;
+using System.Web.Mvc;
+using HttpGetAttribute = System.Web.Mvc.HttpGetAttribute;
+using HttpPostAttribute = System.Web.Mvc.HttpPostAttribute;
+using RedirectToRouteResult = System.Web.Mvc.RedirectToRouteResult;
 
 namespace food_delivery.Areas.Admin.Controllers
 {
-    [Area("Admin")]
+    [RouteArea("Admin")]
     [Authorize(Roles = "Admin")]
     public class SubcategoriesController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly ISubcategoryService _subcategoryService;
+        private readonly ICategoryService _categoryService;
+        private readonly IMapper _mapper;
 
-        public SubcategoriesController(ApplicationDbContext context)
+        public SubcategoriesController(
+            ISubcategoryService subcategoryService, 
+            IMapper mapper, 
+            ICategoryService categoryService
+        )
         {
-            _context = context;
+            _subcategoryService = subcategoryService;
+            _mapper = mapper;
+            _categoryService = categoryService;
+        }
+
+        [HttpGet]
+        public async Task<ViewResult> IndexAsync()
+        {
+            var subcategories = await _subcategoryService.GetAllIncludeCategory();
+
+            return View(subcategories);
         }
         [HttpGet]
-        public IActionResult Index()
+        public async Task<ViewResult> Create()
         {
-            var subcategory = _context.Subcategories
-                .Include(x => x.Category)
-                .ToList();
+            var list = await _categoryService.GetAll();
+            var categoryVMs = _mapper.Map<List<CategoryViewModel>>(list);
 
-            return View(subcategory);
+            ViewBag.Category = new SelectList(categoryVMs, "Id", "Title");
+
+            return View(categoryVMs);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Create(SubcategoryViewModel vm)
+        {
+            if (ModelState.IsValid)
+            {
+                var subcategory = _mapper.Map<SubcategoryModel>(vm);
+
+                await _subcategoryService.Create(subcategory);
+                return (IActionResult)RedirectToAction("Index");
+            }
+            return (IActionResult)View(vm);
         }
         [HttpGet]
-        public IActionResult Create()
+        public async Task<ViewResult> Edit(int id)
         {
-            SubcategoryViewModel vm = new SubcategoryViewModel();
+            var subcategory = await _subcategoryService.GetFirstSubcategoryOfCategoryId(id);
+            var categories = await _categoryService.GetAll();
 
-            ViewBag.Category = new SelectList(_context.Categories, "Id", "Title");
+            var vm = new SubcategoryViewModel
+            {
+                Id = subcategory.Id,
+                Title = subcategory.Title,
+            };
+
+            ViewBag.category = new SelectList(categories, "Id", "Title", subcategory.CategoryId);
 
             return View(vm);
         }
         [HttpPost]
-        public IActionResult Create(SubcategoryViewModel vm)
+        public async Task<ViewResult> Edit(SubcategoryViewModel vm)
         {
-            SubcategoryApiModel model = new SubcategoryApiModel();
-            if (ModelState.IsValid)
-            {
-                model.Title = vm.Title;
-                model.CategoryId = vm.CategoryId;
+            var subcategory = _mapper.Map<SubcategoryModel>(vm);
 
-                _context.Subcategories.Add(model);
-                _context.SaveChanges();
-                return RedirectToAction("Index");
-            }
+            await _subcategoryService.Update(subcategory.Id, subcategory);
+
             return View(vm);
         }
         [HttpGet]
-        public IActionResult Edit(int id)
+        public async Task<RedirectToRouteResult> Delete(int id)
         {
-            SubcategoryViewModel vm = new SubcategoryViewModel();
-            var subcategory = _context.Subcategories
-                .Where(x => x.CategoryId == id)
-                .FirstOrDefault();
-            if (subcategory != null)
-            {
-                vm.Id = subcategory.Id;
-                vm.Title = subcategory.Title;
-                ViewBag.category = new SelectList(_context.Categories, "Id", "Title", subcategory.CategoryId);
-            }
+            await _subcategoryService.Delete(id);
 
-            return View(vm);
-        }
-        [HttpPost]
-        public IActionResult Edit(SubcategoryViewModel vm)
-        {
-            SubcategoryApiModel model = _context.Subcategories.Where(x => x.Id == vm.Id).FirstOrDefault();
-            if (ModelState.IsValid)
-            {
-                model.Title = vm.Title;
-                model.CategoryId = vm.CategoryId;
-
-                _context.Subcategories.Update(model);
-                _context.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            return View(vm);
-        }
-        [HttpGet]
-        public IActionResult Delete(int id)
-        {
-            var subcategory = _context.Subcategories
-                .Where(x => x.Id == id)
-                .FirstOrDefault();
-            if (subcategory != null)
-            {
-                _context.Subcategories.Remove(subcategory);
-                _context.SaveChanges();
-            }
             return RedirectToAction("Index");
         }
     }
