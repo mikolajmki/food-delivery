@@ -1,4 +1,4 @@
-﻿namespace Presentation.Configuration;
+﻿namespace Application.Models.ApplicationModels;
 
 public class ItemReviewsModel
 {

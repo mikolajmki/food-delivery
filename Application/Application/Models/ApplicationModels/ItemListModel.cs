@@ -1,6 +1,4 @@
-﻿using Application.Models;
-
-namespace Presentation.Configuration;
+﻿namespace Application.Models.ApplicationModels;
 
 public class ItemListModel
 {

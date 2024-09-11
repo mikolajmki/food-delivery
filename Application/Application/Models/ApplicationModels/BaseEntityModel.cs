@@ -1,6 +1,6 @@
 ﻿using Application.Abstractions;
 
-namespace Application.Models;
+namespace Application.Models.ApplicationModels;
 
 public class BaseEntityModel : IBaseEntityModel
 {

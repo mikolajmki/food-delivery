@@ -1,7 +1,7 @@
 ﻿using Application.Abstractions;
 using Application.Abstractions.Repositories;
 using Application.Abstractions.Services;
-using Application.Models;
+using Application.Models.ApplicationModels;
 using Application.Models.ReadModels;
 using Domain.Models;
 using MapsterMapper;
@@ -29,7 +29,15 @@ internal class OrderDetailsService : GenericService<OrderDetailsReadModel, Order
         _reviewRepository = reviewRepository;
     }
 
-    public async Task<OrderDetailsReadModel> GetOrderDetails(int orderHeaderId)
+    public async Task<bool> DeleteOrderDetailsOfOrderHeaderId(int orderHeaderId)
+    {
+        await _orderDetailsRepository.DeleteOrderDetailsOfOrderHeaderId(orderHeaderId);
+        await _orderHeaderRepository.Delete(orderHeaderId).ConfigureAwait(false);
+
+        return true;
+    }
+
+    public async Task<OrderDetailsReadModel> GetOrderDetailsByOrderHeaderId(int orderHeaderId)
     {
         var orderHeader = await _orderHeaderRepository.GetOrderHeaderByIdIncludeUser(orderHeaderId);
         var orderDetails = await _orderDetailsRepository.GetOrderDetailsOfOrderHeader(orderHeaderId);

@@ -1,5 +1,5 @@
 ﻿using Application.Abstractions.Services;
-using Application.Models;
+using Application.Models.ApplicationModels;
 using Application.Models.Options;
 using Application.Models.Queries;
 using MapsterMapper;
@@ -10,6 +10,7 @@ using System.Security.Claims;
 using System.Web.Mvc;
 using ActionResult = System.Web.Mvc.ActionResult;
 using HttpGetAttribute = System.Web.Mvc.HttpGetAttribute;
+using HttpPostAttribute = System.Web.Mvc.HttpPostAttribute;
 
 namespace food_delivery.Areas.Admin.Controllers
 {
@@ -19,15 +20,17 @@ namespace food_delivery.Areas.Admin.Controllers
     {
         private readonly IOrderDetailsService _orderDetailsService;
         private readonly IOrderHeaderService _orderHeaderService;
+        private readonly IReviewService _reviewService;
         private readonly IMapper _mapper;
 
         public OrdersController(
             IOrderDetailsService orderDetailsService,
-            IOrderHeaderService orderHeaderService
-        )
+            IOrderHeaderService orderHeaderService,
+            IReviewService reviewService)
         {
             _orderDetailsService = orderDetailsService;
             _orderHeaderService = orderHeaderService;
+            _reviewService = reviewService;
         }
 
         public async Task<ActionResult> IndexAsync(OrderHeaderOrderByApiOptions options)
@@ -72,19 +75,11 @@ namespace food_delivery.Areas.Admin.Controllers
             return View(vm);
         }
         [HttpPost]
-        public IActionResult Review(ReviewApiModel newReview) 
+        public async Task<ActionResult> Review(ReviewApiModel review) 
         {
-            var claimsIdentity = (ClaimsIdentity)User.Identity;
-            var claims = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+            var model = _mapper.Map<ReviewModel>(review);
 
-            var d = DateTime.Now;
-            var date = new DateTime(d.Year, d.Month, d.Day, d.Hour, d.Minute, d.Second);
-
-            newReview.ApplicationUserId = claims.Value;
-            newReview.CreatedDate = date;
-
-            _context.Reviews.Add(newReview);
-            _context.SaveChanges();
+            await _reviewService.CreateReview(model, User.Identity!);
 
             return RedirectToAction("Index", "Reviews");
         }
@@ -92,28 +87,17 @@ namespace food_delivery.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult OrderDetails(OrderDetailsViewModel vm)
         {
+            var orderHeader = _mapper.Map<OrderHeaderModel>(vm.OrderHeader);
 
-            OrderDetailsApiModel orderDetails = _context.OrderDetails.Include(x => x.OrderHeader).Where(x => x.OrderHeader.Id == vm.OrderHeader.Id).FirstOrDefault();
-
-            orderDetails.OrderHeader.PaymentStatus = vm.OrderHeader.PaymentStatus;
-            orderDetails.OrderHeader.OrderStatus = vm.OrderHeader.OrderStatus;
-
-            _context.Update(orderDetails);
-            _context.SaveChanges();
+            _orderHeaderService.Update(orderHeader.Id, orderHeader);
 
             return RedirectToAction("Index");
         }
 
         [HttpGet]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> DeleteAsync(int id)
         {
-            OrderHeaderApiModel orderHeader = _context.OrderHeaders.Where(x => x.Id == id).FirstOrDefault();
-
-            List<OrderDetailsApiModel> orderDetails = _context.OrderDetails.Where(x => x.OrderHeaderId == id).ToList();
-
-            _context.Remove(orderHeader);
-
-            _context.SaveChanges();
+            await _orderDetailsService.DeleteOrderDetailsOfOrderHeaderId(id);
 
             return RedirectToAction("Index");
         }

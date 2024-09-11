@@ -14,6 +14,17 @@ internal class OrderDetailsRepository : GenericRepository<OrderDetails>, IOrderD
         _context = context;
     }
 
+    public async Task<bool> DeleteOrderDetailsOfOrderHeaderId(int id)
+    {
+        var list = await _context.OrderDetails
+            .Where(x => x.OrderHeaderId == id)
+            .ToListAsync();
+
+        _context.OrderDetails.RemoveRange(list);
+
+        return true;
+    }
+
     public async Task<List<OrderDetails>> GetOrderDetailsOfOrderHeader(int id)
     {
         var list = await _context.OrderDetails

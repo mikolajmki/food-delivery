@@ -1,8 +1,10 @@
-﻿using Domain.Models;
+﻿using Application.Models.ApplicationModels;
+using System.Security.Principal;
 
 namespace Application.Abstractions.Services;
 
-public interface IApplicationUserService : IGenericService<ApplicationUser>
+public interface IApplicationUserService : IGenericService<ApplicationUserModel>
 {
-    public ApplicationUser GetApplicationUser(int id);
+    Task<List<ApplicationUserModel>> GetAllWithTotalCounts(IIdentity identity);
+    public ApplicationUserModel GetApplicationUser(int id);
 }

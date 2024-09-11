@@ -1,39 +1,28 @@
-﻿using food_delivery.Repository;
-using food_delivery.ViewModels;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using System.Security.Claims;
+﻿using Application.Abstractions.Services;
+using MapsterMapper;
+using Presentation.ViewModels;
+using System.Web.Mvc;
 
 namespace food_delivery.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    [Authorize(Roles = "Admin")]
-    public class UsersController : Controller
+    [RouteArea("Admin")]
+    [System.Web.Mvc.Authorize(Roles = "Admin")]
+    public class UsersController : System.Web.Mvc.Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IApplicationUserService _userService;
+        private readonly IMapper _mapper;
 
-        public UsersController(ApplicationDbContext context)
+        public UsersController(IApplicationUserService userService, IMapper mapper)
         {
-            _context = context;
+            _userService = userService;
+            _mapper = mapper;
         }
+
         [HttpGet]
-        public IActionResult Index()
+        public async Task<ViewResult> Index()
         {
-            var claimsIdentity = (ClaimsIdentity)this.User.Identity;
-            var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
-            var users = _context.ApplicationUsers
-                .Where(x => x.Id != claim.Value)
-                .Select(model => new UserViewModel()
-                {
-                    Name = model.Name,
-                    City = model.City,
-                    Address = model.Address,
-                    Email = model.Email,
-                    PostalCode = model.PostalCode,
-                    TotalOrders = _context.OrderHeaders.Where(x => x.ApplicationUserId == model.Id).Count(),
-                    TotalReviews = _context.Reviews.Where(x => x.ApplicationUserId == model.Id).Count()
-                })
-                .ToList();
+            var list = await _userService.GetAllWithTotalCounts(User.Identity!);
+            var users = _mapper.Map<List<UserViewModel>>(list);
 
             return View(users);
         }

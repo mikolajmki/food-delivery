@@ -1,6 +1,6 @@
 ﻿using Application.Abstractions.Repositories;
 using Application.Abstractions.Services;
-using Application.Models;
+using Application.Models.ApplicationModels;
 using Domain.Models;
 using MapsterMapper;
 

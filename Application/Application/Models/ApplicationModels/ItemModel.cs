@@ -1,6 +1,6 @@
-﻿namespace Application.Models;
+﻿namespace Application.Models.ApplicationModels;
 
-public class ItemModel: BaseEntityModel
+public class ItemModel : BaseEntityModel
 {
     public int Id { get; set; }
     public int CategoryId { get; set; }

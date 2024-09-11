@@ -1,5 +1,5 @@
 ﻿using Application.Abstractions.Services;
-using Application.Models;
+using Application.Models.ApplicationModels;
 using MapsterMapper;
 using Presentation.ApiModels;
 using Presentation.ViewModels;
