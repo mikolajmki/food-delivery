@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Infrastructure.csproj": {}
+    "C:\\Users\\mikol\\source\\repos\\food-delivery\\Infrastructure\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\sii\\food-delivery\\Application\\Application\\Application.csproj": {
+    "C:\\Users\\mikol\\source\\repos\\food-delivery\\Application\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\sii\\food-delivery\\Application\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\mikol\\source\\repos\\food-delivery\\Application\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\sii\\food-delivery\\Application\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\mmarcinkowski1\\.nuget\\packages\\",
-        "outputPath": "C:\\sii\\food-delivery\\Application\\Application\\obj\\",
+        "projectPath": "C:\\Users\\mikol\\source\\repos\\food-delivery\\Application\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\mikol\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mikol\\source\\repos\\food-delivery\\Application\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mmarcinkowski1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mikol\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,15 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\sii\\food-delivery\\Domain\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\sii\\food-delivery\\Domain\\Domain\\Domain.csproj"
+              "C:\\Users\\mikol\\source\\repos\\food-delivery\\Domain\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\mikol\\source\\repos\\food-delivery\\Domain\\Domain\\Domain.csproj"
               }
             }
           }
@@ -85,21 +84,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\sii\\food-delivery\\Domain\\Domain\\Domain.csproj": {
+    "C:\\Users\\mikol\\source\\repos\\food-delivery\\Domain\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\sii\\food-delivery\\Domain\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\mikol\\source\\repos\\food-delivery\\Domain\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\sii\\food-delivery\\Domain\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\mmarcinkowski1\\.nuget\\packages\\",
-        "outputPath": "C:\\sii\\food-delivery\\Domain\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\mikol\\source\\repos\\food-delivery\\Domain\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\mikol\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mikol\\source\\repos\\food-delivery\\Domain\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mmarcinkowski1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mikol\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -107,7 +106,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -166,21 +164,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\mikol\\source\\repos\\food-delivery\\Infrastructure\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\mikol\\source\\repos\\food-delivery\\Infrastructure\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\mmarcinkowski1\\.nuget\\packages\\",
-        "outputPath": "C:\\sii\\food-delivery\\Infrastructure\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\mikol\\source\\repos\\food-delivery\\Infrastructure\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\mikol\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mikol\\source\\repos\\food-delivery\\Infrastructure\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mmarcinkowski1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mikol\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -188,15 +186,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\sii\\food-delivery\\Application\\Application\\Application.csproj": {
-                "projectPath": "C:\\sii\\food-delivery\\Application\\Application\\Application.csproj"
+              "C:\\Users\\mikol\\source\\repos\\food-delivery\\Application\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\mikol\\source\\repos\\food-delivery\\Application\\Application\\Application.csproj"
               }
             }
           }
@@ -251,7 +248,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     }

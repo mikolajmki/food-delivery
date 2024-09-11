@@ -1,70 +1,47 @@
-﻿using food_delivery.Models;
-using food_delivery.Repository;
+﻿using Application.Abstractions.Services;
 using food_delivery.Utility;
-using food_delivery.ViewModels;
+using MapsterMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+using Presentation.ApiModels;
+using Presentation.ViewModels;
 using System.Security.Claims;
+using System.Web.Mvc;
 
 namespace food_delivery.Areas.Customer.Controllers
 {
     [Area("Customer")]
     public class CartController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly ICartService _cartService;
+        private readonly IMapper _mapper;
         [BindProperty]
         public CartOrderViewModel details { get; set; }
         public OrderDetailsViewModel orderDetails { get; set; }
-        public CartController(ApplicationDbContext context)
-        {
-            _context = context;
-        }
-        [Authorize]
-        public IActionResult Index()
-        {
-            details = new CartOrderViewModel()
-            {
-                OrderHeader = new Models.OrderHeaderApiModel(),
-            };
-            var claimsIdentity = (ClaimsIdentity)User.Identity;
-            var claims = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
-            
-            details.ListOfCart = _context.Carts.Where(x => x.ApplicationUserId == claims.Value).Include(x => x.Item).ToList();
 
-            if (details.ListOfCart != null)
-            {
-                foreach (var cart in details.ListOfCart)
-                {
-                    details.OrderHeader.OrderTotal += cart.Item.Price * cart.Count;
-                }
-                return View(details);
-            }
-            return RedirectToAction("Index", "Home");
+        public CartController(ICartService cartService, IMapper mapper)
+        {
+            _cartService = cartService;
+            _mapper = mapper;
         }
 
-        public IActionResult Summary()
+        [System.Web.Mvc.Authorize]
+        public async Task<ViewResult> Index()
         {
-            var claimsIdentity = (ClaimsIdentity)User.Identity;
-            var claims = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
 
-            details = new CartOrderViewModel()
-            {
-                ListOfCart = _context.Carts.Include(x => x.Item).Where(x => x.ApplicationUserId == claims.Value).ToList(),
-                OrderHeader = new Models.OrderHeaderApiModel(),
-            };
+            var cartOrderReadModel = await _cartService.GetCartOfUserIncludeItemsAndOrderTotal(User.Identity!);
 
-            details.OrderHeader.ApplicationUser = _context.ApplicationUsers.Where(x => x.Id == claims.Value).FirstOrDefault();
-            details.OrderHeader.Name = details.OrderHeader.ApplicationUser.Name;
-            details.OrderHeader.Phone = details.OrderHeader.ApplicationUser.PhoneNumber;
-            details.OrderHeader.TimeOfPick = DateTime.Now;
+            var cartOrderViewModel = _mapper.Map<CartOrderViewModel>(cartOrderReadModel);
+    
+            return View(cartOrderViewModel);
+        }
 
-            foreach (var cart in details.ListOfCart)
-            {
-                details.OrderHeader.OrderTotal += (cart.Item.Price) * cart.Count;
-            }
+        public async Task<ViewResult> SummaryAsync()
+        {
+            var cartOrderReadModel = await _cartService.GetSummary(User.Identity!);
+            var cartOrderViewModel = _mapper.Map<CartOrderViewModel>(cartOrderReadModel);
 
-            return View(details);
+            return View(cartOrderViewModel);
         }
 
         [HttpPost]
