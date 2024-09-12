@@ -1,13 +1,14 @@
 ﻿using Application.Abstractions.Services;
 using MapsterMapper;
 using Presentation.ViewModels;
-using System.Web.Mvc;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
-namespace food_delivery.Areas.Admin.Controllers
+namespace Presentation.Areas.Admin.Controllers
 {
-    [RouteArea("Admin")]
-    [System.Web.Mvc.Authorize(Roles = "Admin")]
-    public class UsersController : System.Web.Mvc.Controller
+    [Area("Admin")]
+    [Authorize(Roles = "Admin")]
+    public class UsersController : Controller
     {
         private readonly IApplicationUserService _userService;
         private readonly IMapper _mapper;
@@ -19,7 +20,7 @@ namespace food_delivery.Areas.Admin.Controllers
         }
 
         [HttpGet]
-        public async Task<ViewResult> Index()
+        public async Task<IActionResult> Index()
         {
             var list = await _userService.GetAllWithTotalCounts(User.Identity!);
             var users = _mapper.Map<List<UserViewModel>>(list);

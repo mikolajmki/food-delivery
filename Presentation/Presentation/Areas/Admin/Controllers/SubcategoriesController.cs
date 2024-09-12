@@ -1,19 +1,16 @@
 ﻿using Application.Abstractions.Services;
 using Application.Models.ApplicationModels;
 using MapsterMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Presentation.ViewModels;
-using System.Web.Mvc;
-using HttpGetAttribute = System.Web.Mvc.HttpGetAttribute;
-using HttpPostAttribute = System.Web.Mvc.HttpPostAttribute;
-using RedirectToRouteResult = System.Web.Mvc.RedirectToRouteResult;
-using ViewResult = System.Web.Mvc.ViewResult;
 
-namespace food_delivery.Areas.Admin.Controllers
+namespace Presentation.Areas.Admin.Controllers
 {
-    [RouteArea("Admin")]
+    [Area("Admin")]
     [Authorize(Roles = "Admin")]
-    public class SubcategoriesController : System.Web.Mvc.Controller
+    public class SubcategoriesController : Controller
     {
         private readonly ISubcategoryService _subcategoryService;
         private readonly ICategoryService _categoryService;
@@ -31,14 +28,14 @@ namespace food_delivery.Areas.Admin.Controllers
         }
 
         [HttpGet]
-        public async Task<ViewResult> IndexAsync()
+        public async Task<IActionResult> IndexAsync()
         {
             var subcategories = await _subcategoryService.GetAllIncludeCategory();
 
             return View(subcategories);
         }
         [HttpGet]
-        public async Task<ViewResult> Create()
+        public async Task<IActionResult> Create()
         {
             var list = await _categoryService.GetAll();
             var categoryVMs = _mapper.Map<List<CategoryViewModel>>(list);
@@ -60,7 +57,7 @@ namespace food_delivery.Areas.Admin.Controllers
             return (IActionResult)View(vm);
         }
         [HttpGet]
-        public async Task<ViewResult> Edit(int id)
+        public async Task<IActionResult> Edit(int id)
         {
             var subcategory = await _subcategoryService.GetFirstSubcategoryOfCategoryId(id);
             var categories = await _categoryService.GetAll();
@@ -76,7 +73,7 @@ namespace food_delivery.Areas.Admin.Controllers
             return View(vm);
         }
         [HttpPost]
-        public async Task<ViewResult> Edit(SubcategoryViewModel vm)
+        public async Task<IActionResult> Edit(SubcategoryViewModel vm)
         {
             var subcategory = _mapper.Map<SubcategoryModel>(vm);
 
@@ -85,7 +82,7 @@ namespace food_delivery.Areas.Admin.Controllers
             return View(vm);
         }
         [HttpGet]
-        public async Task<RedirectToRouteResult> Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
             await _subcategoryService.Delete(id);
 

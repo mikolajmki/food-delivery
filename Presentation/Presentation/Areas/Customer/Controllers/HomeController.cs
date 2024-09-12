@@ -4,6 +4,7 @@ using MapsterMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Presentation.ApiModels;
 using Presentation.ViewModels;
 
@@ -16,13 +17,15 @@ namespace Presentation.Areas.Customer.Controllers
         private readonly IMapper _mapper;
         private readonly IReviewService _reviewService;
         private readonly ICartService _cartService;
+        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(IItemService itemService, IMapper mapper, IReviewService reviewService, ICartService cartService)
+        public HomeController(IItemService itemService, IMapper mapper, IReviewService reviewService, ICartService cartService, ILogger<HomeController> logger)
         {
             _itemService = itemService;
             _mapper = mapper;
             _reviewService = reviewService;
             _cartService = cartService;
+            _logger = logger;
         }
 
         public async Task<IActionResult> Index()
@@ -30,6 +33,8 @@ namespace Presentation.Areas.Customer.Controllers
 
             var  itemListReadModel = await _itemService.GetItemList();
             var itemListViewModel = _mapper.Map<ItemListViewModel>(itemListReadModel);
+
+            _logger.LogInformation("Categories count " + itemListReadModel.Categories.Count.ToString());
 
             return View(itemListViewModel);
         }

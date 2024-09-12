@@ -4,11 +4,12 @@ using MapsterMapper;
 using Microsoft.AspNetCore.Http;
 using Presentation.ApiModels;
 using Presentation.ViewModels;
-using System.Web.Mvc;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
-namespace food_delivery.Areas.Admin.Controllers
+namespace Presentation.Areas.Admin.Controllers
 {
-    [RouteArea("Admin")]
+    [Area("Admin")]
     [Authorize(Roles = "Admin")]
     public class CouponsController : Controller
     {
@@ -22,18 +23,18 @@ namespace food_delivery.Areas.Admin.Controllers
         }
 
         [HttpGet]
-        public ActionResult Index()
+        public IActionResult Index()
         {
             var coupons = couponService.GetAll();
             return View(coupons);
         }
         [HttpGet]
-        public ViewResult Create()
+        public IActionResult Create()
         {
             return View();
         }
         [HttpPost]
-        public async Task<ActionResult> Create(CouponViewModel vm, IFormFile file)
+        public async Task<IActionResult> Create(CouponViewModel vm, IFormFile file)
         {
             if (ModelState.IsValid)
             {
@@ -62,21 +63,21 @@ namespace food_delivery.Areas.Admin.Controllers
             return View();
         }
         [HttpGet]
-        public async Task<ActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
             await couponService.Delete(id);
 
             return RedirectToAction("Index");
         }
         [HttpGet]
-        public async Task<ActionResult> Edit(int id)
+        public async Task<IActionResult> Edit(int id)
         {
             var coupon = await couponService.GetById(id);
 
             return View(coupon);
         }
         [HttpPost]
-        public async Task<ActionResult> Edit(RequestCouponModel request)
+        public async Task<IActionResult> Edit(RequestCouponModel request)
         {
             if (ModelState.IsValid)
             {

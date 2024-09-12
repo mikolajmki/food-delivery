@@ -2,11 +2,12 @@
 using Application.Models.ApplicationModels;
 using MapsterMapper;
 using Presentation.ViewModels;
-using System.Web.Mvc;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
-namespace food_delivery.Areas.Admin.Controllers
+namespace Presentation.Areas.Admin.Controllers
 {
-    [RouteArea("Admin")]
+    [Area("Admin")]
     [Authorize(Roles = "Admin")]
     public class CategoriesController : Controller
     {
@@ -19,7 +20,7 @@ namespace food_delivery.Areas.Admin.Controllers
         }
 
         [HttpGet]
-        public async Task<ViewResult> Index()
+        public async Task<IActionResult> Index()
         {
             var allCategories = await categoryService.GetAll();
 
@@ -36,7 +37,7 @@ namespace food_delivery.Areas.Admin.Controllers
             return View(category);
         }
         [HttpPost]
-        public async Task<RedirectToRouteResult> Create(CategoryViewModel vm)
+        public async Task<IActionResult> Create(CategoryViewModel vm)
         {
             var mappedCategory = mapper.Map<CategoryModel>(vm);
 
@@ -45,7 +46,7 @@ namespace food_delivery.Areas.Admin.Controllers
             return RedirectToAction("Index");
         }
         [HttpGet]
-        public async Task<ViewResult> Edit(int id)
+        public async Task<IActionResult> Edit(int id)
         {
             var category = await categoryService.GetById(id);
 
@@ -54,7 +55,7 @@ namespace food_delivery.Areas.Admin.Controllers
             return View(viewModel);
         }
         [HttpPost]
-        public async Task<RedirectToRouteResult> Edit(CategoryViewModel vm)
+        public async Task<IActionResult> Edit(CategoryViewModel vm)
         {
             if (ModelState.IsValid)
             {
@@ -65,7 +66,7 @@ namespace food_delivery.Areas.Admin.Controllers
             return RedirectToAction("Index");
         }
         [HttpGet]
-        public async Task<RedirectToRouteResult> Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
 
             await categoryService.Delete(id);

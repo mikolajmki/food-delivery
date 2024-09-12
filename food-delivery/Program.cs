@@ -1,27 +1,32 @@
 using Application;
 using Infrastructure;
 using Infrastructure.Repository;
+using Microsoft.AspNetCore.Identity;
 using WebApi.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddSession();
-builder.Services.AddControllersWithViews();
-builder.Services.AddMapsterConfiguration();
-builder.Services.AddMvc();
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.AddLogging();
 
-builder.Services.AddControllers(
-    options => options.SuppressImplicitRequiredAttributeForNonNullableReferenceTypes = true);
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
+    .AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<ApplicationDbContext>();
+
+builder.Services.AddSession();
+builder.Services.AddMapsterConfiguration();
+builder.Services.AddRazorPages();
+
+//builder.Services.AddControllersWithViews();
+//builder.Services.AddMvc();
+
+//builder.Services.AddControllers(
+//    options => options.SuppressImplicitRequiredAttributeForNonNullableReferenceTypes = true);
 
 //builder.Configuration.GetSection(PaymentSettings.Stripe).Bind(PaymentSettings.StripeOptions);
-
-//builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
-//    .AddRoles<IdentityRole>()
-//    .AddEntityFrameworkStores<ApplicationDbContext>();
 
 
 var app = builder.Build();
@@ -45,13 +50,15 @@ var scope = app.Services.CreateScope();
 var service = scope.ServiceProvider.GetService<IDbInitializer>()!;
 service.Initialize();
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
 app.UseAuthentication();;
 
 app.UseAuthorization();
+
+app.MapRazorPages();
 
 app.MapControllerRoute(
     name: "default",

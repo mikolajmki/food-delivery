@@ -1,10 +1,10 @@
-﻿using System.Web.Mvc;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 using Presentation.Models;
+using Microsoft.AspNetCore.Mvc;
 
 
-namespace food_delivery.Controllers
+namespace Presentation.Controllers
 {
     public class HomeController : Controller
     {
@@ -15,18 +15,18 @@ namespace food_delivery.Controllers
             _logger = logger;
         }
 
-        public ActionResult Index()
+        public IActionResult Index()
         {
             return View();
         }
 
-        public ActionResult Privacy()
+        public IActionResult Privacy()
         {
             return View();
         }
 
-        [Microsoft.AspNetCore.Mvc.ResponseCache(Duration = 0, Location = Microsoft.AspNetCore.Mvc.ResponseCacheLocation.None, NoStore = true)]
-        public ActionResult Error()
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id });
         }

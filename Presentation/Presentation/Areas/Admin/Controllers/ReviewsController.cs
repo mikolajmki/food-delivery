@@ -2,15 +2,13 @@
 using Application.Models.ApplicationModels;
 using MapsterMapper;
 using Presentation.ApiModels;
-using System.Web.Mvc;
-using AuthorizeAttribute = System.Web.Mvc.AuthorizeAttribute;
-using HttpGetAttribute = System.Web.Mvc.HttpGetAttribute;
-using HttpPostAttribute = System.Web.Mvc.HttpPostAttribute;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
-namespace food_delivery.Areas.Admin.Controllers
+namespace Presentation.Areas.Admin.Controllers
 {
     [Authorize]
-    [RouteArea("Admin")]
+    [Area("Admin")]
     public class ReviewsController : Controller
     {
         private readonly IReviewService _reviewService;
@@ -22,7 +20,7 @@ namespace food_delivery.Areas.Admin.Controllers
             _mapper = mapper;
         }
 
-        public async Task<ViewResult> Index()
+        public async Task<IActionResult> Index()
         {
             List<ReviewModel> list;
 
@@ -39,7 +37,7 @@ namespace food_delivery.Areas.Admin.Controllers
             return View(reviews);
         }
 
-        public async Task<ViewResult> Details(int id)
+        public async Task<IActionResult> Details(int id)
         {
             ReviewApiModel model;
 
@@ -57,7 +55,7 @@ namespace food_delivery.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public async Task<RedirectToRouteResult> EditAsync (ReviewApiModel review)
+        public async Task<IActionResult> EditAsync (ReviewApiModel review)
         {
             if (ModelState.IsValid)
             {
@@ -71,7 +69,7 @@ namespace food_delivery.Areas.Admin.Controllers
         }
 
         [HttpGet]
-        public async Task<RedirectToRouteResult> Delete(int id) 
+        public async Task<IActionResult> Delete(int id) 
         {
             await _reviewService.Delete(id);
 

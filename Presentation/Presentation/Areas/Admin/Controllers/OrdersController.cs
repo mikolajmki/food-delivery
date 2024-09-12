@@ -5,16 +5,15 @@ using Application.Models.Queries;
 using MapsterMapper;
 using Presentation.ApiModels;
 using Presentation.ViewModels;
-using System.Web.Mvc;
-using ActionResult = System.Web.Mvc.ActionResult;
-using HttpGetAttribute = System.Web.Mvc.HttpGetAttribute;
-using HttpPostAttribute = System.Web.Mvc.HttpPostAttribute;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Authorization;
 
-namespace food_delivery.Areas.Admin.Controllers
+namespace Presentation.Areas.Admin.Controllers
 {
-    [System.Web.Mvc.Authorize]
-    [Microsoft.AspNetCore.Mvc.Area("Admin")]
-    public class OrdersController : System.Web.Mvc.Controller
+    [Authorize]
+    [Area("Admin")]
+    public class OrdersController : Controller
     {
         private readonly IOrderDetailsService _orderDetailsService;
         private readonly IOrderHeaderService _orderHeaderService;
@@ -31,7 +30,7 @@ namespace food_delivery.Areas.Admin.Controllers
             _reviewService = reviewService;
         }
 
-        public async Task<ActionResult> IndexAsync(OrderHeaderOrderByApiOptions options)
+        public async Task<IActionResult> IndexAsync(OrderHeaderOrderByApiOptions options)
         {
             var orderby = _mapper.Map<OrderHeaderOrderByOptions>(options);
 
@@ -52,7 +51,7 @@ namespace food_delivery.Areas.Admin.Controllers
             return View(orders);
         }
         [HttpGet]
-        public async Task<ActionResult> OrderDetailsAsync(int id)
+        public async Task<IActionResult> OrderDetailsAsync(int id)
         {
             var orderDetailsReadModel = await _orderDetailsService.GetOrderDetailsByOrderHeaderId(id);
 
@@ -73,7 +72,7 @@ namespace food_delivery.Areas.Admin.Controllers
             return View(vm);
         }
         [HttpPost]
-        public async Task<ActionResult> Review(ReviewApiModel review) 
+        public async Task<IActionResult> Review(ReviewApiModel review) 
         {
             var model = _mapper.Map<ReviewModel>(review);
 
@@ -84,7 +83,7 @@ namespace food_delivery.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public ActionResult OrderDetails(OrderDetailsViewModel vm)
+        public IActionResult OrderDetails(OrderDetailsViewModel vm)
         {
             var orderHeader = _mapper.Map<OrderHeaderModel>(vm.OrderHeader);
 
@@ -94,7 +93,7 @@ namespace food_delivery.Areas.Admin.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult> DeleteAsync(int id)
+        public async Task<IActionResult> DeleteAsync(int id)
         {
             await _orderDetailsService.DeleteOrderDetailsOfOrderHeaderId(id);
 

@@ -23,6 +23,9 @@ C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\MessagePack.dll
 C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\MessagePack.Annotations.dll
 C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\System.Web.Mvc.dll
 C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\System.Web.Razor.dll
+C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\System.Web.Http.dll
+C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\System.Web.Http.WebHost.dll
 C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\System.Web.Helpers.dll
 C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
 C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
@@ -78,6 +81,7 @@ C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\Microsoft.VisualStudio.Web.C
 C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll
 C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
 C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
 C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\NuGet.Common.dll
 C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\NuGet.Configuration.dll
 C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\NuGet.DependencyResolver.Core.dll
@@ -246,13 +250,9 @@ C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalys
 C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
 C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\runtimes\alpine-arm\native\libe_sqlite3.so
 C:\sii\food-delivery\food-delivery\bin\Debug\net6.0\runtimes\alpine-arm64\native\libe_sqlite3.so
@@ -303,3 +303,4 @@ C:\sii\food-delivery\food-delivery\obj\Debug\net6.0\refint\WebAPI.dll
 C:\sii\food-delivery\food-delivery\obj\Debug\net6.0\WebAPI.pdb
 C:\sii\food-delivery\food-delivery\obj\Debug\net6.0\WebAPI.genruntimeconfig.cache
 C:\sii\food-delivery\food-delivery\obj\Debug\net6.0\ref\WebAPI.dll
+C:\sii\food-delivery\food-delivery\obj\Debug\net6.0\WebAPI.MvcApplicationPartsAssemblyInfo.cs

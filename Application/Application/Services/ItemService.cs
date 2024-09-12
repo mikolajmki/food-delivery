@@ -21,7 +21,8 @@ internal class ItemService : GenericService<ItemModel, Item>, IItemService
         IMapper mapper,
         ICategoryRepository categoryRepository,
         ICouponRepository couponRepository,
-        IReviewRepository reviewRepository
+        IReviewRepository reviewRepository,
+        IItemRepository itemRepository
 
     ) : base(repository)
     {
@@ -29,6 +30,7 @@ internal class ItemService : GenericService<ItemModel, Item>, IItemService
         _categoryRepository = categoryRepository;
         _couponRepository = couponRepository;
         _reviewRepository = reviewRepository;
+        _itemRepository = itemRepository;
     }
 
     public Task<ItemModel> GetItem()

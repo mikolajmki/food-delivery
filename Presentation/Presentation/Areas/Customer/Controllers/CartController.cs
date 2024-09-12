@@ -2,18 +2,17 @@
 using Application.Models.Commands;
 using MapsterMapper;
 using Presentation.ViewModels;
-using System.Web.Mvc;
-using HttpPostAttribute = Microsoft.AspNetCore.Mvc.HttpPostAttribute;
-using ViewResult = System.Web.Mvc.ViewResult;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
-namespace food_delivery.Areas.Customer.Controllers
+namespace Presentation.Areas.Customer.Controllers
 {
-    [Microsoft.AspNetCore.Mvc.Area("Customer")]
-    public class CartController : System.Web.Mvc.Controller
+    [Area("Customer")]
+    public class CartController : Controller
     {
         private readonly ICartService _cartService;
         private readonly IMapper _mapper;
-        [Microsoft.AspNetCore.Mvc.BindProperty]
+        [BindProperty]
         public CartOrderViewModel details { get; set; }
         public OrderDetailsViewModel orderDetails { get; set; }
 
@@ -23,8 +22,8 @@ namespace food_delivery.Areas.Customer.Controllers
             _mapper = mapper;
         }
 
-        [System.Web.Mvc.Authorize]
-        public async Task<ViewResult> Index()
+        [Authorize]
+        public async Task<IActionResult> Index()
         {
 
             var cartOrderReadModel = await _cartService.GetCartOfUserIncludeItemsAndOrderTotal(User.Identity!);
@@ -34,7 +33,7 @@ namespace food_delivery.Areas.Customer.Controllers
             return View(cartOrderViewModel);
         }
 
-        public async Task<ViewResult> SummaryAsync()
+        public async Task<IActionResult> SummaryAsync()
         {
             var cartOrderReadModel = await _cartService.GetSummary(User.Identity!);
             var cartOrderViewModel = _mapper.Map<CartOrderViewModel>(cartOrderReadModel);
@@ -43,7 +42,7 @@ namespace food_delivery.Areas.Customer.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> SummaryAsync(CartOrderViewModel vm)
+        public async Task<IActionResult> SummaryAsync(CartOrderViewModel vm)
         {
             var placeOrderWriteModel = _mapper.Map<PlaceOrderCommand>(vm);
 
@@ -54,19 +53,19 @@ namespace food_delivery.Areas.Customer.Controllers
             return RedirectToAction("Index");
         }
 
-        public async Task<ActionResult> Plus (int id)
+        public async Task<IActionResult> Plus (int id)
         {
             await _cartService.AddToCart(id);
 
             return RedirectToAction(nameof(Index));
         }
-        public async Task<ActionResult> Minus(int id)
+        public async Task<IActionResult> Minus(int id)
         {
             await _cartService.RemoveFromCart(id);
             return RedirectToAction(nameof(Index));
         }
 
-        public async Task<ActionResult> Delete (int id)
+        public async Task<IActionResult> Delete (int id)
         {
             await _cartService.Delete(id);
 

@@ -1,14 +1,15 @@
 ﻿using Application.Abstractions.Services;
 using Application.Models.ApplicationModels;
 using MapsterMapper;
-using Presentation.ApiModels;
 using Presentation.ViewModels;
-using System.Web.Mvc;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace food_delivery.Areas.Admin.Controllers
+namespace Presentation.Areas.Admin.Controllers
 {
-    [Microsoft.AspNetCore.Mvc.Area("Admin")]
-    [System.Web.Mvc.Authorize(Roles = "Admin")]
+    [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class ItemsController : Controller
     {
         private readonly IItemService itemService;
@@ -38,7 +39,7 @@ namespace food_delivery.Areas.Admin.Controllers
             return View(items);
         }
         [HttpGet]
-        public async Task<ActionResult> CreateAsync()
+        public async Task<IActionResult> CreateAsync()
         {
             var categories = await categoryService.GetAll();
             var subcategories = await subcategoryService.GetAll();
@@ -48,7 +49,7 @@ namespace food_delivery.Areas.Admin.Controllers
             return View(new ItemViewModel());
         }
         [HttpGet]
-        public async Task<ActionResult> GetSubcategoryAsync(ItemViewModel item)
+        public async Task<IActionResult> GetSubcategoryAsync(ItemViewModel item)
         {
             var subcategories = await subcategoryService.GetSubcategoriesOfCategoryId(item.CategoryId); 
             ViewBag.Subcategory = new SelectList(subcategories, "Id", "Title");
@@ -56,7 +57,7 @@ namespace food_delivery.Areas.Admin.Controllers
             return View("Create", item);
         }
         [HttpPost]
-        public async Task<ActionResult> Create(ItemViewModel vm)
+        public async Task<IActionResult> Create(ItemViewModel vm)
         {
             if (vm.ImageUrl != null && vm.ImageUrl.Length > 0)
             {
@@ -72,7 +73,7 @@ namespace food_delivery.Areas.Admin.Controllers
             return RedirectToAction("Index");
         }
         [HttpGet]
-        public async Task<ActionResult> EditAsync(int id)
+        public async Task<IActionResult> EditAsync(int id)
         {
             var item = await itemService.GetById(id);
 
@@ -90,7 +91,7 @@ namespace food_delivery.Areas.Admin.Controllers
             return View(vm);
         }
         [HttpPost]
-        public async Task<ActionResult> EditAsync(ItemViewModel vm)
+        public async Task<IActionResult> EditAsync(ItemViewModel vm)
         {
             if (ModelState.IsValid)
             {
@@ -105,7 +106,7 @@ namespace food_delivery.Areas.Admin.Controllers
             return View(vm);
         }
         [HttpGet]
-        public async Task<ActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
             if (await itemService.Delete(id))
             {
