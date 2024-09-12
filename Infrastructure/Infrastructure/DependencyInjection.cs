@@ -1,5 +1,7 @@
 ﻿using Application.Abstractions.Repositories;
+using Application.Abstractions.Services;
 using Infrastructure.Repository;
+using Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -13,6 +15,8 @@ public static class DependencyInjection
         services.AddDbContext<ApplicationDbContext>(
             options =>  options.UseSqlServer(configuration.GetConnectionString("ApplicationDbContextConnection")));
         services.AddScoped<IDbInitializer, DbInitializer>();
+
+        services.AddScoped<IFileService, FileService>();
 
         services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
         services.AddScoped<IApplicationUserRepository, ApplicationUserRepository>();

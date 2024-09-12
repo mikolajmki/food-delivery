@@ -26,7 +26,7 @@ namespace Infrastructure.Repository
             {
                 if (_context.Database.GetPendingMigrations().Count() > 0)
                 {
-                    _context.Database.Migrate();
+                    //_context.Database.Migrate();
                 }
             } 
             catch (Exception ex)

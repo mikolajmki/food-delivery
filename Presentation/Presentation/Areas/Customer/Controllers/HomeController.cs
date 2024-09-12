@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Presentation.ApiModels;
+using Presentation.Areas.Identity;
 using Presentation.ViewModels;
 
 namespace Presentation.Areas.Customer.Controllers
@@ -77,18 +78,20 @@ namespace Presentation.Areas.Customer.Controllers
         [Authorize]
         public async Task<IActionResult> Details(ItemDetailsViewModel vm)
         {
+            var userId = IdentityClaimHelper.GetIdFromClaim(User.Identity!);
+
             if (ModelState.IsValid)
             {
                 var command = new AddToCartCommand
                 {
                     CartCount = vm.Count,
-                    Identity = User.Identity!,
+                    UserId = userId,
                     ItemId = vm.ItemId
                 };
 
                 await _cartService.AddItemToCart(command);
 
-                var userCartCount = await _cartService.GetUserCartsCount(User.Identity!);
+                var userCartCount = await _cartService.GetUserCartsCount(userId);
 
                 HttpContext.Session.SetInt32("SessionCart", userCartCount);
 

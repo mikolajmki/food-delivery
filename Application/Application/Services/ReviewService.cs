@@ -1,53 +1,44 @@
-﻿using Application.Abstractions;
-using Application.Abstractions.Repositories;
+﻿using Application.Abstractions.Repositories;
 using Application.Abstractions.Services;
 using Application.Models.ApplicationModels;
 using Domain.Models;
 using MapsterMapper;
-using System.Security.Principal;
 
 namespace Application.Services;
 
 internal class ReviewService : GenericService<ReviewModel, Review>, IReviewService
 {
     private readonly IReviewRepository _reviewRepository;
-    private IIdentityService _identityService;
     private readonly IMapper _mapper;
 
     public ReviewService(
         IGenericRepository<Review> repository, 
         IReviewRepository reviewRepository, 
-        IMapper mapper, 
-        IIdentityService identityService
+        IMapper mapper 
 
     ): base(repository)
     {
         _reviewRepository = reviewRepository;
         _mapper = mapper;
-        _identityService = identityService;
     }
 
-    public async Task<bool> CreateReview(ReviewModel review, IIdentity identity)
+    public async Task<bool> CreateReview(ReviewModel review, string userId)
     {
-        var id = _identityService.GetIdFromClaim(identity);
-
         var enity = _mapper.Map<Review>(review);
 
         var d = DateTime.UtcNow;
         var date = new DateTime(d.Year, d.Month, d.Day, d.Hour, d.Minute, d.Second);
 
-        enity.ApplicationUserId = id;
+        enity.ApplicationUserId = userId;
         enity.CreatedDate = date;
 
         await _reviewRepository.Create(enity);
 
         return true;
     }
-    public async Task<List<ReviewModel>> GetReviewsOfUser(IIdentity identity)
+    public async Task<List<ReviewModel>> GetReviewsOfUser(string userId)
     {
-        var id = _identityService.GetIdFromClaim(identity);
-
-        var list = await _reviewRepository.GetReviewsOfUser(id);
+        var list = await _reviewRepository.GetReviewsOfUser(userId);
         var reviews = _mapper.Map<List<ReviewModel>>(list);
 
         return reviews;

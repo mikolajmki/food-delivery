@@ -10,7 +10,6 @@ namespace Application.Services;
 internal class ApplicationUserService : GenericService<ApplicationUserModel, ApplicationUser>, IApplicationUserService
 {
     private readonly IApplicationUserRepository _applicationUserRepository;
-    private readonly IIdentityService _identityService;
     private readonly IMapper _mapper;
 
     public ApplicationUserService(
@@ -24,11 +23,9 @@ internal class ApplicationUserService : GenericService<ApplicationUserModel, App
         _applicationUserRepository = applicationUserRepository;
     }
 
-    public async Task<List<ApplicationUserModel>> GetAllWithTotalCounts(IIdentity identity)
+    public async Task<List<ApplicationUserModel>> GetAllWithTotalCounts(string userId)
     {
-        var id = _identityService.GetIdFromClaim(identity);
-
-        var list = await _applicationUserRepository.GetAllWithTotalCounts(id);
+        var list = await _applicationUserRepository.GetAllWithTotalCounts(userId);
         var users = _mapper.Map<List<ApplicationUserModel>>(list);
 
         return users;

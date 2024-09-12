@@ -8,6 +8,7 @@ using Presentation.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Authorization;
+using Presentation.Areas.Identity;
 
 namespace Presentation.Areas.Admin.Controllers
 {
@@ -74,9 +75,10 @@ namespace Presentation.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Review(ReviewApiModel review) 
         {
+            var userId = IdentityClaimHelper.GetIdFromClaim(User.Identity!);
             var model = _mapper.Map<ReviewModel>(review);
 
-            await _reviewService.CreateReview(model, User.Identity!);
+            await _reviewService.CreateReview(model, userId);
 
             //return RedirectToAction("Index", "Reviews");
             return RedirectToAction("Index");

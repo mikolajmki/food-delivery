@@ -4,6 +4,9 @@ using MapsterMapper;
 using Presentation.ApiModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
+using System.Security.Principal;
+using Presentation.Areas.Identity;
 
 namespace Presentation.Areas.Admin.Controllers
 {
@@ -22,6 +25,8 @@ namespace Presentation.Areas.Admin.Controllers
 
         public async Task<IActionResult> Index()
         {
+            var userId = IdentityClaimHelper.GetIdFromClaim(User.Identity!);
+            
             List<ReviewModel> list;
 
             if (User.IsInRole("Admin")) 
@@ -29,7 +34,7 @@ namespace Presentation.Areas.Admin.Controllers
                 list = await _reviewService.GetReviewsOfAllUsers();
             } else
             {
-                list = await _reviewService.GetReviewsOfUser(User.Identity!);
+                list = await _reviewService.GetReviewsOfUser(userId);
             }
 
             var reviews = _mapper.Map<List<ReviewApiModel>>(list);

@@ -4,6 +4,7 @@ using MapsterMapper;
 using Presentation.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
+using Presentation.Areas.Identity;
 
 namespace Presentation.Areas.Customer.Controllers
 {
@@ -25,8 +26,9 @@ namespace Presentation.Areas.Customer.Controllers
         [Authorize]
         public async Task<IActionResult> Index()
         {
+            var userId = IdentityClaimHelper.GetIdFromClaim(User.Identity!);
 
-            var cartOrderReadModel = await _cartService.GetCartOfUserIncludeItemsAndOrderTotal(User.Identity!);
+            var cartOrderReadModel = await _cartService.GetCartOfUserIncludeItemsAndOrderTotal(userId);
 
             var cartOrderViewModel = _mapper.Map<CartOrderViewModel>(cartOrderReadModel);
     
@@ -35,7 +37,9 @@ namespace Presentation.Areas.Customer.Controllers
 
         public async Task<IActionResult> SummaryAsync()
         {
-            var cartOrderReadModel = await _cartService.GetSummary(User.Identity!);
+            var userId = IdentityClaimHelper.GetIdFromClaim(User.Identity!);
+
+            var cartOrderReadModel = await _cartService.GetSummary(userId);
             var cartOrderViewModel = _mapper.Map<CartOrderViewModel>(cartOrderReadModel);
 
             return View(cartOrderViewModel);
@@ -67,9 +71,11 @@ namespace Presentation.Areas.Customer.Controllers
 
         public async Task<IActionResult> Delete (int id)
         {
+            var userId = IdentityClaimHelper.GetIdFromClaim(User.Identity!);
+
             await _cartService.Delete(id);
 
-            var userCartCount = await _cartService.GetUserCartsCount(User.Identity!);
+            var userCartCount = await _cartService.GetUserCartsCount(userId);
 
             //HttpContext.Session.SetInt32("SessionCart", userCartCount);
 

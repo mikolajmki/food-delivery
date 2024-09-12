@@ -3,6 +3,7 @@ using MapsterMapper;
 using Presentation.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
+using Presentation.Areas.Identity;
 
 namespace Presentation.Areas.Admin.Controllers
 {
@@ -22,7 +23,9 @@ namespace Presentation.Areas.Admin.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            var list = await _userService.GetAllWithTotalCounts(User.Identity!);
+            var userId = IdentityClaimHelper.GetIdFromClaim(User.Identity!);
+
+            var list = await _userService.GetAllWithTotalCounts(userId);
             var users = _mapper.Map<List<UserViewModel>>(list);
 
             return View(users);

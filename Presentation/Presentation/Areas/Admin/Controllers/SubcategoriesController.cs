@@ -52,9 +52,9 @@ namespace Presentation.Areas.Admin.Controllers
                 var subcategory = _mapper.Map<SubcategoryModel>(vm);
 
                 await _subcategoryService.Create(subcategory);
-                return (IActionResult)RedirectToAction("Index");
+                return RedirectToAction("Index");
             }
-            return (IActionResult)View(vm);
+            return View(vm);
         }
         [HttpGet]
         public async Task<IActionResult> Edit(int id)

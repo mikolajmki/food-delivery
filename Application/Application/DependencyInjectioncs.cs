@@ -12,8 +12,6 @@ public static class DependencyInjectioncs
         services.AddScoped<IApplicationUserService, ApplicationUserService>();
         services.AddScoped<ICartService, CartService>();
         services.AddScoped<ICategoryService, CategoryService>();
-        services.AddScoped<IFileService, FileService>();
-        services.AddScoped<IIdentityService, IdentityService>();
         services.AddScoped<IItemService, ItemService>();
         services.AddScoped<IOrderDetailsService, OrderDetailsService>();
         services.AddScoped<IOrderHeaderService, OrderHeaderService>();

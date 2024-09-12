@@ -1,6 +1,6 @@
 ﻿using Application.Abstractions.Services;
 
-namespace Application.Services;
+namespace Infrastructure.Services;
 
 internal class FileService : IFileService
 {

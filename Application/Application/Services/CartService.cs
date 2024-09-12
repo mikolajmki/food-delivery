@@ -5,7 +5,6 @@ using Application.Models.Commands;
 using Application.Models.ReadModels;
 using Domain.Models;
 using MapsterMapper;
-using System.Security.Principal;
 
 namespace Application.Services;
 
@@ -13,7 +12,6 @@ internal class CartService : GenericService<CartModel, Cart>, ICartService
 {
     private readonly ICartRepository _cartRepository;
     private readonly IApplicationUserRepository _userRepository;
-    private readonly IIdentityService _identityService;
     private readonly IOrderHeaderRepository _orderHeaderRepository;
     private readonly IOrderDetailsRepository _orderDetailsRepository;
     private readonly IMapper _mapper;
@@ -22,7 +20,6 @@ internal class CartService : GenericService<CartModel, Cart>, ICartService
         IGenericRepository<Cart> repository,
         ICartRepository cartRepository,
         IMapper mapper,
-        IIdentityService identityService,
         IApplicationUserRepository userRepository,
         IOrderHeaderRepository orderHeaderRepository,
         IOrderDetailsRepository orderDetailsRepository
@@ -31,7 +28,6 @@ internal class CartService : GenericService<CartModel, Cart>, ICartService
     {
         _cartRepository = cartRepository;
         _mapper = mapper;
-        _identityService = identityService;
         _userRepository = userRepository;
         _orderHeaderRepository = orderHeaderRepository;
         _orderDetailsRepository = orderDetailsRepository;
@@ -41,13 +37,10 @@ internal class CartService : GenericService<CartModel, Cart>, ICartService
     {
         throw new NotImplementedException();
     }
-    public async Task<CartOrderReadModel> GetCartOfUserIncludeItemsAndOrderTotal(IIdentity identity)
+    public async Task<CartOrderReadModel> GetCartOfUserIncludeItemsAndOrderTotal(string userId)
     {
-        var id = _identityService.GetIdFromClaim(identity);
 
-        var list = await _cartRepository.GetCartsOfUserIncludeItems(id);
-        
-
+        var list = await _cartRepository.GetCartsOfUserIncludeItems(userId);
 
         var carts = _mapper.Map<List<CartModel>>(list);
 
@@ -60,18 +53,17 @@ internal class CartService : GenericService<CartModel, Cart>, ICartService
         return cartOrderReadModel;
     }
 
-    public async Task<CartOrderReadModel> GetSummary(IIdentity identity)
+    public async Task<CartOrderReadModel> GetSummary(string userId)
     {
-        var id = _identityService.GetIdFromClaim(identity);
 
-        var list = await _cartRepository.GetCartsOfUserIncludeItems(id);
+        var list = await _cartRepository.GetCartsOfUserIncludeItems(userId);
         var carts = _mapper.Map<List<CartModel>>(list);
 
-        var user = await _userRepository.GetById(int.Parse(id));
+        var user = await _userRepository.GetById(int.Parse(userId));
 
         var orderHeader = new OrderHeaderModel
         {
-            ApplicationUserId = id,
+            ApplicationUserId = userId,
             Name = user.Name,
             Phone = user.PhoneNumber,
             OrderTotal = CalculateOrderTotal(list),
@@ -101,6 +93,7 @@ internal class CartService : GenericService<CartModel, Cart>, ICartService
                 Name = orderHeader.Name,
                 Count = cart.Count
             };
+            await _orderDetailsRepository.Create(orderDetails);
         }
 
         return true;
@@ -132,30 +125,28 @@ internal class CartService : GenericService<CartModel, Cart>, ICartService
         return true;
     }
 
-    public Task<bool> DeleteCartOfUser(IIdentity identity)
+    public Task<bool> DeleteCartOfUser(string userId)
     {
         throw new NotImplementedException();
     }
 
-    public async Task<int> GetUserCartsCount(IIdentity identity)
+    public async Task<int> GetUserCartsCount(string userId)
     {
-        var id = _identityService.GetIdFromClaim(identity);
-        var count = await _cartRepository.GetUserCartsCount(id);
+        var count = await _cartRepository.GetUserCartsCount(userId);
 
         return count;
     }
 
     public async Task<bool> AddItemToCart(AddToCartCommand command)
     {
-        var id = _identityService.GetIdFromClaim(command.Identity);
-        var cart = await _cartRepository.GetCartbyUserIdAndItemId(id, command.ItemId);
+        var cart = await _cartRepository.GetCartbyUserIdAndItemId(command.UserId, command.ItemId);
 
         if (cart == null)
         {
             var newCart = new Cart
             {
                 ItemId = command.ItemId,
-                ApplicationUserId = id,
+                ApplicationUserId = command.UserId,
                 Count = command.CartCount,
             };
 

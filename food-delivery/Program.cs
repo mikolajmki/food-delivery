@@ -2,6 +2,7 @@ using Application;
 using Infrastructure;
 using Infrastructure.Repository;
 using Microsoft.AspNetCore.Identity;
+using Presentation;
 using WebApi.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.AddPresentation();
 builder.Services.AddLogging();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
