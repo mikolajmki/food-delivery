@@ -1,8 +1,8 @@
-﻿using Domain.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using System.Web.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
-using System.Web.Mvc;
+using Presentation.Models;
+
 
 namespace food_delivery.Controllers
 {
@@ -25,10 +25,10 @@ namespace food_delivery.Controllers
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        [Microsoft.AspNetCore.Mvc.ResponseCache(Duration = 0, Location = Microsoft.AspNetCore.Mvc.ResponseCacheLocation.None, NoStore = true)]
         public ActionResult Error()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id });
         }
     }
 }

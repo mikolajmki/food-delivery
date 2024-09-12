@@ -1,6 +1,5 @@
 ﻿using Application.Abstractions.Repositories;
 using Domain.Models;
-using food_delivery.Repository;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repository;
@@ -9,7 +8,7 @@ internal class OrderHeaderRepository : GenericRepository<OrderHeader>, IOrderHea
 {
     private readonly ApplicationDbContext _context;
 
-    public OrderHeaderRepository(ApplicationDbContext context)
+    public OrderHeaderRepository(ApplicationDbContext context) : base(context)
     {
         _context = context;
     }

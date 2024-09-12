@@ -66,7 +66,8 @@ namespace food_delivery.Areas.Admin.Controllers
 
                 return RedirectToAction("Index");
             }
-            return RedirectToAction("Details", new { id = review.Id });
+            //return RedirectToAction("Details", new { id = review.Id });
+            return RedirectToAction("Details");
         }
 
         [HttpGet]

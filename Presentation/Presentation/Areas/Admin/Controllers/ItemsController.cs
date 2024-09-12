@@ -60,10 +60,13 @@ namespace food_delivery.Areas.Admin.Controllers
         {
             if (vm.ImageUrl != null && vm.ImageUrl.Length > 0)
             {
-                if (await fileService.SaveImage(vm.ImageUrl!))
+                using(var fileStream = vm.ImageUrl.OpenReadStream())
                 {
-                    var item = mapper.Map<ItemModel>(vm);
-                    await itemService.Create(item);
+                    if (await fileService.SaveImage(fileStream))
+                    {
+                        var item = mapper.Map<ItemModel>(vm);
+                        await itemService.Create(item);
+                    }
                 }
             }
             return RedirectToAction("Index");

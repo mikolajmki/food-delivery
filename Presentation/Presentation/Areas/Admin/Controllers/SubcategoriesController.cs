@@ -7,12 +7,13 @@ using System.Web.Mvc;
 using HttpGetAttribute = System.Web.Mvc.HttpGetAttribute;
 using HttpPostAttribute = System.Web.Mvc.HttpPostAttribute;
 using RedirectToRouteResult = System.Web.Mvc.RedirectToRouteResult;
+using ViewResult = System.Web.Mvc.ViewResult;
 
 namespace food_delivery.Areas.Admin.Controllers
 {
     [RouteArea("Admin")]
     [Authorize(Roles = "Admin")]
-    public class SubcategoriesController : Controller
+    public class SubcategoriesController : System.Web.Mvc.Controller
     {
         private readonly ISubcategoryService _subcategoryService;
         private readonly ICategoryService _categoryService;

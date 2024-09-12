@@ -1,4 +1,5 @@
 ﻿using Application.Models.ApplicationModels;
+using Domain.Models;
 
 namespace Application.Abstractions.Services;
 

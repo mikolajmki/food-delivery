@@ -9,4 +9,5 @@ public interface IReviewService : IGenericService<ReviewModel>
     Task<ReviewModel> GetReviewDetailsIncludeUser (int id);
     Task<ReviewModel> GetReviewDetails(int id);
     Task<bool> CreateReview(ReviewModel review, IIdentity identity);
+    Task<List<ReviewModel>> GetByItemIdIncludeUser(int id);
 }

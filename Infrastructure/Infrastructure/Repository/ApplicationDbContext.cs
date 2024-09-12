@@ -1,12 +1,12 @@
-﻿using Domain.Models
+﻿using Domain.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace food_delivery.Repository;
+namespace Infrastructure.Repository;
 
 
 
-internal class ApplicationDbContext: IdentityDbContext
+public class ApplicationDbContext: IdentityDbContext
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
     {

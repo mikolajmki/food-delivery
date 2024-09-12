@@ -26,7 +26,7 @@ public static class MapsterConfiguration
         config.NewConfig<SubcategoryModel, SubcategoryViewModel>();
         config.NewConfig<ItemModel, ItemViewModel>();
         config.NewConfig<CartOrderModel, CartOrderViewModel>();
-        config.NewConfig<ItemListModel, ItemListViewModel>();
+        config.NewConfig<ItemListReadModel, ItemListViewModel>();
         config.NewConfig<ItemReviewsModel, ItemReviewsViewModel>();
         config.NewConfig<OrderDetailsReadModel, OrderDetailsViewModel>();
         config.NewConfig<ApplicationUserModel, UserViewModel>();

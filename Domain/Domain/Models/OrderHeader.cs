@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Domain.Utility;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Domain.Models;
@@ -17,8 +18,8 @@ public class OrderHeader: BaseEntity
     public string? CouponCode { get; set; }
     public double? CouponDis { get; set; }
     public string? TransId { get; set; }
-    public string OrderStatus { get; set; }
-    public string PaymentStatus { get; set; }
+    public OrderStatus OrderStatus { get; set; }
+    public PaymentStatus PaymentStatus { get; set; }
     public string Name { get; set; }
     public string Phone { get; set; }
     public string Address { get; set; }

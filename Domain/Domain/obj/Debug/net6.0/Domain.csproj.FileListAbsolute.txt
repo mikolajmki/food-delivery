@@ -1,5 +1,4 @@
 C:\sii\food-delivery\Domain\Domain\bin\Debug\net6.0\Domain.deps.json
-C:\sii\food-delivery\Domain\Domain\bin\Debug\net6.0\Domain.runtimeconfig.json
 C:\sii\food-delivery\Domain\Domain\bin\Debug\net6.0\Domain.dll
 C:\sii\food-delivery\Domain\Domain\bin\Debug\net6.0\Domain.pdb
 C:\sii\food-delivery\Domain\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
@@ -11,5 +10,4 @@ C:\sii\food-delivery\Domain\Domain\obj\Debug\net6.0\Domain.sourcelink.json
 C:\sii\food-delivery\Domain\Domain\obj\Debug\net6.0\Domain.dll
 C:\sii\food-delivery\Domain\Domain\obj\Debug\net6.0\refint\Domain.dll
 C:\sii\food-delivery\Domain\Domain\obj\Debug\net6.0\Domain.pdb
-C:\sii\food-delivery\Domain\Domain\obj\Debug\net6.0\Domain.genruntimeconfig.cache
 C:\sii\food-delivery\Domain\Domain\obj\Debug\net6.0\ref\Domain.dll

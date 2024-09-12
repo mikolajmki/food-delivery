@@ -1,4 +1,6 @@
-﻿namespace Application.Models.ApplicationModels;
+﻿using Domain.Utility;
+
+namespace Application.Models.ApplicationModels;
 
 public class OrderHeaderModel : BaseEntityModel
 {
@@ -9,7 +11,7 @@ public class OrderHeaderModel : BaseEntityModel
     public string? CouponCode { get; set; }
     public double? CouponDis { get; set; }
     public string OrderStatus { get; set; }
-    public string PaymentStatus { get; set; }
+    public PaymentStatus PaymentStatus { get; set; }
     public DateTime OrderDate { get; set; }
     public string Name { get; set; }
     public string Phone { get; set; }

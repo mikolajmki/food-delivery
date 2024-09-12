@@ -1,21 +1,19 @@
 ﻿using Application.Abstractions.Services;
-using food_delivery.Utility;
+using Application.Models.Commands;
 using MapsterMapper;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using Presentation.ApiModels;
 using Presentation.ViewModels;
-using System.Security.Claims;
 using System.Web.Mvc;
+using HttpPostAttribute = Microsoft.AspNetCore.Mvc.HttpPostAttribute;
+using ViewResult = System.Web.Mvc.ViewResult;
 
 namespace food_delivery.Areas.Customer.Controllers
 {
-    [Area("Customer")]
-    public class CartController : Controller
+    [Microsoft.AspNetCore.Mvc.Area("Customer")]
+    public class CartController : System.Web.Mvc.Controller
     {
         private readonly ICartService _cartService;
         private readonly IMapper _mapper;
-        [BindProperty]
+        [Microsoft.AspNetCore.Mvc.BindProperty]
         public CartOrderViewModel details { get; set; }
         public OrderDetailsViewModel orderDetails { get; set; }
 
@@ -45,80 +43,36 @@ namespace food_delivery.Areas.Customer.Controllers
         }
 
         [HttpPost]
-        public IActionResult Summary(CartOrderViewModel vm)
+        public async Task<ActionResult> SummaryAsync(CartOrderViewModel vm)
         {
-            OrderHeaderApiModel orderHeader = new Models.OrderHeaderApiModel()
-            {
-                ApplicationUserId = vm.OrderHeader.ApplicationUser.Id,
-                Name = vm.OrderHeader.Name,
-                Phone = vm.OrderHeader.Phone,
-                Address = vm.OrderHeader.Address,
-                OrderDate = vm.OrderHeader.OrderDate,
-                TimeOfPick = vm.OrderHeader.TimeOfPick,
-                DateOfPick = vm.OrderHeader.DateOfPick,
-                OrderTotal = vm.OrderHeader.OrderTotal,
-                OrderStatus = OrderStatus.StatusPending,
-                PaymentStatus = PaymentStatus.StatusPending
-            };
+            var placeOrderWriteModel = _mapper.Map<PlaceOrderCommand>(vm);
 
-            _context.Add(orderHeader);
-            _context.SaveChanges();
+            await _cartService.PlaceOrder(placeOrderWriteModel);
 
-            var carts = _context.Carts.Where(x => x.ApplicationUserId == vm.OrderHeader.ApplicationUser.Id).Include(x => x.Item).ToList();
-
-            foreach (var cart in carts)
-            {
-                OrderDetailsApiModel orderDetails = new Models.OrderDetailsApiModel()
-                {
-                    OrderHeaderId = orderHeader.Id,
-                    ItemId = cart.Item.Id,
-                    Name = orderHeader.Name,
-                    Count = cart.Count
-                };
-                _context.Add(orderDetails);
-                _context.Remove(cart);
-            }
-
-            HttpContext.Session.SetInt32("SessionCart", 0);
-
-            _context.SaveChanges();
+            //HttpContext.Session.SetInt32("SessionCart", 0);
 
             return RedirectToAction("Index");
         }
 
-        public async Task<IActionResult> Plus (int id)
+        public async Task<ActionResult> Plus (int id)
         {
-            var cart = await _context.Carts.FirstOrDefaultAsync(c => c.Id == id);
-            cart.Count += 1;
-            HttpContext.Session.SetInt32("SessionCart", cart.Count);
-            await _context.SaveChangesAsync();
+            await _cartService.AddToCart(id);
+
             return RedirectToAction(nameof(Index));
         }
-        public async Task<IActionResult> Minus(int id)
+        public async Task<ActionResult> Minus(int id)
         {
-            var cart = await _context.Carts.FirstOrDefaultAsync(c => c.Id == id);
-            if (cart.Count == 1)
-            {
-                _context.Carts.Remove(cart);
-                _context.SaveChanges();
-            }
-            cart.Count -= 1;
-            HttpContext.Session.SetInt32("SessionCart", cart.Count);
-            await _context.SaveChangesAsync();
+            await _cartService.RemoveFromCart(id);
             return RedirectToAction(nameof(Index));
         }
 
-        public async Task<IActionResult> Delete (int id)
+        public async Task<ActionResult> Delete (int id)
         {
-            var claimsIdentity = (ClaimsIdentity)User.Identity;
-            var claims = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+            await _cartService.Delete(id);
 
-            var cart = await _context.Carts.FirstOrDefaultAsync(c => c.Id == id);
-            _context.Carts.Remove(cart);
-            _context.SaveChanges();
+            var userCartCount = await _cartService.GetUserCartsCount(User.Identity!);
 
-            var userCartCount = _context.Carts.Where(x => x.ApplicationUserId == claims.Value).ToList().Count();
-            HttpContext.Session.SetInt32("SessionCart", userCartCount);
+            //HttpContext.Session.SetInt32("SessionCart", userCartCount);
 
             return RedirectToAction(nameof(Index));
         }

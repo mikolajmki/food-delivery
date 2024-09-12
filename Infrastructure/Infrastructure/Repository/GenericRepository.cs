@@ -1,6 +1,5 @@
 ﻿using Application.Abstractions.Repositories;
 using Domain.Models.Abstraction;
-using food_delivery.Repository;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repository;
@@ -9,6 +8,11 @@ public class GenericRepository<TEntity> : IGenericRepository<TEntity>
     where TEntity : class, IBaseEntity
 {
     private readonly ApplicationDbContext _context;
+
+    public GenericRepository(ApplicationDbContext context)
+    {
+        _context = context;
+    }
 
     public async Task<bool> Create(TEntity model)
     {

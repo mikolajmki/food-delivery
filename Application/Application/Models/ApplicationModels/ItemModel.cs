@@ -8,5 +8,7 @@ public class ItemModel : BaseEntityModel
     public string Description { get; set; }
     public double Price { get; set; }
     public string Image { get; set; }
+    public int TotalReviewsCount { get; set; }
+    public double AverageRating { get; set; }
 
 }

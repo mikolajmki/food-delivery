@@ -1,6 +1,5 @@
 ﻿using Application.Abstractions.Repositories;
 using Domain.Models;
-using food_delivery.Repository;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repository;
@@ -9,7 +8,7 @@ internal class ApplicationUserRepository : GenericRepository<ApplicationUser>, I
 {
     private readonly ApplicationDbContext _context;
 
-    public ApplicationUserRepository(ApplicationDbContext context)
+    public ApplicationUserRepository(ApplicationDbContext context) : base(context)
     {
         _context = context;
     }

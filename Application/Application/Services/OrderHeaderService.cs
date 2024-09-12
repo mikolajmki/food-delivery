@@ -4,7 +4,7 @@ using Application.Models.ApplicationModels;
 using Application.Models.Options;
 using Application.Models.Queries;
 using Domain.Models;
-using food_delivery.Utility;
+using Domain.Utility;
 using MapsterMapper;
 
 namespace Application.Services;

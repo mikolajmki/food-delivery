@@ -1,108 +1,64 @@
-﻿using food_delivery.Areas.Admin.Controllers;
-using food_delivery.Models;
-using food_delivery.Repository;
-using food_delivery.ViewModels;
+﻿using Application.Abstractions.Services;
+using Application.Models.Commands;
+using MapsterMapper;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System.Security.Claims;
+using Presentation.ApiModels;
+using Presentation.ViewModels;
 
-namespace food_delivery.Areas.Customer.Controllers
+namespace Presentation.Areas.Customer.Controllers
 {
     [Area("Customer")]
     public class HomeController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IItemService _itemService;
+        private readonly IMapper _mapper;
+        private readonly IReviewService _reviewService;
+        private readonly ICartService _cartService;
 
-        public HomeController(ApplicationDbContext context)
+        public HomeController(IItemService itemService, IMapper mapper, IReviewService reviewService, ICartService cartService)
         {
-            _context = context;
+            _itemService = itemService;
+            _mapper = mapper;
+            _reviewService = reviewService;
+            _cartService = cartService;
         }
 
         public async Task<IActionResult> Index()
         {
 
-            ItemListViewModel vm = new ItemListViewModel()
-            {
-                CategoriesList = await _context.Categories.ToListAsync(),
-                Categories = await _context.Categories.ToListAsync(),
-                Coupons = await _context.Coupons.Where(c => c.IsActive).ToListAsync(),
-            };
+            var  itemListReadModel = await _itemService.GetItemList();
+            var itemListViewModel = _mapper.Map<ItemListViewModel>(itemListReadModel);
 
-            vm.Items = _context.Items.Include(x => x.Category).Include(y => y.Subcategory)
-            .Select(model =>
-                new ItemViewModel()
-                {
-                    Id = model.Id,
-                    Image = model.Image,
-                    Title = model.Title,
-                    Description = model.Description,
-                    Price = model.Price,
-                    CategoryId = model.CategoryId,
-                    TotalReviewsCount = _context.Reviews.Where(x => x.ItemId == model.Id).Count(),
-                }).ToList();
-
-            foreach (var item in vm.Items)
-            {
-                if (item.TotalReviewsCount > 0)
-                {
-                    item.AverageRating = (double)_context.Reviews.Where(x => x.ItemId == item.Id).ToList().Sum(x => x.Rating) / (double)item.TotalReviewsCount;
-                }
-                else
-                {
-                    item.AverageRating = 0;
-                }
-            }
-
-            return View(vm);
+            return View(itemListViewModel);
         }
 
-        public IActionResult GetByCategory (int id)
+        public async Task<IActionResult> GetByCategoryAsync (int id)
         {
-            ItemListViewModel vm = new ItemListViewModel()
-            {
-                CategoriesList = _context.Categories.ToList(),
-                Categories = _context.Categories.ToList(),
-                Coupons = _context.Coupons.Where(c => c.IsActive).ToList(),
-            };
 
-            vm.Items = _context.Items.Where(x => x.CategoryId == id).Include(x => x.Category).Include(y => y.Subcategory)
-            .Select(model =>
-                new ItemViewModel()
-                {
-                    Id = model.Id,
-                    Image = model.Image,
-                    Title = model.Title,
-                    Description = model.Description,
-                    Price = model.Price,
-                    CategoryId = model.CategoryId,
-                    TotalReviewsCount = _context.Reviews.Where(x => x.ItemId == model.Id).Count(),
-                }).ToList();
+            var itemListReadModel = await _itemService.GetItemListOfCategoryId(id);
+            var itemListViewModel = _mapper.Map<ItemListViewModel>(itemListReadModel);
 
-            foreach (var item in vm.Items)
-            {
-                if (item.TotalReviewsCount > 0)
-                {
-                    item.AverageRating = (double)_context.Reviews.Where(x => x.ItemId == item.Id).ToList().Sum(x => x.Rating) / (double)item.TotalReviewsCount;
-                }
-                else
-                {
-                    item.AverageRating = 0;
-                }
-            }
 
-            return View("Index", vm);
+            return View("Index", itemListViewModel);
         }
         [HttpGet]
         public async Task<IActionResult> Details(int id)
         {
-            var itemFromDb = await _context.Items.Include(x => x.Category).Include(y => y.Subcategory).Where(x => x.Id == id).FirstOrDefaultAsync();
-            var reviews = _context.Reviews.Include(x => x.ApplicationUser).Where(x => x.ItemId == id).ToList();
+            var itemModel = await _itemService.GetPopulatedById(id);
+            var reviewModelList = await _reviewService.GetByItemIdIncludeUser(id);
+
+            var item = _mapper.Map<ItemApiModel>(itemModel);
+            var reviews = _mapper.Map<List<ReviewApiModel>>(reviewModelList);
+
+            //var itemFromDb = await _context.Items.Include(x => x.Category).Include(y => y.Subcategory).Where(x => x.Id == id).FirstOrDefaultAsync();
+            //var reviews = _context.Reviews.Include(x => x.ApplicationUser).Where(x => x.ItemId == id).ToList();
 
             var vm = new ItemDetailsViewModel()
             {
-                Item = itemFromDb,
-                ItemId = itemFromDb.Id,
+                Item = item,
+                ItemId = item.Id,
                 Reviews = reviews,
                 Count = 1
             };
@@ -118,30 +74,17 @@ namespace food_delivery.Areas.Customer.Controllers
         {
             if (ModelState.IsValid)
             {
-                var claimsIdentity = (ClaimsIdentity)this.User.Identity;
-                var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
-                vm.ApplicationUserId = claim.Value;
-
-                Console.WriteLine(vm.ToString());
-
-                var cartFromDb = await _context.Carts.Where(x => x.ApplicationUserId == vm.ApplicationUserId && x.ItemId == vm.ItemId).FirstOrDefaultAsync();
-
-                if (cartFromDb == null) 
+                var command = new AddToCartCommand
                 {
-                    await _context.Carts.AddAsync(new CartApiModel
-                    {
-                        ItemId = vm.ItemId,
-                        ApplicationUserId = vm.ApplicationUserId,
-                        Count = vm.Count
-                    });
-                } else
-                {
-                    cartFromDb.Count += vm.Count;
-                }
+                    CartCount = vm.Count,
+                    Identity = User.Identity!,
+                    ItemId = vm.ItemId
+                };
 
-                await _context.SaveChangesAsync();
-                
-                var userCartCount = _context.Carts.Where(x => x.ApplicationUserId == claim.Value).ToList().Count();
+                await _cartService.AddItemToCart(command);
+
+                var userCartCount = await _cartService.GetUserCartsCount(User.Identity!);
+
                 HttpContext.Session.SetInt32("SessionCart", userCartCount);
 
                 return RedirectToAction("Index");

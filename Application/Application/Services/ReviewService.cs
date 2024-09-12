@@ -76,4 +76,12 @@ internal class ReviewService : GenericService<ReviewModel, Review>, IReviewServi
 
         return review;
     }
+
+    public async Task<List<ReviewModel>> GetByItemIdIncludeUser(int id)
+    {
+        var list = await _reviewRepository.GetByItemIdIncludeUser(id);
+        var reviews = _mapper.Map<List<ReviewModel>>(list);
+
+        return reviews;
+    }
 }

@@ -1,17 +1,21 @@
-using Microsoft.EntityFrameworkCore;
+using Application;
+using Infrastructure;
+using Infrastructure.Repository;
 using WebApi.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
-
 
 // Add services to the container.
 
 builder.Services.AddSession();
 builder.Services.AddControllersWithViews();
+builder.Services.AddMapsterConfiguration();
+builder.Services.AddMvc();
+builder.Services.AddApplication();
+builder.Services.AddInfrastructure(builder.Configuration);
+
 builder.Services.AddControllers(
     options => options.SuppressImplicitRequiredAttributeForNonNullableReferenceTypes = true);
-builder.Services.AddDbContext<ApplicationDbContext>(
-    options => options.UseSqlServer(builder.Configuration.GetConnectionString("ApplicationDbContextConnection")));
 
 //builder.Configuration.GetSection(PaymentSettings.Stripe).Bind(PaymentSettings.StripeOptions);
 
@@ -19,8 +23,6 @@ builder.Services.AddDbContext<ApplicationDbContext>(
 //    .AddRoles<IdentityRole>()
 //    .AddEntityFrameworkStores<ApplicationDbContext>();
 
-builder.Services.AddScoped<IDbInitializer, DbInitializer>();
-builder.Services.AddMapsterConfiguration();
 
 var app = builder.Build();
 
@@ -40,7 +42,7 @@ app.UseRequestLocalization(options =>
 app.UseSession();
 
 var scope = app.Services.CreateScope();
-var service = scope.ServiceProvider.GetService<IDbInitializer>();
+var service = scope.ServiceProvider.GetService<IDbInitializer>()!;
 service.Initialize();
 
 app.UseHttpsRedirection();
