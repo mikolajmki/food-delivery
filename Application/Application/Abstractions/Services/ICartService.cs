@@ -6,7 +6,7 @@ using System.Security.Principal;
 
 namespace Application.Abstractions.Services;
 
-public interface ICartService : IGenericService<CartModel>
+public interface ICartService : IGenericService<CartModel, Cart>
 {
     Task<bool> AddToCart(int id);
     Task<CartModel> GetCart();

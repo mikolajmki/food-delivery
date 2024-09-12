@@ -6,7 +6,7 @@ using MapsterMapper;
 
 namespace Application.Services;
 
-public class GenericService<TModel, TEntity> : IGenericService<TModel> 
+public class GenericService<TModel, TEntity> : IGenericService<TModel, TEntity> 
     where TModel : class, IBaseEntityModel
     where TEntity : class, IBaseEntity
 {

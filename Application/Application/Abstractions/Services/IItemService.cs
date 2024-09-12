@@ -1,8 +1,9 @@
 ﻿using Application.Models.ApplicationModels;
+using Domain.Models;
 
 namespace Application.Abstractions.Services;
 
-public interface IItemService : IGenericService<ItemModel>
+public interface IItemService : IGenericService<ItemModel, Item>
 {
     Task<ItemModel> GetItem();
     Task<ItemListReadModel> GetItemList();

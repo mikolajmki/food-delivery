@@ -5,7 +5,7 @@ using System.Security.Principal;
 
 namespace Application.Abstractions.Services;
 
-public interface IOrderHeaderService : IGenericService<OrderHeaderModel>
+public interface IOrderHeaderService : IGenericService<OrderHeaderModel, OrderHeader>
 {
     Task<List<OrderHeaderModel>> GetOrderHeadersOfAllUsers(GetOrderHeadersOfUserQuery query);
     Task<List<OrderHeaderModel>> GetOrderHeadersOfUser(GetOrderHeadersOfUserQuery query);

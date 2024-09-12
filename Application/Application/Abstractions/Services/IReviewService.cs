@@ -1,8 +1,9 @@
 ﻿using Application.Models.ApplicationModels;
+using Domain.Models;
 using System.Security.Principal;
 namespace Application.Abstractions.Services;
 
-public interface IReviewService : IGenericService<ReviewModel>
+public interface IReviewService : IGenericService<ReviewModel, Review>
 {
     Task<List<ReviewModel>> GetReviewsOfUser(IIdentity identity);
     Task<List<ReviewModel>> GetReviewsOfAllUsers();

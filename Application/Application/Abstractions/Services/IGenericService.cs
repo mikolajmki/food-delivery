@@ -2,7 +2,7 @@
 
 namespace Application.Abstractions.Services;
 
-public interface IGenericService<TModel>
+public interface IGenericService<TModel, TEntity>
     where TModel : class, IBaseEntityModel
 {
     Task<IQueryable<TModel>> GetAll();
