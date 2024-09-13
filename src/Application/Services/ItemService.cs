@@ -9,7 +9,6 @@ namespace Application.Services;
 
 internal class ItemService : GenericService<ItemModel, Item>, IItemService
 {
-    private readonly IItemRepository _repository;
     private readonly ICategoryRepository _categoryRepository;
     private readonly ICouponRepository _couponRepository;
     private readonly IReviewRepository _reviewRepository;
@@ -24,7 +23,7 @@ internal class ItemService : GenericService<ItemModel, Item>, IItemService
         IReviewRepository reviewRepository,
         IItemRepository itemRepository
 
-    ) : base(repository)
+    ) : base(repository, mapper)
     {
         _mapper = mapper;
         _categoryRepository = categoryRepository;
@@ -108,7 +107,7 @@ internal class ItemService : GenericService<ItemModel, Item>, IItemService
 
     public async Task<List<ItemModel>> GetPopulated()
     {
-        var list = await _repository.GetPopulated();
+        var list = await _itemRepository.GetPopulated();
         var items = _mapper.Map<List<ItemModel>>(list);
 
         return items;
@@ -116,7 +115,7 @@ internal class ItemService : GenericService<ItemModel, Item>, IItemService
 
     public async Task<ItemModel> GetPopulatedById(int id)
     {
-        var entity = await _repository.GetPopulatedById(id);
+        var entity = await _itemRepository.GetPopulatedById(id);
         var item = _mapper.Map<ItemModel>(entity);
 
         return item;

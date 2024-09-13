@@ -24,11 +24,13 @@ namespace Presentation.Areas.Admin.Controllers
         public OrdersController(
             IOrderDetailsService orderDetailsService,
             IOrderHeaderService orderHeaderService,
-            IReviewService reviewService)
+            IReviewService reviewService,
+            IMapper mapper)
         {
             _orderDetailsService = orderDetailsService;
             _orderHeaderService = orderHeaderService;
             _reviewService = reviewService;
+            _mapper = mapper;
         }
 
         public async Task<IActionResult> IndexAsync(OrderHeaderOrderByApiOptions options)
@@ -37,32 +39,35 @@ namespace Presentation.Areas.Admin.Controllers
 
             var query = new GetOrderHeadersOfUserQuery(orderby);
 
-            List<OrderHeaderModel> orders;
+            List<OrderHeaderModel> list;
 
             if (User.IsInRole("Admin"))
             {
-                orders = await _orderHeaderService.GetOrderHeadersOfAllUsers(query);
+                list = await _orderHeaderService.GetOrderHeadersOfAllUsers(query);
             }
             else
             {
                 query.Identity = User.Identity;
-                orders = await _orderHeaderService.GetOrderHeadersOfUser(query);
+                list = await _orderHeaderService.GetOrderHeadersOfUser(query);
             }
+
+            var orders = _mapper.Map<List<OrderHeaderApiModel>>(options);
 
             return View(orders);
         }
         [HttpGet]
         public async Task<IActionResult> OrderDetailsAsync(int id)
         {
-            var orderDetailsReadModel = await _orderDetailsService.GetOrderDetailsByOrderHeaderId(id);
+            var list = await _orderDetailsService.GetOrderDetailsByOrderHeaderId(id);
+            var orderDetailsReadModel = _mapper.Map<OrderDetailsViewModel>(list);
 
-            List<ItemApiModel> notReviewedItems = new List<ItemApiModel>();
+            var notReviewedItems = new List<ItemApiModel>();
 
             foreach (var item in orderDetailsReadModel.OrderDetails) 
             {
                 if (!orderDetailsReadModel.Reviews.Any(x => x.ItemId == item.ItemId))
                 {
-                    //notReviewedItems.Add(item.Item);
+                    notReviewedItems.Add(item.Item);
                 }
             }
 

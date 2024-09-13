@@ -32,7 +32,7 @@ public class GenericRepository<TEntity> : IGenericRepository<TEntity>
 
     public Task<TEntity> GetById(int id)
     {
-        return _context.Set<TEntity>().AsNoTracking().FirstOrDefaultAsync(x => x.Id == id);
+        return _context.Set<TEntity>().AsNoTracking().SingleAsync(x => x.Id == id);
     }
 
     public async Task<IQueryable<TEntity>> GetAll()
@@ -40,8 +40,11 @@ public class GenericRepository<TEntity> : IGenericRepository<TEntity>
         return _context.Set<TEntity>().AsNoTracking();
     }
 
-    public Task<bool> Update(int id, TEntity entity)
+    public async Task<bool> Update(int id, TEntity entity)
     {
-        throw new NotImplementedException();
+        TEntity model = await _context.Set<TEntity>().SingleAsync(x=> x.Id == id);
+        _context.Entry(model).CurrentValues.SetValues(entity);
+
+        return true;
     }
 }

@@ -1,11 +1,10 @@
 ﻿using Application.Abstractions.Services;
 using Application.Models.ApplicationModels;
 using MapsterMapper;
-using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Presentation.ApiModels;
 using Presentation.ViewModels;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Authorization;
 
 namespace Presentation.Areas.Admin.Controllers
 {
@@ -25,7 +24,9 @@ namespace Presentation.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            var coupons = couponService.GetAll();
+            var list = couponService.GetAll();
+            var coupons = mapper.Map<List<CouponViewModel>>(list);
+
             return View(coupons);
         }
         [HttpGet]

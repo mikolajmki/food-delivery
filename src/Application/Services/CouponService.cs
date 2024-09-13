@@ -6,16 +6,15 @@ using MapsterMapper;
 
 namespace Application.Services;
 
-internal class CategoryService : GenericService<CategoryModel, Category>, ICategoryService
+internal class CouponService : GenericService<CouponModel, Coupon>, ICouponService
 {
     private readonly IMapper mapper;
 
-    public CategoryService(IGenericRepository<Category> repository, IMapper mapper) : base(repository, mapper)
+    public CouponService(IGenericRepository<Coupon> repository, IMapper mapper) : base(repository, mapper)
     {
-        this.mapper = mapper;
     }
 
-    public Task<CategoryModel> GetCategory()
+    public Task<CouponModel> GetCoupon()
     {
         throw new NotImplementedException();
     }

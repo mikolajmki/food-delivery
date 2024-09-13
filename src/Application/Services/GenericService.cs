@@ -13,9 +13,10 @@ public class GenericService<TModel, TEntity> : IGenericService<TModel, TEntity>
     private readonly IGenericRepository<TEntity> _repository;
     private readonly IMapper _mapper;
 
-    public GenericService(IGenericRepository<TEntity> repository)
+    public GenericService(IGenericRepository<TEntity> repository, IMapper mapper)
     {
         _repository = repository;
+        _mapper = mapper;
     }
 
     public async Task<bool> Create(TModel model)

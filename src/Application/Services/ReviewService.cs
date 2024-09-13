@@ -16,7 +16,7 @@ internal class ReviewService : GenericService<ReviewModel, Review>, IReviewServi
         IReviewRepository reviewRepository, 
         IMapper mapper 
 
-    ): base(repository)
+    ): base(repository, mapper)
     {
         _reviewRepository = reviewRepository;
         _mapper = mapper;

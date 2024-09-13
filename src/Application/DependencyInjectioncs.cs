@@ -11,6 +11,7 @@ public static class DependencyInjectioncs
         services.AddScoped(typeof(IGenericService<,>), typeof(GenericService<,>));
         services.AddScoped<IApplicationUserService, ApplicationUserService>();
         services.AddScoped<ICartService, CartService>();
+        services.AddScoped<ICouponService, CouponService>();
         services.AddScoped<ICategoryService, CategoryService>();
         services.AddScoped<IItemService, ItemService>();
         services.AddScoped<IOrderDetailsService, OrderDetailsService>();

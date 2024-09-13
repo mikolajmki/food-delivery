@@ -21,7 +21,7 @@ internal class OrderDetailsService : GenericService<OrderDetailsReadModel, Order
         IOrderDetailsRepository orderDetailsRepository,
         IMapper mapper,
         IOrderHeaderRepository orderHeaderRepository,
-        IReviewRepository reviewRepository) : base(repository)
+        IReviewRepository reviewRepository) : base(repository, mapper)
     {
         _orderDetailsRepository = orderDetailsRepository;
         _orderHeaderRepository = orderHeaderRepository;

@@ -24,7 +24,7 @@ internal class CartService : GenericService<CartModel, Cart>, ICartService
         IOrderHeaderRepository orderHeaderRepository,
         IOrderDetailsRepository orderDetailsRepository
         
-        ) : base(repository)
+        ) : base(repository, mapper)
     {
         _cartRepository = cartRepository;
         _mapper = mapper;

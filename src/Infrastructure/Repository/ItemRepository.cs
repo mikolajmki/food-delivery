@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repository;
 
-public class ItemRepository : GenericRepository<Item>, IItemRepository
+internal class ItemRepository : GenericRepository<Item>, IItemRepository
 {
     private readonly ApplicationDbContext _context;
 

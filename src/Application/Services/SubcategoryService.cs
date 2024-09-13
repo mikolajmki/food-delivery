@@ -12,11 +12,14 @@ internal class SubcategoryService : GenericService<SubcategoryModel, Subcategory
     private readonly IMapper _mapper;
 
     public SubcategoryService(
-        IGenericRepository<Subcategory> repository, 
-        ISubcategoryRepository subcategoryRepository
-    ) : base(repository)
+        IGenericRepository<Subcategory> repository,
+        ISubcategoryRepository subcategoryRepository,
+        IMapper mapper
+        
+        ) : base(repository, mapper)
     {
         _subcategoryRepository = subcategoryRepository;
+        _mapper = mapper;
     }
 
     public async Task<List<SubcategoryModel>> GetAllIncludeCategory()

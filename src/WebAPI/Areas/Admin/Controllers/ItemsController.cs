@@ -1,10 +1,10 @@
 ﻿using Application.Abstractions.Services;
 using Application.Models.ApplicationModels;
 using MapsterMapper;
-using Presentation.ViewModels;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Presentation.ViewModels;
 
 namespace Presentation.Areas.Admin.Controllers
 {
@@ -19,22 +19,24 @@ namespace Presentation.Areas.Admin.Controllers
         private readonly IMapper mapper;
 
         public ItemsController(
-            IItemService itemService, 
-            ICategoryService categoryService, 
+            IItemService itemService,
+            ICategoryService categoryService,
             ISubcategoryService subcategoryService,
-            IMapper mapper
-        )
+            IMapper mapper,
+            IFileService fileService)
         {
             this.itemService = itemService;
             this.categoryService = categoryService;
             this.subcategoryService = subcategoryService;
             this.mapper = mapper;
+            this.fileService = fileService;
         }
 
         [HttpGet]
         public async Task<ViewResult> Index()
         {
-            var items = await itemService.GetPopulated();
+            var list = await itemService.GetPopulated();
+            var items = mapper.Map<List<ItemViewModel>>(list);
 
             return View(items);
         }
@@ -63,11 +65,12 @@ namespace Presentation.Areas.Admin.Controllers
             {
                 using(var fileStream = vm.ImageUrl.OpenReadStream())
                 {
-                    if (await fileService.SaveImage(fileStream))
-                    {
-                        var item = mapper.Map<ItemModel>(vm);
-                        await itemService.Create(item);
-                    }
+                    //if (await fileService.SaveImage(fileStream))
+                    //{
+
+                    //}
+                    var item = mapper.Map<ItemModel>(vm);
+                    await itemService.Create(item);
                 }
             }
             return RedirectToAction("Index");

@@ -7,10 +7,6 @@ using WebApi.Configuration;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
-builder.Services.AddApplication();
-builder.Services.AddInfrastructure(builder.Configuration);
-builder.Services.AddMapsterConfiguration();
 builder.Services.AddLogging();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
@@ -22,6 +18,10 @@ builder.Services.AddRazorPages();
 builder.Services.AddControllers();
 builder.Services.AddMvc();
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddApplication();
+builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.AddMapsterConfiguration();
 
 var app = builder.Build();
 

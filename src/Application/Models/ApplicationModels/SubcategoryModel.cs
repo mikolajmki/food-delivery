@@ -3,5 +3,5 @@
 public class SubcategoryModel : BaseEntityModel
 {
     public string Title { get; set; }
-    public string CategoryId { get; set; }
+    public int CategoryId { get; set; }
 }

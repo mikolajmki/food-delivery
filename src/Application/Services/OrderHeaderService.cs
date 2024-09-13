@@ -18,7 +18,7 @@ internal class OrderHeaderService : GenericService<OrderHeaderModel, OrderHeader
     public OrderHeaderService(
         IGenericRepository<OrderHeader> repository,
         IOrderHeaderRepository orderHeaderRepository,
-        IMapper mapper) : base(repository)
+        IMapper mapper) : base(repository, mapper)
     {
         _orderHeaderRepository = orderHeaderRepository;
         _mapper = mapper;

@@ -17,7 +17,7 @@ internal class ApplicationUserService : GenericService<ApplicationUserModel, App
         IMapper mapper, 
         IApplicationUserRepository applicationUserRepository
 
-    ) : base(repository)
+    ) : base(repository, mapper)
     {
         _mapper = mapper;
         _applicationUserRepository = applicationUserRepository;

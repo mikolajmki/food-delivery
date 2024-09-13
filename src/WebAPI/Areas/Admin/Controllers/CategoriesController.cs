@@ -14,9 +14,10 @@ namespace Presentation.Areas.Admin.Controllers
         private readonly ICategoryService categoryService;
         private readonly IMapper mapper;
 
-        public CategoriesController(ICategoryService categoryService)
+        public CategoriesController(ICategoryService categoryService, IMapper mapper)
         {
             this.categoryService = categoryService;
+            this.mapper = mapper;
         }
 
         [HttpGet]
@@ -24,7 +25,7 @@ namespace Presentation.Areas.Admin.Controllers
         {
             var allCategories = await categoryService.GetAll();
 
-            List<CategoryViewModel> categoryViewModel =
+            var categoryViewModel =
                 mapper.Map<List<CategoryViewModel>>(allCategories);
 
             return View(categoryViewModel);
@@ -32,7 +33,7 @@ namespace Presentation.Areas.Admin.Controllers
         [HttpGet]
         public ViewResult Create()
         {
-            CategoryViewModel category = new CategoryViewModel();
+            CategoryViewModel category = new();
 
             return View(category);
         }

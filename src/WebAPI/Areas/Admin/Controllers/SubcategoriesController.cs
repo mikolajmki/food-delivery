@@ -4,6 +4,7 @@ using MapsterMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Presentation.ApiModels;
 using Presentation.ViewModels;
 
 namespace Presentation.Areas.Admin.Controllers
@@ -30,7 +31,8 @@ namespace Presentation.Areas.Admin.Controllers
         [HttpGet]
         public async Task<IActionResult> IndexAsync()
         {
-            var subcategories = await _subcategoryService.GetAllIncludeCategory();
+            var list = await _subcategoryService.GetAllIncludeCategory();
+            var subcategories = _mapper.Map<List<SubcategoryApiModel>>(list);
 
             return View(subcategories);
         }
@@ -42,7 +44,9 @@ namespace Presentation.Areas.Admin.Controllers
 
             ViewBag.Category = new SelectList(categoryVMs, "Id", "Title");
 
-            return View(categoryVMs);
+            var subcategory = new SubcategoryViewModel();
+
+            return View(subcategory);
         }
         [HttpPost]
         public async Task<IActionResult> Create(SubcategoryViewModel vm)
