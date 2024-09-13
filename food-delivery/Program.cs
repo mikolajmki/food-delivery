@@ -2,7 +2,6 @@ using Application;
 using Infrastructure;
 using Infrastructure.Repository;
 using Microsoft.AspNetCore.Identity;
-using Presentation;
 using WebApi.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,7 +10,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
-builder.Services.AddPresentation();
 builder.Services.AddLogging();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
@@ -21,15 +19,6 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 builder.Services.AddSession();
 builder.Services.AddMapsterConfiguration();
 builder.Services.AddRazorPages();
-
-//builder.Services.AddControllersWithViews();
-//builder.Services.AddMvc();
-
-//builder.Services.AddControllers(
-//    options => options.SuppressImplicitRequiredAttributeForNonNullableReferenceTypes = true);
-
-//builder.Configuration.GetSection(PaymentSettings.Stripe).Bind(PaymentSettings.StripeOptions);
-
 
 var app = builder.Build();
 

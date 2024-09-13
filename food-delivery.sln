@@ -5,13 +5,11 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "food-delivery\WebAPI.csproj", "{B4258205-DD3D-4BC3-95AE-CE99D9C15F9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain\Domain.csproj", "{8FD477C6-CD9E-4521-AE49-1869C077F20A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain\Domain.csproj", "{8FD477C6-CD9E-4521-AE49-1869C077F20A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure\Infrastructure.csproj", "{E7A535DE-E611-4B8A-A6DC-633E9007C081}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure\Infrastructure.csproj", "{E7A535DE-E611-4B8A-A6DC-633E9007C081}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation", "Presentation\Presentation\Presentation.csproj", "{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application\Application.csproj", "{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application\Application.csproj", "{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +29,6 @@ Global
 		{E7A535DE-E611-4B8A-A6DC-633E9007C081}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7A535DE-E611-4B8A-A6DC-633E9007C081}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7A535DE-E611-4B8A-A6DC-633E9007C081}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1DCF8A1A-BA5E-426E-B510-6FD3A5ABFAFE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E31F8A39-395A-4FC7-8C91-7933D5DD40C7}.Release|Any CPU.ActiveCfg = Release|Any CPU

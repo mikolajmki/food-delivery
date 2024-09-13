@@ -28,7 +28,12 @@
     <ProjectReference Include="..\Application\Application\Application.csproj" />
     <ProjectReference Include="..\Domain\Domain\Domain.csproj" />
     <ProjectReference Include="..\Infrastructure\Infrastructure\Infrastructure.csproj" />
-    <ProjectReference Include="..\Presentation\Presentation\Presentation.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Views\Shared\" />
+    <Folder Include="Areas\Customer\Data\" />
+    <Folder Include="Areas\Customer\Models\" />
   </ItemGroup>
 
 </Project>
