@@ -1,6 +1,0 @@
-C:\sii\food-delivery\Presentation\Presentation\obj\Debug\net6.0\Presentation.csproj.AssemblyReference.cache
-C:\sii\food-delivery\Presentation\Presentation\obj\Debug\net6.0\Presentation.GeneratedMSBuildEditorConfig.editorconfig
-C:\sii\food-delivery\Presentation\Presentation\obj\Debug\net6.0\Presentation.AssemblyInfoInputs.cache
-C:\sii\food-delivery\Presentation\Presentation\obj\Debug\net6.0\Presentation.AssemblyInfo.cs
-C:\sii\food-delivery\Presentation\Presentation\obj\Debug\net6.0\Presentation.csproj.CoreCompileInputs.cache
-C:\sii\food-delivery\Presentation\Presentation\obj\Debug\net6.0\Presentation.sourcelink.json

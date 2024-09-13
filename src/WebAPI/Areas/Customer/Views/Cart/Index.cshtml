@@ -1,0 +1,71 @@
+﻿@model Presentation.ViewModels.CartOrderViewModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="h-100" style="background-color: #eee;">
+    <div class="container h-100 py-5">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-10">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h3 class="fw-normal mb-0 text-black">Shopping Cart</h3>
+                </div>
+                @if (Model.ListOfCart.Count > 0)
+                {
+                    @foreach (var cart in Model.ListOfCart)
+                    {
+                        <div class="card-rounded-3 mb-4 bg-white">
+                            <div class="card-body p-4">
+                                <div class="row d-flex justify-content-between align-items-center">
+                                    <div class="col-md-2 col-lg-2 col-xl-2">
+                                        <img src="@cart.Item.Image" class="img-fluid rounded-3" alt="Image"/>
+                                    </div>
+                                    <div class="col-md-3 col-lg-3 col-xl-3">
+                                        <p class="lead fw-normal mb-2">@cart.Item.Title</p>
+                                        <p><span class="text-muted">@Html.Raw(cart.Item.Description)</span></p>
+                                    </div>
+                                    <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1 d-flex flex-row gap-2">
+                                        <span class="mb-0 h5">@cart.Item.Price.ToString("C")</span>x<span class="mb-0 h5">@cart.Count</span>
+                                    </div>
+                                    <div class="col-md-3 col-lg-3 col-xl-2 d-flex flex-row">
+                                        <a asp-action="plus" asp-route-id="@cart.Id" class="btn btn-link px-2">
+                                            <i class="fa fa-plus-circle fa-lg"></i>
+                                        </a>
+                                        <a asp-action="minus" asp-route-id="@cart.Id" class="btn btn-link px-2">
+                                            <i class="fa fa-minus-circle fa-lg"></i>
+                                        </a>
+                                        <a asp-action="delete" asp-route-id="@cart.Id" class="btn btn-link px-2">
+                                            <i class="fa fa-trash fa-lg"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    <div class="card-rounded-3 mb-4 bg-white">
+                        <div class="card-body p-4 d-flex justify-content-between">
+                            <span>Total(USD)</span>
+                            <span class="fw-bold"><a>@Model.OrderHeader.OrderTotal.ToString("C")</a></span>
+                        </div>
+                    </div>
+                    <div class="card-rounded-3 mb-4 bg-white">
+                        <div class="card-body p-4 d-flex justify-content-between">
+                            <a class="btn btn-primary w-100" asp-action="Summary">Proceed to Pay</a>
+                        </div>
+                    </div>
+                } else
+                {
+                    <div class="card-rounded-3 mb-4 bg-white">
+                        <div class="card-body p-4">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                    No items in the shopping cart.
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>

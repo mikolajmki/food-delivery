@@ -1,7 +1,0 @@
-C:\sii\food-delivery\food-delivery\obj\Debug\net6.0\WebAPI.csproj.AssemblyReference.cache
-C:\sii\food-delivery\food-delivery\obj\Debug\net6.0\WebAPI.GeneratedMSBuildEditorConfig.editorconfig
-C:\sii\food-delivery\food-delivery\obj\Debug\net6.0\WebAPI.AssemblyInfoInputs.cache
-C:\sii\food-delivery\food-delivery\obj\Debug\net6.0\WebAPI.AssemblyInfo.cs
-C:\sii\food-delivery\food-delivery\obj\Debug\net6.0\WebAPI.csproj.CoreCompileInputs.cache
-C:\sii\food-delivery\food-delivery\obj\Debug\net6.0\WebAPI.MvcApplicationPartsAssemblyInfo.cache
-C:\sii\food-delivery\food-delivery\obj\Debug\net6.0\WebAPI.sourcelink.json
